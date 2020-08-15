@@ -30,7 +30,12 @@
     }
 
     .parallax-container {
-      height: 200px;
+      height: 300px;
+    }
+    .shadow-inset {
+      -moz-box-shadow:    inset 0 0 50px #000000;
+      -webkit-box-shadow: inset 0 0 50px #000000;
+      box-shadow:         inset 0 0 50px #000000;
     }
 
     .tabs .indicator {
@@ -242,7 +247,7 @@
   </section>
 
   <!-- parallax -->
-  <div class="parallax-container">
+  <div class="parallax-container shadow-inset">
     <div class="parallax">
       <img src="img/bricks.jpg" alt="" class="responsive-img">
     </div>
@@ -352,7 +357,7 @@
   </section>
 
   <!-- parallax -->
-  <div class="parallax-container scrollspy">
+  <div class="parallax-container shadow-inset">
     <div class="parallax">
       <img src="img/bricks.jpg" alt="" class="responsive-img">
     </div>
