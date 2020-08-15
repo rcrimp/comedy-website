@@ -19,24 +19,38 @@
   <style>
     #header-image {
       background-image: url("img/header.jpg");
-      background-size: cover;
       background-color: black;
       background-position: center top;
-      min-height: 500px;
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 100%;
     }
     @media screen and (max-width: 992px) {
       #header-image {
-        min-height: 400px;
+        min-height: 50%;
+        background-attachment: scroll;
+        background-image: url("img/header-trimmed.jpg");
       }
     }
     @media screen and (max-width: 600px) {
       #header-image {
         min-height: 210px;
+        background-size: cover;
+        background-attachment: scroll;
       }
     }
 
     .parallax-container {
-      height: 300px;
+      height: 40%;
+    }
+    .parallax {
+      background-image: url("img/bricks.jpg");
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .shadow-inset {
       -moz-box-shadow:    inset 0 0 50px #000000;
@@ -75,13 +89,13 @@
    }
 
    /* photo gallery */
-    #comedian .row .col {
+    #gallery .row .col {
       padding: 0;
     }
-    #comedian .card {
+    #gallery .card {
       margin: 0;
     } 
-    #comedian .card-title {
+    #gallery .card-title {
       font-size: 16px !important;
       background: rgba(0, 0, 0, 0.5);
       width: 100%;
@@ -106,14 +120,12 @@
       <div class="container">
         <a href="#" class="brand-logo">Reuben Crimp</a>
         <a href="" class="sidenav-trigger tooltipped" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
-        <!-- class="btn-floating red darken-4 tooltipped " data-position="right" data-tooltip="Instagram"> -->
-
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#comedian" class="">Performer</a></li>
-          <li><a href="#producer" class="">Producer</a></li>
-          <li><a href="#contact" class="">Contact</a></li>
+          <li><a href="#performer-anchor" class="">Performer</a></li>
+          <li><a href="#producer-anchor" class="">Producer</a></li>
+          <li><a href="#contact-anchor" class="">Contact</a></li>
             <li>
               <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
                 <i class="fab fa-instagram"></i>
@@ -131,9 +143,9 @@
             </li>
         </ul>
         <ul id="mobile-menu" class="sidenav grey lighten-2">
-          <li><a href="#comedian" class="">Performer</a></li>
-          <li><a href="#producer" class="">Producer</a></li>
-          <li><a href="#contact" class="">Contact</a></li>
+          <li><a href="#performer-anchor" class="">Performer</a></li>
+          <li><a href="#producer-anchor" class="">Producer</a></li>
+          <li><a href="#contact-anchor" class="">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -162,9 +174,9 @@
   </div>
 
   <!-- performer -->
-  <section id="comedian" class="container section scrollspy">
-    <h2 class="red-text text-darken-4">Comedy</h2>
-    <p>My debut stand up performance was in Dunedin, May 2017, since then I have performed across the country: Auckland, Wellington, Christchurch, Queenstown, Invercargill, Palmerston North, and Hamilton. I have also performed in numerous festivals including: Dunedin Fringe Festival(s), the Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
+  <section id="gallery" class="container section scrollspy">
+    <h2 id="performer-anchor" class="red-text text-darken-4">Comedian</h2>
+    <p>My debut stand up gig was in Dunedin, May 2017, since then I have performed across the country in every NZ city, alongside Jeremy Elwood, Brendhan Lovegrove, Tim Batt and more. I have also performed in numerous festivals including: Dunedin Fringe Festival(s), The Christchurch Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
     
     <div class="row">
 
@@ -259,16 +271,14 @@
   <!-- parallax -->
   <div class="parallax-container shadow-inset">
     <div class="parallax">
-      <img src="img/bricks.jpg" alt="" class="responsive-img">
     </div>
   </div>
 
   <!-- producer -->
-  <section class="container section scrollspy" id="producer">
-    <h2 class="red-text text-darken-4">Show Productions</h2>
+  <section class="container section scrollspy">
+    <h2 id="producer-anchor" class="red-text text-darken-4">Comedy Producer</h2>
     <p>I have been producing comedy shows with <a href="#">Dunedin Comedy</a> since early 2018. 
-      I am involved in every step of production including. (marketing, graphic design, talent booking, audio, light, stage managing, filming, photography). Here are some shows I have produced.</p>
-
+      I am involved in every step of production including: marketing, graphic design, talent booking, audio, lighting, filming, photography, stage managing, etc...</p>
     <div class="row">
       <div class="col s6 m6 l4">
         <div class="card hoverable">
@@ -280,7 +290,7 @@
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">RAW Comedy<i class="material-icons right">close</i></span>
-            <p>First ever RAW Comedy Quest.</p>
+            <p>First ever RAW Comedy Quest in Otago.</p>
           </div>
         </div>
       </div>
@@ -315,14 +325,14 @@
       <div class="col s6 m6 l4">
         <div class="card hoverable">
           <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/bark.png" alt="">
+            <img class="activator" src="img/shows/church.jpg" alt="">
           </div>
           <div class="card-content">
-            <span class="card-title activator">Barking Mad<i class="material-icons right">expand_more</i></span>
+            <span class="card-title activator">Variety Show<i class="material-icons right">expand_more</i></span>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Barking Mad<i class="material-icons right">close</i></span>
-            <p>Semi pro show.</p>
+            <span class="card-title grey-text text-darken-4">Variety Show<i class="material-icons right">close</i></span>
+            <p>Balclutha City Impact Church.</p>
           </div>
         </div>
       </div>
@@ -356,10 +366,8 @@
       </div>
 
     </div>
-  </section>
-  
-  <section class="container section scrollspy" id="partners">
-    <h2 class="red-text text-darken-4">Partners</h2>
+
+    <h2 id="partners" class="red-text text-darken-4">Partners</h2>
     <div class="row">
       <div class="col s4 m3 l2">
         <a href="https://www.dunedinfringe.nz/">
@@ -403,16 +411,17 @@
   <!-- parallax -->
   <div class="parallax-container shadow-inset">
     <div class="parallax">
-      <img src="img/bricks.jpg" alt="" class="responsive-img">
     </div>
   </div>
 
   <!-- contact form -->
-  <section class="section container scrollspy" id="contact">
-    <div class="row">
+  <section class="section container scrollspy">
+    <div id="contact-anchor" class="row">
       <div class="col s12 l5">
         <h2 class="red-text text-darken-4">Contact Me</h2>
-        <p>Corporate bookings.</p>
+        <p>From open mic sign ups to corporate events.</p> 
+          
+        <p>I can book professional comperes to host private functions. I can book talent from across  </p>
       </div>
       <div class="col s12 l5 offset-l2">
         <form action="">
@@ -472,7 +481,7 @@
     $(document).ready(function(){
       $(".sidenav").sidenav();
       $(".materialboxed").materialbox();
-      $(".parallax").parallax();
+      // $(".parallax").parallax();
       $(".tabs").tabs();
       $(".datepicker").datepicker({});
       $(".tooltipped").tooltip();
