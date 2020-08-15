@@ -1,0 +1,434 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Reuben Crisp Comedy</title>
+  <style>
+    #header-image {
+      background-image: url("img/header.jpg");
+      background-size: cover;
+      background-color: black;
+      background-position: center top;
+      min-height: 500px;
+    }
+    @media screen and (max-width: 992px) {
+      #header-image {
+        min-height: 400px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      #header-image {
+        min-height: 300px;
+      }
+    }
+
+    .parallax-container {
+      height: 200px;
+    }
+
+    .tabs .indicator {
+      background-color: #b71c1c;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus:active {
+      background: transparent;
+    }
+
+    .btn-floating {
+      margin: 5px !important;
+    }
+    #mobile-social-buttons li a {
+      margin: 10px;
+    }
+
+    /* label focus color */
+    .input-field input:focus + label,
+    .input-field textarea:focus + label {
+      color: #b71c1c !important;
+    }
+    /* label underline focus color */
+    .input-field input:focus,
+    .input-field textarea:focus {
+      border-bottom: 1px solid #b71c1c !important;
+      box-shadow: 0 1px 0 0 #b71c1c !important
+    }
+    /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #b71c1c;
+   }
+
+    #comedian .row .col {
+      padding: 0;
+    }
+
+    #comedian .card {
+      margin: 0;
+    } 
+    #comedian .card-title {
+      font-size: 16px !important;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper red darken-4">
+      <div class="container">
+        <a href="#" class="brand-logo">Reuben Crisp</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#producer" class="">Producer</a></li>
+          <li><a href="#comedian" class="">Performer</a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+            <li>
+              <a href="#" class="btn-floating btn-small black tooltipped " data-position="right" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-floating btn-small black tooltipped" data-position="right" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-floating btn-small black tooltipped" data-position="right" data-tooltip="email">
+                <i class="fab material-icons">mail</i>
+              </a>
+            </li>
+        </ul>
+        <ul id="mobile-menu" class="sidenav grey lighten-2">
+          <li><a href="#producer" class="">Producer</a></li>
+          <li><a href="#comedian" class="">Performer</a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="header-image">
+    <div class="container hide-on-large-only">
+      <ul id="mobile-social-buttons" class="right">
+        <li>
+          <a href="#" class="btn-floating btn-small red darken-4 tooltipped " data-position="right" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating btn-small red darken-4 tooltipped" data-position="right" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-floating btn-small red darken-4 tooltipped" data-position="right" data-tooltip="email">
+            <i class="fab material-icons">mail</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- production examples -->
+  <section class="container section scrollspy" id="producer">
+    <h2 class="red-text text-darken-4">Show Productions</h2>
+    <p>I have been producing comedy shows with <a href="#">Dunedin Comedy</a> since early 2018. 
+      I am involved in every step of production including. (marketing, graphic design, talent booking, audio, light, stage managing, filming, photography). Here are some shows I have produced.</p>
+
+    <div class="row">
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/raw.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Otago RAW<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">RAW Comedy<i class="material-icons right">close</i></span>
+            <p>First ever RAW Comedy Quest.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/breast.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Breast Cancer<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Breast Cancer<i class="material-icons right">close</i></span>
+            <p>Raised $1,200 for Breast Cancer Foundation NZ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/laughter.png" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">COVID-19<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">COVID-19<i class="material-icons right">close</i></span>
+            <p>Social distancing, contact tracing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/bark.png" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Barking Mad<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Barking Mad<i class="material-icons right">close</i></span>
+            <p>Semi pro show.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/cannabash-promo.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Cannabash<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Cannabash<i class="material-icons right">close</i></span>
+            <p>Stoned up comedy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m6 l4">
+        <div class="card">
+          <div class="card-image waves-effect waves-light">
+            <img class="activator" src="img/shows/inch.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Open Mics<i class="material-icons right">expand_more</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Open Mics<i class="material-icons right">close</i></span>
+            <p>Open Mics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <h2>Partners</h2>
+    Grandpafigs
+    goodtimes
+    hellopecia
+    remarkably funny
+    dunedin fringe
+    nz comedy guild -->
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/bricks.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- performer -->
+  <section id="comedian" class="container section scrollspy">
+    <h2 class="red-text text-darken-4">Performance Photos</h2>
+    <div class="row">
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/chch.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">Salty Buskers Festival</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/haloween.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">Ha-Ha-Haloween</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/blue.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">The Burlesque Rumble</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/pun-battle.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">Christchurch Pun Battle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/cannabash.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title small">Cannabash Stoned Up Comedy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/classic.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title small">The Classic, Auckland</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/photos/fringe.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title small">Dunedin Fringe Festival 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="red-text text-darken-4">Reviews</h2>
+    <div class="row">
+      <div class="col s12 m6">
+    <div class="card">
+      <div class="card-content">
+        <p>&ldquo;split-second timing, confidence, and brilliant gags.&rdquo;</p>
+        <p>
+          <a class="" target="_blank" href="https://www.odt.co.nz/news/dunedin/fringe/review-something-offer-all-senses-humour">- Otago Daily Times</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="col s12 m6">
+    <div class="card">
+      <div class="card-content">
+        <p>&ldquo;Reuben tries a new joke that falls quite flat.&rdquo;</p>
+        <p>
+          <a class="" target="_blank" href="https://www.theatreview.org.nz/reviews/review.php?id=11827">- theatreview</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+    <!-- <h2 class="red-text text-darken-4">Videos</h2>
+    <ul>
+      <li>Otago RAW 2020</li>
+      <li>Opening for Harriet 2019</li>
+      <li>Something from 2018</li>
+      <li>Craft Bar 2017</li>
+    </ul> -->
+
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container scrollspy">
+    <div class="parallax">
+      <img src="img/bricks.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="red-text text-darken-4">Contact Me</h2>
+        <p>Corporate bookings.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix ">message</i>
+            <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <!-- <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for</label>
+          </div> -->
+          <!-- <div class="input-field">
+            <p>Services required...</p>
+            <p><label>
+              <input type="checkbox">
+              <span>Photography</span>
+            </label></p>
+            <p><label>
+              <input type="checkbox">
+              <span>Editing</span>
+            </label></p>
+          </div> -->
+          <div class="input-field center">
+            <button class="btn red darken-4">Send <i class="material-icons right">send</i>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer red darken-4">
+    <!-- <div class="container">
+      <ul>
+        <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-instagram"> </i> Instagram</a></li>
+        <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-facebook"> </i> Facebook</a></li>
+        <li><a href="" class="grey-text text-lighten-3"><i class="material-icons tiny">alternate_email</i> Email</a></li>
+      </ul>
+    </div> -->
+    <div class="footer-copyright transparent">
+      <div class="container center-align">&copy; 2020 Reuben Crisp</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".sidenav").sidenav();
+      $(".materialboxed").materialbox();
+      $(".parallax").parallax();
+      $(".tabs").tabs();
+      $(".datepicker").datepicker({});
+      $(".tooltipped").tooltip();
+      $(".scrollspy").scrollSpy();
+    });
+  </script>
+</body>
+</html>
