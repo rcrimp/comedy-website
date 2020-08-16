@@ -25,13 +25,15 @@
   <header>
     <nav class="nav-wrapper red darken-4">
       <div class="container">
-        <a href="#" class="brand-logo truncate">Reuben Crisp</a>
+        <!-- <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+        <a href="#" data-target="mobile-menu" class="brand-logo truncate sidenav-trigger show-on-large">Reuben Crisp</a>
         <a href="" class="sidenav-trigger" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#performer-anchor" class="">On Stage</a></li>
-          <li><a href="#producer-anchor" class="">Off Stage</a></li>
+          <li><a href="#performer-anchor" class="">Comedian</a></li>
+          <li><a href="#producer-anchor" class="">Producer</a></li>
           <li><a href="#contact-anchor" class="">Contact</a></li>
           <!-- <li><a class="disabled">@</a></li>   -->
           <li>
@@ -50,11 +52,25 @@
               </a>
             </li>
         </ul>
-        <ul id="mobile-menu" class="sidenav grey lighten-2">
-          <li><a href="#performer-anchor" class="">On Stage Performances</a></li>
-          <li><a href="#producer-anchor" class="">Off Stage Productions</a></li>
-          <li><a href="#contact-anchor" class="">Contact Me</a></li>
-          <li><a href="#contact-anchor" class="">About Me</a></li>
+        <ul id="mobile-menu" class="sidenav">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img class="responsive-img" src="img/bricks.jpg">
+              </div>
+            <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
+            <a href="#user"><img class="circle z-depth-2" src="img/reuben-photos/orange_hair.jpg"></a>
+            <a href="#name"><span class="white-text name">Reuben Crisp</span></a>
+            <a href="#email"><span class="white-text email">reubencrimp@gmail.com</span></a>
+          </div></li>
+          <li><a href="#performer-anchor" class="sidenav-close">Photographs & Film</a></li>
+          <li><a href="#producer-anchor" class="sidenav-close">Comedy Productions</a></li>
+          <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
+          <li><a href="#contact-anchor" class="sidenav-close">Profile</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="#!"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="#!"><i class="sidenav-close material-icons">email</i>Email</a></li>
         </ul>
       </div>
     </nav>
@@ -66,17 +82,20 @@
     <div class="container hide-on-large-only">
       <ul id="mobile-social-buttons" class="left">
         <li>
-          <a href="http://www.instagram.com/reuben_crisp" class="btn-floating red darken-4 tooltipped " data-position="right" data-tooltip="Instagram">
+          <a href="#performer-anchor" class="btn-floating red darken-4 tooltipped "
+          data-position="right" data-tooltip="Profile">
             <i class="material-icons">person</i>
           </a>
         </li>
         <li>
-          <a href="http://www.facebook.com/phyterjet" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Facebook">
+          <a href="#contact-anchor" class="btn-floating red darken-4 tooltipped"
+          data-position="right" data-tooltip="Contact">
             <i class="material-icons">mail</i>
           </a>
         </li>
         <li>
-          <a href="mailto:reubencrimp@gmail.com" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Email">
+          <a href="#producer-anchor" class="btn-floating red darken-4 tooltipped"
+          data-position="right" data-tooltip="Portfolio">
             <i class="material-icons">apps</i>
           </a>
         </li>
@@ -232,10 +251,10 @@
   </div>
 
   <!-- producer -->
-  <section class="container section">
-    <h2 id="producer-anchor" class="scrollspy red-text text-darken-3">Comedy Producer</h2>
+  <section id="producer-anchor" class="scrollspy container section">
+    <h2 class="red-text text-darken-3">Comedy Producer</h2>
     <p>I have been producing under <a href="#">Dunedin Comedy&trade;</a> since early 2018. 
-      As a production director I take every step in the pipeline: Promotion, Graphic designer, Talent booking, Software and Tech engineer: (audio+lighting, filming+photography, web+machine learning), stage management, Designing marketing strategies...</p>
+      As a production director I take every step in the pipeline: Promotion, Graphic designer, Talent booking, audio, lighting, filming, photography, stage management...</p>
     <div class="row">
       
       <div class="col s12 m6 l4">
@@ -549,10 +568,6 @@
                       <input type="checkbox">
                       <span>Open mic registration</span>
                     </label></p>
-                    <p><label>
-                      <input type="checkbox">
-                      <span>Editing</span>
-                    </label></p>
                   </div>
       
                   <div class="input-field center">
@@ -627,10 +642,10 @@
   </section>
 
   <!-- parallax -->
-  <!-- <div class="parallax-container shadow-inset">
+  <div class="parallax-container shadow-inset">
     <div id="parallax3" class="parallax">
     </div>
-  </div> -->
+  </div>
 
   <!-- footer -->
   <!-- <footer class="page-footer transparent"> -->
@@ -645,13 +660,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".sidenav").sidenav();
+      $(".sidenav").sidenav({preventScrolling: false,});
       $(".materialboxed").materialbox();
       // $(".parallax").parallax();
       $(".tabs").tabs();
       $(".datepicker").datepicker({});
       $(".tooltipped").tooltip();
-      $(".scrollspy").scrollSpy();
+      $(".scrollspy").scrollSpy({scrollOffset: 100});
       $('.modal').modal();
       $('.slider').slider({height: 500});
       $('.collapsible').collapsible();
