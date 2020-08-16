@@ -1,0 +1,870 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">  
+  <title>Dunedin Comedy</title>
+  <style>
+    #header-image {
+      background-image: url("img/bricks.jpg");
+      background-color: black;
+      background-position: center top;
+      background-attachment: fixed;
+      background-position: top;
+      background-size: cover;
+      min-height: 33%;
+    }
+    @media screen and (max-width: 992px) {
+      #header-image {
+        min-height: 33%;
+        background-attachment: scroll;
+        background-image: url("img/bricks.jpg");
+      }
+    }
+    @media screen and (max-width: 600px) {
+      #header-image {
+        min-height: 50px;
+        background-size: cover;
+        background-attachment: scroll;
+      }
+    }
+    #header-button {
+      position: relative;
+      top: 4vw;}
+
+    .parallax-container {
+      height: 33%;
+    }
+    .parallax {
+      background-image: url("img/bricks.jpg");
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .shadow-inset {
+      -moz-box-shadow:    inset 0 0 50px #000000;
+      -webkit-box-shadow: inset 0 0 50px #000000;
+      box-shadow:         inset 0 0 50px #000000;
+    }
+
+    .tabs .indicator {
+      background-color: #b71c1c;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus:active {
+      background: #b71c1c;
+    }
+
+    nav .btn-floating {
+      margin: 10px 10px !important;
+    }
+    #mobile-social-buttons li a {
+      margin: 10px;
+    }
+
+    /* label focus color */
+    .input-field input:focus + label,
+    .input-field textarea:focus + label {
+      color: #1565c0 !important;
+    }
+    /* label underline focus color */
+    .input-field input:focus,
+    .input-field textarea:focus {
+      border-bottom: 1px solid #1565c0 !important;
+      box-shadow: 0 1px 0 0 #1565c0 !important
+    }
+    /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #1565c0;
+   }
+
+   /* photo gallery */
+    #gallery .row .col {
+      padding: 0;
+    }
+    #gallery .card {
+      margin: 0;
+    } 
+    #gallery .card-title {
+      font-size: 16px !important;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+
+    /* */
+    blockquote {
+      font-style: italic;
+      border-color: #b71c1c;
+    }
+    blockquote a {
+      font-style: normal;
+      margin-right: 10px;
+    }
+
+    .modal {
+      height: 100% !important;
+      max-height: 100%;
+      width: 100vw !important;
+      top: 0 !important;
+    }
+    /* 
+    .model-content {
+      width: max-content;
+    } */
+    .modal .indicators .active {
+      background-color:#1565c0 !important;
+    }
+
+    .collapsible .active .collapsible-header {
+        color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper red darken-4">
+      <div class="container">
+        <a href="#" class="brand-logo truncate">Dunedin Comedy</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#performer-anchor" class="">Events</a></li>
+          <li><a href="#producer-anchor" class="">About</a></li>
+          <li><a href="#contact-anchor" class="">Contact</a></li>
+          <li>
+            <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#contact-anchor" class="btn-floating btn-small black tooltipped" data-tooltip="Me">
+              <i class="fab material-icons">slideshow</i>
+            </a>
+          </li>
+        </ul>
+        <ul id="mobile-menu" class="sidenav grey lighten-2">
+          <li><a href="#performer-anchor" class="">Upcoming Shows</a></li>
+          <li><a href="#producer-anchor" class="">Show History</a></li>
+          <li><a href="#contact-anchor" class="">Register for open mics</a></li>
+          <li><a href="#contact-anchor" class="">Ask us?</a></li>
+          <li><a href="#contact-anchor" class="">Who we are</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="header-image">
+    <div class="container">
+      
+    </div>
+    <div class="container hide-on-large-only">
+      <ul id="mobile-social-buttons" class="left">
+        <li>
+          <a href="http://www.instagram.com/reuben_crisp" class="btn-floating red darken-4 tooltipped " data-position="right" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/phyterjet" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:reubencrimp@gmail.com" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Email">
+            <i class="fab material-icons">mail</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- EVENTS -->
+  <section class="container section">
+
+    <h2 id="producer-anchor" class="scrollspy red-text text-darken-3">Live Events</h2>
+
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <ul class="tabs">
+          <li class="tab col s3"><a href="#weekly" class="active" >Weekly</a></li>
+          <li class="tab col s3"><a href="#fortnightly">Fortnightly</a></li>
+          <li class="tab col s3"><a href="#history">Show History</a></li>
+        </ul>
+      </div>
+      <div id="weekly" class="col s12">
+        <ul class="collection">
+          
+          <li class="collection-item">
+            <div class="row">
+              <img class="col s4 responsive-img z-depth-1" src="img/shows/barking-banner.png" alt="">
+              <span class="col s4 title">
+                Barking Mad
+                <br>
+                Thur 27th Aug 2020
+                <br>
+                Dog with Two Tails
+                <br>
+                Moray Place
+                <br>
+                $10 Door Sales
+              </span>
+              <div class="col s4">
+                <p>Who let the dogs out? comedy is back at Bark! Down a Jug and inject your lungs with carbonated hilarity at Dun.. <br>
+                </p>
+                <a class="btn red darken-2 left" href="#!" class="secondary-content">
+                  <i class="left material-icons">local_activity</i>$5
+                </a>
+                <a class="btn white red-text right" href="#!" class="secondary-content">
+                  <i class="left material-icons">events</i>27-Aug-20</a>
+  
+              </div>
+            </div>
+          </li>
+
+          <li class="collection-item">
+            <div class="row">
+              <img class="col s4 responsive-img" src="img/shows/laughter-banner.png" alt="">
+              <span class="col s4 title">
+                Comedy Exchange
+                <br>
+                22nd August 2020
+                <br>
+                The New Athenaeum Theatre
+                <br>
+                23 Octagon
+                <br>
+                $20 Door Sales
+              </span>
+              <div class="col s4">
+                <p>Descriptions<br>
+                </p>
+                <a class="btn red darken-2 left" href="#!" class="secondary-content">
+                  <i class="left material-icons">local_activity</i>$17
+                </a>
+                <a class="btn white red-text right" href="#!" class="secondary-content">
+                  <i class="left material-icons">events</i>22-Aug-20</a>
+  
+              </div>
+            </div>
+          </li>
+        
+        </ul>
+      </div>
+      
+      <div id="fortnightly" class="col s12">
+
+      </div>
+      
+      <div id="history" class="col s12">
+        <div class="row">
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image modal-trigger" href="#modal1">
+              <img src="img/shows/raw-banner.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Otago RAW Comedy Quest</p>
+            </div>
+          </div>
+        </div>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <!-- <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a> -->
+            <!-- <h4>Otago RAW Comedy Quest 2020</h4> -->
+            <!-- <p class="btn-large btn-floating">First ever RAW Comedy Quest in Otago.</p> -->
+  
+            <div class="slider">
+              <ul class="slides">
+                <li><img src="img/raw/RAW_00.JPG"></li>
+                <li><img src="img/raw/RAW_06.JPG"></li>
+                <li><img src="img/raw/RAW_07.JPG"></li>
+                <li><img src="img/raw/RAW_10.JPG"></li>
+                <li><img src="img/raw/RAW_12.JPG"></li>
+              </ul>
+            </div>
+            <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a>
+                      <p class="center">Innagural Otago RAW Comedy Quest in a basement theatre.</p>
+  
+          </div>
+        </div>
+  
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/breast-banner.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+            </div>
+            <div class="activator card-content">
+              <p class="truncate">Breast Cancer Fundraiser</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Raised $1,200 for Breast Cancer Foundation NZ.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/christmas-banner.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="activator card-content">
+              <p class="truncate">Christmas Variety Show</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Balclutha City Impact Church.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/laughter-banner.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Post COVID-19 shows</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Social distancing, contact tracing.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/cannabash-banner.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Whakamana Cannabis Museum</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Stoned up comedy.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/inch-banner.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Open mic comedy shows</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Open Mics from April 2018 to February 2020.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/halloween-banner.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Nightmare on 403 Princes St</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Open Mics from April 2018 to February 2020.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/firinglines-banner.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Setting the Bar Low, Zanzibar</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Open Mics from April 2018 to February 2020.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/ars-banner-2.png" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">A Hot Piece of Ars Festival Showcase</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Open Mics from April 2018 to February 2020.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      
+    </div>
+
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container shadow-inset">
+    <div class="parallax">
+    </div>
+  </div>
+
+
+  <!-- performer -->
+  <section id="gallery" class="container section scrollspy">
+    
+    <div class="row">
+      <div class="col s12 m7 l7">
+        <h2 id="performer-anchor" class="left red-text text-darken-2 scrollspy">Gallery</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/inch-crowd.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="Hosting the comedy lineup at Dux Central during the 2020 Saly Buskers Festival.">
+            <span class="card-title">Open Mics at Inch Bar 2019</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/zanzibar.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="I dressed up as a vampire for our 2018 Halloween show in Dunedin.">
+            <span class="card-title">Firing Lines at Zanzibar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/toast.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="I was invited to perform alongside a Burlesque troupe.">
+            <span class="card-title">Comedy on Toast Bar</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/justin.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="I've won MVP for best pun two years running (2018, 2019).">
+            <span class="card-title">Justin White on Tour</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/reuben-photos/haloween.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="At the Whakamana Cannabis Museum in front of some papier-mâché.">
+            <span class="card-title small">Nightmare on 403 Princes St</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/dan.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="My first gig at the Classic in 2017.">
+            <span class="card-title small">Dan Brader at Inch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/reuben-photos/fringe.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+            <span class="card-title small">Dunedin Fringe Festival</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col s12 m12 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/wide-inchbar.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+            <span class="card-title small">Live at Inch Bar</span>
+          </div>
+        </div>
+      </div>
+
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/02.jpg" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Aaron Davies in Port Chalmers</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/simon-says.png" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Simon Says?</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/04.jpg" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Shit End Town and Dead Jobs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/jon_at_Dees.jpg" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Downstairs at Dee's Cafe</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/spongebob.png" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Late and Live</span>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/dunedin-photos/elisa.jpg" alt="" class="responsive-img materialboxed"
+            data-caption="Sold out audience at the 2018 Dunedin Fringe Festival">
+          <span class="card-title small">Elisa Rubin, Pot Noodle</span>
+        </div>
+      </div>
+    </div>
+
+    
+  
+
+
+  <!-- </div> -->
+    </div>
+
+  </div>
+  
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container shadow-inset">
+    <div class="parallax">
+    </div>
+  </div>
+  
+  <!-- contact form -->
+  <section id="contact-anchor" class="section container scrollspy">
+    <div  class="row">
+      <div class="col s12 l6">
+        <h2 class="red-text text-darken-3">Contact</h2>
+        <p>
+          From open mics to professional compèring.
+        </p>
+        <p>
+          Need a host for your club's function or corporate event? Want a step up from your local Toast Masters? let's work together.
+        </p>
+      </div>
+
+      <div class="col s12 m12 l6">
+        <ul class="collapsible popout">
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">person</i>Profile 
+            </div>
+            <div class="collapsible-body grey lighten-3">
+              <div class="row">
+                <div class="col s4 m4 l4">
+                  <!-- <div class="btn-floating btn-large transparent"> -->
+                    <!-- <img title="NZ" src="img/photos/reuben_crimp.png" alt="" class="responsive-img"/> -->
+                  <!-- </div> -->
+                  
+                  <img src="img/photos/reuben_crimp.png" alt="" class="z-depth-2 left responsive-img">
+                  
+                </div>
+                <div class="col s8 m8 l8">
+                  <p class="blue-text text-darken-2">Reuben Crimp</p>
+                  <p class="black-text text-darken-2" >
+                    <div class="right btn-floating btn transparent z-depth-2">
+                      <img title="Dunedin Comedy" src="img/partners/dunedincomedy.jpg" alt="" class="responsive-img"/>
+                    </div>
+                    <div class="right btn-floating btn white z-depth-2">
+                      <img title="IRIS Data Science" src="img/Iris_Logo_OnBlack.png" alt="" class="responsive-img"/>
+                    </div>
+                    Production Director
+                    <br>
+                    Software Engineer
+                    <!-- <br> -->
+                    <!-- ✍ Digital Artist<span class="grey-text text-lighten-3 right">📚__  🎨_</span> -->
+                  </p>                  
+                </div>
+              </div> 
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header"><i class="material-icons">people</i>Partners
+              <span class="right grey-text badge">
+                (11)</span>
+            </div>
+            <div class="collapsible-body">
+              <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
+              <div class="row">
+                <div class="col s2 m2 l2">
+                  <a href="http://www.comedyguild.org.nz/">
+                    <img src="img/partners/guild.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">NZ Comedy Guild</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.dunedinfringe.nz/">
+                    <img src="img/partners/dunedinfringe.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">Dunedin Fringe</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/candocomedy/">
+                    <img src="img/partners/cando.png" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">Can Do Comedy</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="http://www.dunedincomedy.co.nz">
+                    <img src="img/partners/dunedincomedy.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate blue-text text-darken-2">Dunedin Comedy</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.hellopeciaproductions.co.nz/">
+                    <img src="img/partners/hellopecia.jpg" alt="" class="responsive-img">
+                    <div class="center truncate red-blue tex-darken-2">Hello Pecia Productions</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/GrandpaFigs/">
+                    <img src="img/partners/grandpafigs.jpg" alt="" class="responsive-img">
+                    <div class="center truncate red-blue tex-darken-2">Grandpa Figs</div>
+                  </a>
+                </div>
+              </div>
+                <div class="row">
+                
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/queenstowncomedy/">
+                    <img src="img/partners/remarkablyfunny.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">Remarkably Funny</div>
+                  </a>
+                </div>
+
+                <div class="col s2 m2 l2">
+                  <a href="https://www.comedyhubpalmy.com/">
+                    <img src="img/partners/palmy.png" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">The Comedy Hub</div>
+                  </a>
+                </div>
+
+                <div class="col s2 m2 l2">
+                  <a href="http://www.ncomedy.co.nz/">
+                    <img src="img/partners/notorious.jpg" alt="" class=" responsive-img">
+                    <div class="center truncate red-blue tex-darken-2">Notorious*</div>
+                  </a>
+                </div>
+
+                <div class="col s2 m2 l2">
+                  <a href="http://www.humorous.co.nz/">
+                    <img src="img/partners/capital.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">Wellington Capital Comedy</div>
+                  </a>
+                </div>
+                
+                <div class="col s2 m2 l2">
+                  <a href="http://www.humorous.co.nz/">
+                    <img src="img/partners/classic.jpg" alt="" class="circle responsive-img z-depth-1">
+                    <div class="center truncate red-blue tex-darken-2">The Classic, Auckland</div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header"><i class="material-icons">phone</i>Call</div>
+            <div class="collapsible-body">
+              <!-- <span width="32px"> -->
+                <!-- <img width="32px" src="img/nz.png" alt=""> -->
+              <!-- </span> -->
+              <div class="btn-floating btn-small transparent z-depth-0">
+                <img title="NZ" src="img/nz.png" alt="" class="responsive-img"/>
+              </div>
+              <span>(+64) 022 165 2992</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="collapsible-header"><i class="material-icons">email</i>Message</div>
+            <div class="collapsible-body">
+              <div class="card-content">
+                <form action="">
+                  <div class="input-field">
+                    <i class="material-icons prefix">alternate_email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your email</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix ">message</i>
+                    <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+      
+                  <div class="input-field center">
+                    <button class="btn-small blue darken-3">
+                      Send<i class="material-icons right">send</i>
+                    </button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </li>
+
+        <li>
+            <div class="collapsible-header"><i class="material-icons">public</i>Location</div>
+            <div class="collapsible-body card-image">
+              <img src="img/map.jpg" alt="" class="z-depth-3 responsive-img materialboxed">
+              <p class="center">19 Baldwin st, North Dunedin, 9016<br>
+                <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
+                <!-- <a href="http://dunedincomedy.co.nz">dunedincomedy.co.nz</a><br> -->
+                <!-- <a href="http://reubencrimp.com">reubencrimp.com</a> -->
+              </p>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="col s12 m12 l5">
+        <div class="card hoverable">
+          
+          <div class="card-image waves-effect">
+            <img class="activator" src="img/Dunedin_Comedy_BSNS_BACK.png" alt="">
+          </div>
+          <div class="card-reveal">
+            
+              <div class="col l1 offset-l11 hide-on-med-and-down">
+                <span class="card-title"><i class="red-text text-darken-4 material-icons right">close</i></span>
+              </div>
+              <div class="col s4 m4 l4 offset-m1">
+                <img src="img/photos/reuben_crimp.png" alt="" class="left circle responsive-img z-depth-1">
+              </div>
+            
+              <div class="col s8 m6 l8">
+                <span class="card-title red-text text-darken-4">Reuben Crimp</span>
+                <p>Executive Producer,<br>Dunedin Comedy</p>
+              </div>
+              
+          </div>
+
+        </div>
+      </div> -->
+
+
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container shadow-inset">
+    <div class="parallax">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <!-- <footer class="page-footer black"> -->
+    <!-- <p>FOOTER SHIT!</p> -->
+    <div class="footer-copyright red darken-4">
+      <div class="white-text container center-align">Reuben Crimp Creation &copy; 2020</div>
+    <!-- </div> -->
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".sidenav").sidenav();
+      $(".materialboxed").materialbox();
+      // $(".parallax").parallax();
+      $(".tabs").tabs();
+      $(".datepicker").datepicker({});
+      $(".tooltipped").tooltip();
+      $(".scrollspy").scrollSpy();
+      $('.modal').modal();
+      $('.slider').slider({height: 500});
+      $('.collapsible').collapsible();
+      $('.dropdown-trigger').dropdown();
+      $('.tabs').tabs();
+    });
+  </script>
+</body>
+</html>
