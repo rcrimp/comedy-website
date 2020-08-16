@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
   
-  <title>Reuben Crimp Comedy</title>
+  <title>Krispy Kreme Komedy</title>
   <style>
     #header-image {
       background-image: url("img/header.jpg");
@@ -41,9 +41,12 @@
         background-attachment: scroll;
       }
     }
+    #header-button {
+      position: relative;
+      top: 4vw;}
 
     .parallax-container {
-      height: 40%;
+      height: 33%;
     }
     .parallax {
       background-image: url("img/bricks.jpg");
@@ -110,6 +113,24 @@
       font-style: normal;
       margin-right: 10px;
     }
+
+    .modal {
+      height: 100% !important;
+      max-height: 100%;
+      width: 100vw !important;
+      top: 0 !important;
+    }
+    /* 
+    .model-content {
+      width: max-content;
+    } */
+    .modal .indicators .active {
+      background-color:#b71c1c !important;
+    }
+
+    .collapsible .active .collapsible-header {
+        color: #b71c1c;
+    }
   </style>
 </head>
 <body>
@@ -118,15 +139,16 @@
   <header>
     <nav class="nav-wrapper red darken-4">
       <div class="container">
-        <a href="#" class="brand-logo">Reuben Crimp</a>
+        <a href="#" class="brand-logo truncate">Reuben Crisp</a>
         <a href="" class="sidenav-trigger tooltipped" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#performer-anchor" class="">Performer</a></li>
-          <li><a href="#producer-anchor" class="">Producer</a></li>
+          <li><a href="#performer-anchor" class="">On Stage</a></li>
+          <li><a href="#producer-anchor" class="">Off Stage</a></li>
           <li><a href="#contact-anchor" class="">Contact</a></li>
-            <li>
+          <li><a class="disabled">Follow:</a></li>  
+          <li>
               <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
                 <i class="fab fa-instagram"></i>
               </a>
@@ -151,6 +173,9 @@
     </nav>
   </header>
   <div id="header-image">
+    <div class="container">
+      
+    </div>
     <div class="container hide-on-large-only">
       <ul id="mobile-social-buttons" class="left">
         <li>
@@ -175,8 +200,43 @@
 
   <!-- performer -->
   <section id="gallery" class="container section scrollspy">
-    <h2 id="performer-anchor" class="red-text text-darken-4">Comedian</h2>
-    <p>My debut stand up gig was in Dunedin, May 2017, since then I have performed across the country in every NZ city, alongside Jeremy Elwood, Brendhan Lovegrove, Tim Batt and more. I have also performed in numerous festivals including: Dunedin Fringe Festival(s), The Christchurch Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
+    
+    <div class="row">
+      <div class="col s12 m7 l7">
+        <h2 id="performer-anchor" class="left red-text text-darken-2">Comedian</h2>
+      </div>
+      
+      <div class="col s12 m4 l4">
+        <a id="header-button" class='right dropdown-trigger btn black darken-4' href='#' data-target='dropdown1'>
+          <i class="material-icons left red-text">circle</i>
+          Watch Live
+          
+        </a>
+     </div>
+      <!-- Dropdown Structure -->
+
+      <ul id='dropdown1' class='dropdown-content'>
+        <!-- <input type="text" value=" Calendar" class="right red datepicker"> -->
+
+        <li>
+          <!-- <form action=""> -->
+            <!-- <input type="text" value=" Calendar" class="right red datepicker"> -->
+          <!-- </form> -->
+          <a class="white-text red darken-4" href="#!">
+            Calendar
+            <i class="material-icons white-text red darken-4">event</i>
+          </a>
+        </li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a class="red-text text-darken-3" href="#!">Facebook</a></li>
+        <li><a class="red-text text-darken-3" href="#!">Eventfinda</a></li>
+        <li><a class="red-text text-darken-3" href="#!">Trybooking</a></li>
+      </ul>
+    </div>
+    
+
+
+    <p>My debut stand up gig was in Dunedin, May 2017, since then I have performed across the country in every NZ city, appearing alongside Jeremy Elwood, Brendhan Lovegrove, Tim Batt and more. I have also performed in numerous festivals including: Dunedin Fringe Festival(s), The Christchurch Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
     
     <div class="row">
 
@@ -194,8 +254,8 @@
         <div class="card">
           <div class="card-image">
             <img src="img/photos/haloween.jpg" alt="" class="responsive-img materialboxed"
-              data-caption="I dressed up as a vampire for our 2018 Haloween show in Dunedin.">
-            <span class="card-title">Ha-Ha-Haloween</span>
+              data-caption="I dressed up as a vampire for our 2018 Halloween show in Dunedin.">
+            <span class="card-title">Ha-Ha-Halloween</span>
           </div>
         </div>
       </div>
@@ -285,134 +345,123 @@
   <section class="container section scrollspy">
     <h2 id="producer-anchor" class="red-text text-darken-4">Comedy Producer</h2>
     <p>I have been producing comedy shows with <a href="#">Dunedin Comedy</a> since early 2018. 
-      I am involved in every step of production including: marketing, graphic design, talent booking, audio, lighting, filming, photography, stage managing, etc...</p>
+      As a production director I take every step in the pipeline: Promotion, Graphic designer, Talent booking, Software and Tech engineer: (audio+lighting, filming+photography, web+machine learning), stage management, Designing marketing strategies...</p>
     <div class="row">
-      <div class="col s6 m6 l4">
+      
+      <div class="col s12 m6 l4">
         <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/raw.jpg" alt="">
+          <div class="card-image modal-trigger" href="#modal1">
+            <img src="img/shows/raw-banner.jpg" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
           </div>
           <div class="card-content">
-            <span class="card-title activator">Otago RAW<i class="material-icons right">expand_more</i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">RAW Comedy<i class="material-icons right">close</i></span>
-            <p>First ever RAW Comedy Quest in Otago.</p>
+            <p class="truncate">Otago RAW Comedy Quest</p>
           </div>
         </div>
       </div>
-      <div class="col s6 m6 l4">
-        <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/breast.jpg" alt="">
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <!-- <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a> -->
+          <!-- <h4>Otago RAW Comedy Quest 2020</h4> -->
+          <!-- <p class="btn-large btn-floating">First ever RAW Comedy Quest in Otago.</p> -->
+
+          <div class="slider">
+            <ul class="slides">
+              <li><img src="img/raw/RAW_00.JPG"></li>
+              <li><img src="img/raw/RAW_06.JPG"></li>
+              <li><img src="img/raw/RAW_07.JPG"></li>
+              <li><img src="img/raw/RAW_10.JPG"></li>
+              <li><img src="img/raw/RAW_12.JPG"></li>
+            </ul>
           </div>
-          <div class="card-content">
-            <span class="card-title activator">Breast Cancer<i class="material-icons right">expand_more</i></span>
+          <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a>
+                    <p class="center">Innagural Otago RAW Comedy Quest in a basement theatre.</p>
+
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="activator" src="img/shows/breast-banner.png" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+          </div>
+          <div class="activator card-content">
+            <p class="truncate">Breast Cancer Fundraiser</p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Breast Cancer<i class="material-icons right">close</i></span>
+            <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
             <p>Raised $1,200 for Breast Cancer Foundation NZ.</p>
           </div>
         </div>
       </div>
-      <div class="col s6 m6 l4">
+      
+      <div class="col s12 m6 l4">
         <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/laughter.png" alt="">
+          <div class="card-image">
+            <img class="activator" src="img/shows/christmas-banner.jpg" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
           </div>
-          <div class="card-content">
-            <span class="card-title activator">COVID-19<i class="material-icons right">expand_more</i></span>
+          <div class="activator card-content">
+            <p class="truncate">Christmas Variety Show</p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">COVID-19<i class="material-icons right">close</i></span>
+            <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+            <p>Balclutha City Impact Church.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="activator" src="img/shows/laughter-banner.png" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+          </div>
+          <div class="card-content">
+            <p class="truncate">Post COVID-19 shows</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
             <p>Social distancing, contact tracing.</p>
           </div>
         </div>
       </div>
-      <div class="col s6 m6 l4">
+      
+      <div class="col s12 m6 l4">
         <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/church.jpg" alt="">
+          <div class="card-image">
+            <img class="activator" src="img/shows/cannabash-banner.png" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
           </div>
           <div class="card-content">
-            <span class="card-title activator">Variety Show<i class="material-icons right">expand_more</i></span>
+            <p class="truncate">Whakamana Cannabis Museum</p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Variety Show<i class="material-icons right">close</i></span>
-            <p>Balclutha City Impact Church.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s6 m6 l4">
-        <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/cannabash-promo.jpg" alt="">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator">Cannabash<i class="material-icons right">expand_more</i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Cannabash<i class="material-icons right">close</i></span>
+            <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
             <p>Stoned up comedy.</p>
           </div>
         </div>
       </div>
-      <div class="col s6 m6 l4">
+      <div class="col s12 m6 l4">
         <div class="card hoverable">
-          <div class="card-image waves-effect waves-light">
-            <img class="activator" src="img/shows/inch.jpg" alt="">
+          <div class="card-image">
+            <img class="activator" src="img/shows/inch-banner.png" alt="">
+            <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
           </div>
           <div class="card-content">
-            <span class="card-title activator">Open Mics<i class="material-icons right">expand_more</i></span>
+            <p class="truncate">Open mic comedy shows</p>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Open Mics<i class="material-icons right">close</i></span>
-            <p>Open Mics.</p>
+            <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+            <p>Open Mics from April 2018 to February 2020.</p>
           </div>
         </div>
       </div>
 
     </div>
 
-    <h2 id="partners" class="red-text text-darken-4">Partners</h2>
-    <div class="row">
-      <div class="col s4 m3 l2">
-        <a href="https://www.dunedinfringe.nz/">
-          <img src="img/partners/dunedinfringe.jpg" alt="" class="circle responsive-img">
-          <div class="center truncate">Dunedin Fringe</div>
-        </a>
-      </div>
-      <div class="col s4 m3 l2">
-        <a href="https://www.hellopeciaproductions.co.nz/">
-          <img src="img/partners/hellopecia.jpg" alt="" class="responsive-img">
-          <div class="center truncate">Hello Pecia Productions</div>
-        </a>
-        </div>
-      <!-- <div class="col s4 m3 l2">
-        <a href="http://www.ncomedy.com">
-          <img src="img/partners/notorious.jpg" alt="" class="responsive-img">
-          <div class="center">Notorious*</div>
-        </a>
-      </div> -->
-      <div class="col s4 m3 l2">
-        <a href="https://www.facebook.com/GrandpaFigs/">
-          <img src="img/partners/grandpafigs.jpg" alt="" class="responsive-img">
-          <div class="center truncate">Grandpa Figs</div>
-        </a>
-      </div>
-      <div class="col s4 m3 l2">
-        <a href="https://www.facebook.com/candocomedy/">
-          <img src="img/partners/cando.png" alt="" class="circle responsive-img">
-          <div class="center truncate">Can Do Comedy</div>
-        </a>
-      </div>
-      <div class="col s4 m3 l2">
-        <a href="https://www.facebook.com/queenstowncomedy/">
-          <img src="img/partners/remarkablyfunny.jpg" alt="" class="circle responsive-img">
-          <div class="center truncate">Remarkably Funny</div>
-        </a>
-      </div>
-    </div>
   </section>
 
   <!-- parallax -->
@@ -422,63 +471,188 @@
   </div>
 
   <!-- contact form -->
-  <section class="section container scrollspy">
-    <div id="contact-anchor" class="row">
-      <div class="col s12 l5">
-        <h2 class="red-text text-darken-4">Contact Me</h2>
-        <p>From open mic sign ups to corporate events.</p> 
-          
-        <p>I can book professional comperes to host private functions. I can book talent from across  </p>
+  <section id="contact-anchor" class="section container scrollspy">
+    <div  class="row">
+      <div class="col s12 l6">
+        <h2 class="red-text text-darken-4">Connect</h2>
+        <p>
+          Everything from open mics to professional compèring.
+        </p>
+        <p>
+          Need a host for your club's function or corporate event?
+          <br>
+          Want to step up from your local Toast Masters?
+        </p>
       </div>
-      <div class="col s12 l5 offset-l2">
-        <form action="">
-          <div class="input-field">
-            <i class="material-icons prefix">email</i>
-            <input type="email" id="email">
-            <label for="email">Your email</label>
+
+      <div class="col s12 m12 l6">
+        <ul class="collapsible popout">
+          <li>
+            <div class="collapsible-header">
+              <i class="material-icons">person</i>Business Card 
+            </div>
+            <div class="collapsible-body grey lighten-3">
+              <div class="row">
+                <div class="col s4 m4 l4">
+                  <!-- <div class="btn-floating btn-large transparent"> -->
+                    <!-- <img title="NZ" src="img/photos/reuben_crimp.png" alt="" class="responsive-img"/> -->
+                  <!-- </div> -->
+                  <img src="img/photos/reuben_crimp.png" alt="" class="left circle responsive-img">
+                </div>
+                <div class="col s8 m8 l8">
+                  <h4 class="blue-text text-darken-2 flow-text">Reuben Crimp</h4>
+                  <p class="black-text text-darken-2" >
+                    <div class="right btn-floating btn-small transparent z-depth-0">
+                      <img title="Dunedin Comedy" src="img/partners/dunedincomedy.jpg" alt="" class="responsive-img"/>
+                    </div>
+                    Production Director
+                    <div class="right btn-floating btn-small transparent z-depth-0">
+                      <img title="IRIS Data Science" src="img/Iris_Logo_OnBlack.png" alt="" class="responsive-img"/>
+                    </div>
+                    Software Engineer
+                    <br>
+                    Artist<span class="right">📚👨‍🍳✍</span>
+                  </p>                  
+                </div>
+              </div> 
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">email</i>Send an email</div>
+            <div class="collapsible-body">
+              <div class="card-content">
+                <form action="">
+                  <div class="input-field">
+                    <i class="material-icons prefix">alternate_email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your email</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix ">message</i>
+                    <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+      
+                  <div class="input-field center">
+                    <button class="btn red darken-4">
+                      Send<i class="material-icons right">send</i>
+                    </button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">phone</i>Call me</div>
+            <div class="collapsible-body">
+              <!-- <span width="32px"> -->
+                <!-- <img width="32px" src="img/nz.png" alt=""> -->
+              <!-- </span> -->
+              <div class="btn-floating btn-small transparent z-depth-0">
+                <img title="NZ" src="img/nz.png" alt="" class="responsive-img"/>
+              </div>
+              <span>(+64) 022 165 2992</span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">public</i>Portals</div>
+            <div class="collapsible-body">
+              <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
+              <a href="http://dunedincomedy.co.nz">dunedincomedy.co.nz</a><br>
+              <a href="http://reubencrimp.com">reubencrimp.com</a>
+            </div>
+
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">people</i>Network</div>
+            <div class="collapsible-body">
+              <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
+              <div class="row">
+                <div class="col s2 m2 l2">
+                  <a href="http://www.dunedincomedy.co.nz">
+                    <img src="img/partners/dunedincomedy.jpg" alt="" class="circle responsive-img">
+                    <div class="center truncate red-text text-darken-3">Dunedin Comedy</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.dunedinfringe.nz/">
+                    <img src="img/partners/dunedinfringe.jpg" alt="" class="circle responsive-img">
+                    <div class="center truncate red-text tex-darken-3">Dunedin Fringe</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/candocomedy/">
+                    <img src="img/partners/cando.png" alt="" class="circle responsive-img">
+                    <div class="center truncate red-text tex-darken-3">Can Do Comedy</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.hellopeciaproductions.co.nz/">
+                    <img src="img/partners/hellopecia.jpg" alt="" class="responsive-img">
+                    <div class="center truncate red-text tex-darken-3">Hello Pecia Productions</div>
+                  </a>
+                </div>
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/GrandpaFigs/">
+                    <img src="img/partners/grandpafigs.jpg" alt="" class="responsive-img">
+                    <div class="center truncate red-text tex-darken-3">Grandpa Figs</div>
+                  </a>
+                </div>
+                
+                <div class="col s2 m2 l2">
+                  <a href="https://www.facebook.com/queenstowncomedy/">
+                    <img src="img/partners/remarkablyfunny.jpg" alt="" class="circle responsive-img">
+                    <div class="center truncate red-text tex-darken-3">Remarkably Funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="col s12 m12 l5">
+        <div class="card hoverable">
+          
+          <div class="card-image waves-effect">
+            <img class="activator" src="img/Dunedin_Comedy_BSNS_BACK.png" alt="">
           </div>
-          <div class="input-field">
-            <i class="material-icons prefix ">message</i>
-            <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
-            <label for="message">Your message</label>
-          </div>
-          <!-- <div class="input-field">
-            <input type="text" id="date" class="datepicker">
-            <label for="date">Choose a date you need me for</label>
-          </div> -->
-          <!-- <div class="input-field">
-            <p>Services required...</p>
-            <p><label>
-              <input type="checkbox">
-              <span>Photography</span>
-            </label></p>
-            <p><label>
-              <input type="checkbox">
-              <span>Editing</span>
-            </label></p>
-          </div> -->
-          <div class="input-field center">
-            <button class="btn red darken-4">Send <i class="material-icons right">send</i>
-            </button>
+          <div class="card-reveal">
+            
+              <div class="col l1 offset-l11 hide-on-med-and-down">
+                <span class="card-title"><i class="red-text text-darken-4 material-icons right">close</i></span>
+              </div>
+              <div class="col s4 m4 l4 offset-m1">
+                <img src="img/photos/reuben_crimp.png" alt="" class="left circle responsive-img">
+              </div>
+            
+              <div class="col s8 m6 l8">
+                <span class="card-title red-text text-darken-4">Reuben Crimp</span>
+                <p>Executive Producer,<br>Dunedin Comedy</p>
+              </div>
+              
           </div>
 
-        </form>
-      </div>
-    </div>
+        </div>
+      </div> -->
+
+
   </section>
 
-  <!-- footer -->
-  <footer class="page-footer red darken-4">
-    <!-- <div class="container">
-      <ul>
-        <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-instagram"> </i> Instagram</a></li>
-        <li><a href="" class="grey-text text-lighten-3"><i class="fab fa-facebook"> </i> Facebook</a></li>
-        <li><a href="" class="grey-text text-lighten-3"><i class="material-icons tiny">alternate_email</i> Email</a></li>
-      </ul>
-    </div> -->
-    <div class="footer-copyright transparent">
-      <div class="container center-align">&copy; 2020 Reuben Crimp</div>
+  <!-- parallax -->
+  <div class="parallax-container shadow-inset">
+    <div class="parallax">
     </div>
+  </div>
+
+  <!-- footer -->
+  <!-- <footer class="page-footer black"> -->
+    <!-- <p>FOOTER SHIT!</p> -->
+    <div class="footer-copyright red darken-4">
+      <div class="white-text container center-align">Reuben Crimp Creation &copy; 2020</div>
+    <!-- </div> -->
   </footer>
 
   <!-- Compiled and minified JavaScript -->
@@ -490,9 +664,13 @@
       $(".materialboxed").materialbox();
       // $(".parallax").parallax();
       $(".tabs").tabs();
-      // $(".datepicker").datepicker({});
+      $(".datepicker").datepicker({});
       $(".tooltipped").tooltip();
       $(".scrollspy").scrollSpy();
+      $('.modal').modal();
+      $('.slider').slider({height: 500});
+      $('.collapsible').collapsible();
+      $('.dropdown-trigger').dropdown();
     });
   </script>
 </body>
