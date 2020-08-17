@@ -37,7 +37,7 @@
 
     #profile-list {
       margin: 0 auto;
-      text-align: center;
+      /* text-align: center; */
     }
 
     .profile {
@@ -48,6 +48,7 @@
     }
     .profile img {
       object-fit: cover;
+      width: 100px;
       height: 100px;
     }
   </style>
@@ -326,11 +327,61 @@
         <div class="col s12 m6 l4">
           <div class="card hoverable">
             <div class="card-image">
+              <img class="activator" src="img/shows/punbattle.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Dunedin Pun Battle</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Dunedin Pun Battle</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/toast.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Stand-up Comedy, Toast Bar</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Stand-up Comedy at Toast Bar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
               <img class="activator" src="img/shows/inch-banner.png" alt="">
               <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Open mic comedy shows</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Open Mics from April 2018 to February 2020.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/firinglines-banner.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Firing Lines, Zanzibar</p>
             </div>
             <div class="card-reveal">
               <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
@@ -360,23 +411,7 @@
         <div class="col s12 m6 l4">
           <div class="card hoverable">
             <div class="card-image">
-              <img class="activator" src="img/shows/firinglines-banner.jpg" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
-            </div>
-            <div class="card-content">
-              <p class="truncate">Setting the Bar Low, Zanzibar</p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
-              <p>Open Mics from April 2018 to February 2020.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l4">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img class="activator" src="img/shows/ars-banner-2.png" alt="">
+              <img class="activator" src="img/shows/ars-banner.png" alt="">
               <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
@@ -389,6 +424,23 @@
           </div>
         </div>
 
+        <div class="col s12 m6 l4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img class="activator" src="img/shows/stadej-fringe.jpg" alt="">
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+            </div>
+            <div class="card-content">
+              <p class="truncate">Sh*t Towns & Dead End Jobs</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+              <p>Sh*t Towns & Dead End Jobs</p>
+            </div>
+          </div>
+        </div>
+
+        
 
       </div>
     </div>
@@ -745,12 +797,13 @@
       $('.collapsible').collapsible();
       $('.dropdown-trigger').dropdown();
       $('.tabs').tabs();
-        var files = ['Aaron Davies', 'Ian Loughran', 'Nicholas Gray', 'Annie Hayes', 'Jimmy Fletcher', 'Reuben Crisp', 'Brent Harpur', 'John Bagnall', 'Richie Lewis', 'Chewie', 'Jonathan Falconer.png', 'Rob McLennan', 'Elisa Rubin.png', 'Joseph Corbett', 'Harriet Moir', 'Moe Stebbings'];
+        var files = ['Aaron Davies', 'Ian Loughran', 'Nicholas Gray', 'Annie Hayes', 'Jimmy Fletcher', 'Reuben Crisp', 'Brent Harpur', 'John Bagnall', 'Richie Lewis', 'Chewie', 'Jonathan Falconer', 'Rob McLennan', 'Elisa Rubin', 'Joseph Corbett', 'Harriet Moir', 'Moe Stebbings'
+      , 'Gerard Dougherty', 'Sarper Dorter', 'Josh Ritchie', 'Hamish Mabon-Ross', 'Jenny Kendrick', 'Demelza Daisy Ray', 'Rachael Hodge', 'Stefan Ayto', 'Cheryl Anne Amos', 'Nicola Brown', 'Cullum Harmer', 'William Warren', 'Simon Kingsley-Holmes', 'Matt Wedd', 'Brittany Cardwell'];
         
-        for (f of files) {
-          $("#profile-list").append(`<li class="profile">
-        <img class="circle responsive-img z-depth-1" src="img/comedians/${f}.jpg" alt="">
-        <p class="center">${f}</p>
+        for (f of files.sort()) {
+          $("#profile-list").append(`<li title="${f}" class="profile">
+        <a href=""><img class="circle responsive-img z-depth-1" src="img/comedians/${f}.jpg" alt="">
+        <p class="center truncate red-text text-darken-2">${f}</p></a>
       </li`)  
         }
     });
