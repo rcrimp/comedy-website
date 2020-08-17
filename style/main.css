@@ -1,48 +1,12 @@
-#header-image {
-  background-image: url("../img/header.jpg");
-  background-color: black;
-  background-position: center top;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100%;
-}
-@media screen and (max-width: 992px) {
-  #header-image {
-    min-height: 50%;
-    background-attachment: scroll;
-    background-image: url("../img/header-trimmed.jpg");
-  }
-}
-@media screen and (max-width: 600px) {
-  #header-image {
-    min-height: 210px;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-}
-#header-button {
-  position: relative;
-  top: 4vw;}
-
 .parallax-container {
   height: 33%;
 }
 .parallax {
+  background-image: url("../img/bricks.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#parallax1 {
-  background-image: url("../img/reuben-photos/mornington-2.jpg");
-}
-#parallax2 {
-  background-image: url("../img/bricks.jpg");
-}
-#parallax3 {
-  background-image: url("../img/bricks.jpg");
 }
 .shadow-inset {
   -moz-box-shadow:    inset 0 0 50px #000000;

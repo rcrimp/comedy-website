@@ -14,8 +14,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="stylesheet" href="style/reuben.css">
-
+  <link rel="stylesheet" href="style/main.css">
+  <style>
+    #header-image {
+      background-image: url("../img/header.jpg");
+      background-color: black;
+      background-position: center top;
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 100%;
+    }
+    @media screen and (max-width: 992px) {
+      #header-image {
+        min-height: 50%;
+        background-attachment: scroll;
+        background-image: url("../img/header-trimmed.jpg");
+      }
+    }
+    @media screen and (max-width: 600px) {
+      #header-image {
+        min-height: 210px;
+        background-size: cover;
+        background-attachment: scroll;
+      }
+    }
+  </style>
   <title>Dunedin Comedy - Reuben Crisp</title>
   
 </head>

@@ -10,166 +10,84 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">  
   <title>Dunedin Comedy</title>
+  <link rel="stylesheet" href="style/main.css">
   <style>
     #header-image {
       background-image: url("img/bricks.jpg");
-      /* background-position: center top; */
       background-attachment: fixed;
-      /* background-position: top; */
       background-size: cover;
-      min-height: 33%;
+      min-height: 50%;
     }
     @media screen and (max-width: 992px) {
       #header-image {
-        min-height: 33%;
+        min-height: 210px;
       }
-    }
-    @media screen and (max-width: 600px) {
-      #header-image {
-        min-height: 50px;
-      }
-    }
-    #header-button {
-      position: relative;
-      top: 4vw;}
-
-    .parallax-container {
-      height: 33%;
-    }
-    .parallax {
-      background-image: url("img/bricks.jpg");
-      background-attachment: fixed;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .shadow-inset {
-      -moz-box-shadow:    inset 0 0 50px #000000;
-      -webkit-box-shadow: inset 0 0 50px #000000;
-      box-shadow:         inset 0 0 50px #000000;
-    }
-
-    .tabs .indicator {
-      background-color: #b71c1c;
-    }
-    .tabs .tab a:focus, .tabs .tab a:focus:active {
-      background: #b71c1c;
-    }
-
-    nav .btn-floating {
-      margin: 10px 10px !important;
-    }
-    #mobile-social-buttons li a {
-      margin: 10px;
-    }
-
-    /* label focus color */
-    .input-field input:focus + label,
-    .input-field textarea:focus + label {
-      color: #1565c0 !important;
-    }
-    /* label underline focus color */
-    .input-field input:focus,
-    .input-field textarea:focus {
-      border-bottom: 1px solid #1565c0 !important;
-      box-shadow: 0 1px 0 0 #1565c0 !important
-    }
-    /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #1565c0;
-   }
-
-   /* photo gallery */
-    #gallery .row .col {
-      padding: 0;
-    }
-    #gallery .card {
-      margin: 0;
-    } 
-    #gallery .card-title {
-      font-size: 16px !important;
-      background: rgba(0, 0, 0, 0.5);
-      width: 100%;
-    }
-
-    /* */
-    blockquote {
-      font-style: italic;
-      border-color: #b71c1c;
-    }
-    blockquote a {
-      font-style: normal;
-      margin-right: 10px;
-    }
-
-    .modal {
-      height: 100% !important;
-      max-height: 100%;
-      width: 100vw !important;
-      top: 0 !important;
-    }
-    /* 
-    .model-content {
-      width: max-content;
-    } */
-    .modal .indicators .active {
-      background-color:#1565c0 !important;
-    }
-
-    .collapsible .active .collapsible-header {
-        color: #1565c0;
     }
   </style>
 </head>
 <body>
 
   <!-- navbar -->
-  <header class="">
-    <nav class=" red darken-4">
-      <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo">
+  <header>
+    <nav class="nav-wrapper red darken-4">
+      <div class="container">
+        
+        <!-- desktop navigation -->
+        <a href="#" data-target="side-menu" class="brand-logo sidenav-trigger show-on-large">
           <img class="" src="img/dunedin-logo.png" alt="">
-          <i class="material-icons">home</i>
+          <!-- <i class="material-icons">home</i> -->
           &nbsp;
         </a>
-
-        <!-- <a href="#" class="brand-logo valign-wrapper"> -->
-        <!-- </a> -->
-        <a href="" class="sidenav-trigger" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
-          <i class="material-icons">menu</i>
-        </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#performer-anchor" class="">Events</a></li>
-          <li><a href="#producer-anchor" class="">About</a></li>
-          <li><a href="#contact-anchor" class="">Contact</a></li>
+          <li><a href="#" class="">Events</a></li>
+          <li><a href="#" class="">About</a></li>
+          <li><a href="#" class="">Contact</a></li>
           <li>
-            <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
+            <a href="http://www.instagram.com/dunedincomedy" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
+            <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
               <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="#contact-anchor" class="btn-floating btn-small black tooltipped" data-tooltip="Me">
+            <a href="http://www.youtube.com/" class="btn-floating btn-small black tooltipped" data-tooltip="Youtube">
               <i class="fab material-icons">slideshow</i>
             </a>
           </li>
         </ul>
-        <ul id="mobile-menu" class="sidenav grey lighten-2">
-          <li><a href="#performer-anchor" class="">Upcoming Shows</a></li>
-          <li><a href="#producer-anchor" class="">Show History</a></li>
-          <li><a href="#contact-anchor" class="">Register for open mics</a></li>
-          <li><a href="#contact-anchor" class="">Ask us?</a></li>
-          <li><a href="#contact-anchor" class="">Who we are</a></li>
+
+        <!-- side menu -->
+        <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="side-menu" class="sidenav">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img class="responsive-img" src="img/bricks.jpg">
+              </div>
+              <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
+              <a href="#"><span class="white-text name">Dunedin Comedy</span></a>
+              <a href="#"><span class="white-text name">2020</span></a>
+            </div>
+          </li>
+          <li><a href="#" class="sidenav-close">Upcoming Shows</a></li>
+          <li><a href="#" class="sidenav-close">Comedians</a></li>
+          <li><a href="#" class="sidenav-close">Join us</a></li>
+          <li><a href="#" class="sidenav-close">About us</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="http://www.facebook.com/phyterjet"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="http://www.instagram.com/reuben_crisp"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="#" class="sidenav-close"><i class="sidenav-close material-icons">email</i>Email</a></li>
         </ul>
       </div>
     </nav>
   
     <div id="header-image">
-        <!-- <p class="white-text center transparent">Dunedin Comedy</p> -->
+      
       <div class="container hide-on-large-only">
         <ul id="mobile-social-buttons" class="left">
           <li>
@@ -194,14 +112,6 @@
 
   <!-- EVENTS -->
   <section class="container section">
-    <script>
-      let links = [
-        "https://event645693.eventfinda.co.nz/2020/comedy-exchange-christchurch-dunedin/dunedin",
-        "https://event645693.eventfinda.co.nz/2020/laughter-is-the-best-medicine-mosgiel/dunedin",
-        "https://event645693.eventfinda.co.nz/2020/the-breast-comedy-show-2020/dunedin",  
-      ];
-    </script>
-    <h1 id="producer-anchor" class="center scrollspy red-text text-darken-3">Dunedin Comedy</h2>
 
 
     <div class="row">
