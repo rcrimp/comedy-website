@@ -13,15 +13,26 @@
   <link rel="stylesheet" href="style/main.css">
   <style>
     #header-image {
-      background-image: url("img/bricks.jpg");
+      background-image: url("img/bricks-blank.jpg");
       background-attachment: fixed;
+      background-position: center top;
       background-size: cover;
       min-height: 50%;
+    }
+    #title {
+      height: 50%;
     }
     @media screen and (max-width: 992px) {
       #header-image {
         min-height: 210px;
       }
+      #title {
+        height: 210px;
+      }
+    }
+    #title img {
+      font-weight: 600;
+      vertical-align:middle;
     }
   </style>
 </head>
@@ -69,9 +80,13 @@
               <div class="background">
                 <img class="responsive-img" src="img/bricks.jpg">
               </div>
+              <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>               -->
               <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
+              <a href="#user"><img class="circle z-depth-2" src="img/partners/dunedincomedy.jpg"></a>
+
               <a href="#"><span class="white-text name">Dunedin Comedy</span></a>
-              <a href="#"><span class="white-text name">2020</span></a>
+              <!-- <a href="#"><span class="white-text name">Dunedin Comedy</span></a> -->
+              <a href="#"><span class="white-text email">&copy; 2020</span></a>
             </div>
           </li>
           <li><a href="#" class="sidenav-close">Upcoming Shows</a></li>
@@ -87,26 +102,33 @@
     </nav>
   
     <div id="header-image">
-      
-      <div class="container hide-on-large-only">
-        <ul id="mobile-social-buttons" class="left">
-          <li>
-            <a href="http://www.instagram.com/reuben_crisp" class="btn-floating red darken-4 tooltipped " data-position="right" data-tooltip="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.facebook.com/phyterjet" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:reubencrimp@gmail.com" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Email">
-              <i class="fab material-icons">mail</i>
-            </a>
-          </li>
-        </ul>
+      <div class="container row">
+        <div class="col s2 hide-on-large-only">
+          <ul id="mobile-social-buttons">
+            <li>
+              <a href="http://www.instagram.com/reuben_crisp" class="btn-floating red darken-4 tooltipped " data-position="right" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com/phyterjet" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:reubencrimp@gmail.com" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Email">
+                <i class="fab material-icons">mail</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="title" class="col s8 m6 offset-m1 offset-l3 valign-wrapper">
+          <img class="responsive-img" src="img/dunedin-comedy.png" alt="">
+        </div>
       </div>
+
+      
     </header>
   </div>
 
@@ -192,7 +214,7 @@
           <div class="card hoverable">
             <div class="card-image modal-trigger" href="#modal1">
               <img src="img/shows/raw-banner.jpg" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">launch</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Otago RAW Comedy Quest</p>
@@ -240,7 +262,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/christmas-banner.jpg" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="activator card-content">
               <p class="truncate">Christmas Variety Show</p>
@@ -257,7 +279,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/laughter-banner.png" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Post COVID-19 shows</p>
@@ -273,7 +295,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/cannabash-banner.png" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Whakamana Cannabis Museum</p>
@@ -289,7 +311,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/inch-banner.png" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Open mic comedy shows</p>
@@ -307,7 +329,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/halloween-banner.png" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Nightmare on 403 Princes St</p>
@@ -323,7 +345,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/firinglines-banner.jpg" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">Setting the Bar Low, Zanzibar</p>
@@ -339,7 +361,7 @@
           <div class="card hoverable">
             <div class="card-image">
               <img class="activator" src="img/shows/ars-banner-2.png" alt="">
-              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">location_city</i></a>
+              <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
             </div>
             <div class="card-content">
               <p class="truncate">A Hot Piece of Ars Festival Showcase</p>
