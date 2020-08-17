@@ -32,24 +32,34 @@
     }
     #title img {
       font-weight: 600;
-      vertical-align:middle;
+      vertical-align :middle;
     }
 
-    #profile-list {
+    /* profile lists */
+    #comedian-list {
       margin: 0 auto;
       /* text-align: center; */
     }
-
     .profile {
       display: inline-block;
       margin:5px;
       vertical-align: top;
-      width: 100px;
+      width: 80px;
     }
     .profile img {
       object-fit: cover;
-      width: 100px;
-      height: 100px;
+      width: inherit;
+      height: 80px;
+    }
+
+    #premium-list .profile {
+      width: 110px;
+    }
+    #premium-list .profile img {
+      height: 110px;
+    }
+    #premium-list .profile p {
+      /* font-size: larger; */
     }
   </style>
 </head>
@@ -625,12 +635,8 @@
       </div>
     </div>
 
-    <ul id="profile-list">
-      <!-- <li class="profile">
-        <img class="circle responsive-img z-depth-1" src="img/comedians/Aaron Davies.jpg" alt="">
-        <p class="center">Aaron Davies</p>
-      </li> -->
-    </ul>
+    <div id="premium-list" class="row"></div>
+    <ul id="comedian-list" class="row"></ul>
 
   </section>
 
@@ -743,14 +749,69 @@
       $('.collapsible').collapsible();
       $('.dropdown-trigger').dropdown();
       $('.tabs').tabs();
-        var files = ['Aaron Davies', 'Ian Loughran', 'Nicholas Gray', 'Annie Hayes', 'Jimmy Fletcher', 'Reuben Crisp', 'Brent Harpur', 'John Bagnall', 'Richie Lewis', 'Chewie', 'Jonathan Falconer', 'Rob McLennan', 'Elisa Rubin', 'Joseph Corbett', 'Harriet Moir', 'Moe Stebbings'
-      , 'Gerard Dougherty', 'Sarper Dorter', 'Josh Ritchie', 'Hamish Mabon-Ross', 'Jenny Kendrick', 'Demelza Daisy Ray', 'Gerrit Gray', 'Rachael Hodge', 'Stefan Ayto', 'Cheryl Anne Amos', 'Nicola Brown', 'Cullum Harmer', 'William Warren', 'Simon Kingsley-Holmes', 'Matt Wedd', 'Brittany Cardwell'];
-        
-        for (f of files.sort()) {
-          $("#profile-list").append(`<li title="${f}" class="profile">
-        <a href=""><img class="circle responsive-img z-depth-1" src="img/comedians/${f}.jpg" alt="">
-        <p class="center truncate red-text text-darken-2">${f}</p></a>
-      </li`)  
+        var premium = [
+          'Jonathan Falconer',
+          'Reuben Crisp',
+          'Harriet Moir',
+          'Simon Kingsley-Holmes',
+          'Brittany Cardwell',
+          'Aaron Davies',
+        ];
+        for (f of premium) {
+            $("#premium-list").append(
+
+              `<div class="col s4 m3 l2">
+                <div class="card hoverable">
+                  <div class="card-image responsive-img">
+                    <img class="circle" src="img/comedians/${f}.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                    <p class="center red-text text-darken-2">${f}</p>
+                  </div>
+                </div>
+              </div>`);
+        }
+        // <div class="card hoverable">
+        //     <div class="card-image modal-trigger" href="#modal1">
+        //       <img src="img/shows/raw-banner.jpg" alt="">
+        //       <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">launch</i></a>
+        //     </div>
+        //     <div class="card-content">
+        //       <p class="truncate">Otago RAW Comedy Quest</p>
+        //     </div>
+        //   </div>
+        var comedians = [
+          'Ian Loughran',
+          'Nicholas Gray',
+          'Annie Hayes',
+          'Jimmy Fletcher',
+          'Brent Harpur',
+          'John Bagnall',
+          'Richie Lewis',
+          'Chewie',
+          'Rob McLennan',
+          'Elisa Rubin',
+          'Joseph Corbett',
+          'Moe Stebbings',
+          'Gerard Dougherty',
+          'Sarper Dorter',
+          'Josh Ritchie',
+          'Hamish Mabon-Ross',
+          'Jenny Kendrick',
+          'Demelza Daisy Ray',
+          'Gerrit Gray',
+          'Rachael Hodge',
+          'Stefan Ayto',
+          'Cheryl Anne Amos',
+          'Nicola Brown',
+          'Cullum Harmer',
+          'William Warren',
+          'Matt Wedd',
+        ];
+        for (f of comedians.sort()) {
+          $("#comedian-list").append(`<li title="${f}" class="profile z-depth-1">
+        <a href=""><img class="responsive-img" src="img/comedians/${f}.jpg" alt="">
+        <p class="center truncate red-text text-darken-2">${f}</p></a></li`)  
         }
     });
   </script>
