@@ -81,7 +81,7 @@ nav .btn-floating {
 }
 
 /* photo gallery */
-#gallery .row .col {
+#gallery .col {
   padding: 0;
 }
 #gallery .card {

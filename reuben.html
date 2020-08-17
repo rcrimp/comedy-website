@@ -16,7 +16,7 @@
   <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="stylesheet" href="style/reuben.css">
 
-  <title>Reuben Crisp Comedy</title>
+  <title>Dunedin Comedy - Reuben Crisp</title>
   
 </head>
 <body>
@@ -25,61 +25,62 @@
   <header>
     <nav class="nav-wrapper red darken-4">
       <div class="container">
-        <!-- <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
 
-        <a href="#" data-target="mobile-menu" class="brand-logo truncate sidenav-trigger show-on-large">Reuben Crisp</a>
-        <a href="" class="sidenav-trigger" data-target="mobile-menu" data-position="right" data-tooltip="Menu">
-          <i class="material-icons">menu</i>
-        </a>
+        <!-- desktop nav -->
+        <a href="#" data-target="side-menu" class="brand-logo truncate sidenav-trigger show-on-large">Reuben Crisp</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#performer-anchor" class="">Comedian</a></li>
           <li><a href="#producer-anchor" class="">Producer</a></li>
           <li><a href="#contact-anchor" class="">Contact</a></li>
-          <!-- <li><a class="disabled">@</a></li>   -->
           <li>
-              <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#contact-anchor" class="btn-floating btn-small black tooltipped" data-tooltip="Me">
-                <i class="fab material-icons">person</i>
-              </a>
-            </li>
+            <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#contact-anchor" class="btn-floating btn-small black tooltipped" data-tooltip="Me">
+              <i class="fab material-icons">person</i>
+            </a>
+          </li>
         </ul>
-        <ul id="mobile-menu" class="sidenav">
+
+        <!-- side menu -->
+        <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="side-menu" class="sidenav">
           <li>
             <div class="user-view">
               <div class="background">
                 <img class="responsive-img" src="img/bricks.jpg">
               </div>
               <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
-              <a href="#user"><img class="circle z-depth-2" src="img/reuben-photos/orange_hair.jpg"></a>
+              <a href="#user"><img class="circle z-depth-2" src="img/reuben-photos/moustache-profile.png"></a>
               <a href="#name"><span class="white-text name">Reuben Crisp</span></a>
               <a href="#email"><span class="white-text email">reubencrimp@gmail.com</span></a>
             </div>
           </li>
-          <li><a href="#performer-anchor" class="sidenav-close">Photographs & Film</a></li>
-          <li><a href="#producer-anchor" class="sidenav-close">Comedy Productions</a></li>
+          <li><a href="#performer-anchor" class="sidenav-close">Performances</a></li>
+          <li><a href="#producer-anchor" class="sidenav-close">Productions</a></li>
           <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">Profile</a></li>
+          <li><a href="#contact-anchor" class="sidenav-close">Me</a></li>
           <li><div class="divider"></div></li>
-          <li><a href="#!"><i class="fab fa-facebook"></i>Facebook</a></li>
-          <li><a href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
-          <li><a href="#!"><i class="sidenav-close material-icons">email</i>Email</a></li>
+          <li><a href="http://www.facebook.com/phyterjet"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="http://www.instagram.com/reuben_crisp"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="#contact-anchor" class="sidenav-close"><i class="sidenav-close material-icons">email</i>Email</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
+  <!-- hero image -->
   <div id="header-image">
-    <div class="container">
-      
-    </div>
+    <!-- mobile menu -->
     <div class="container hide-on-large-only">
       <ul id="mobile-social-buttons" class="left">
         <li>
@@ -89,34 +90,33 @@
           </a>
         </li>
         <li>
-          <a href="#contact-anchor" class="btn-floating red darken-4 tooltipped"
-          data-position="right" data-tooltip="Contact">
+          <a href="#contact-anchor" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Contact">
             <i class="material-icons">mail</i>
           </a>
         </li>
         <li>
-          <a href="#producer-anchor" class="btn-floating red darken-4 tooltipped"
-          data-position="right" data-tooltip="Portfolio">
+          <a href="#producer-anchor" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Portfolio">
             <i class="material-icons">apps</i>
           </a>
         </li>
       </ul>
     </div>
-
   </div>
 
   <!-- performer -->
-  <section id="gallery" class="container section scrollspy">
+  <section id="performer-anchor" class="container section scrollspy">
     
     <div class="row">
-      <div class="col s12 m7 l7">
-        <h2 id="performer-anchor" class="left red-text text-darken-2 scrollspy">Comedian</h2>
-      </div>
       
-      <div class="col hide-on-med-and-down l4">
-        <a id="header-button" class='right dropdown-trigger btn red darken-2' href='#' data-target='dropdown1'>
+      <!-- title -->
+      <div class="col s12 m7 l7">
+        <h2  class="left red-text text-darken-2 scrollspy">Comedian</h2>
+      </div>
+      <!-- show button -->
+      <div class="col s12 m5 l5">
+        <h2 class="hide-on-small-only"><a class='dropdown-trigger btn-large red darken-2' href='#' data-target='dropdown1'>
           <i class="material-icons right white-text">expand_more</i>Upcoming shows
-        </a>
+        </a></h2>
         <ul id='dropdown1' class='dropdown-content'>
           <li>
             <a class="white-text red darken-2" href="#!">
@@ -130,13 +130,14 @@
           <li><a class="red-text text-darken-3" href="#!">Trybooking</a></li>
         </ul>
       </div>
-   
-     </div>   
 
+    </div>
 
-    <p>My debut stand up performance was in Dunedin, May 2017, since then I have gigged in every NZ city. I have performed alongside Jeremy Elwood, Brendhan Lovegrove, Britney Cardwell.. I have done numerous festivals: Dunedin Fringe Festival(s), The Christchurch Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
-    
     <div class="row">
+      <p>My first open mic was in Dunedin on May 2017, since then I have gigged in every NZ city. I have performed alongside Jeremy Elwood, Brendhan Lovegrove, Britney Cardwell.. I have done numerous festivals: Dunedin Fringe Festival(s), The Christchurch Comedy Carnival, Fringe in the Stings', Salty Buskers Festival, and the Palmy Fringe Festival.</p>
+    </div>
+
+    <div id="gallery" class="row">
 
       <div class="col s6 m4 l3">
         <div class="card">
@@ -254,8 +255,8 @@
   <!-- producer -->
   <section id="producer-anchor" class="scrollspy container section">
     <h2 class="red-text text-darken-3">Comedy Producer</h2>
-    <p>I have been producing under <a href="#">Dunedin Comedy&trade;</a> since early 2018. 
-      As a producer I am involved in every step of the pipeline: booking talent, promotion, graphic design, audio, lighting, filming, photography, stage management...</p>
+    <p>I have been producing under <a href="#">Dunedin Comedy</a> since early 2018. 
+      As a necessity I have taken a variety of roles in the production pipeline including: booking talent, promotion, graphic design, audio, lighting, filming, photography, stage management...</p>
     <div class="row">
       
       <div class="col s12 m6 l4">
@@ -384,27 +385,26 @@
   <section id="contact-anchor" class="section container scrollspy">
     <h2 class="center red-text text-darken-4">
       Reuben Crisp</h2>
+    
     <div  class="row">
-
-      <div class="col s12 l6">
+      <div class="col s12 l6 offset-l3">
         <ul class="collapsible popout">
-          <li class="">
+          
+          <!-- My Mission -->
+          <li class="active">
             <div class="collapsible-header">
               <i class="material-icons">event_note</i>Mission
             </div>
             <div class="collapsible-body">
-              Elevate the public's awareness of live performing arts.
+              Elevate the public's awareness of live stand up.
               <p>
                 Create opportunities for rising talent here in Otago. 
               </p>
-              <p>
-                Provide professional compèring (MC) as a service.
-              </p>
-              <!-- Need a host for your club's function or corporate event? Want a step up from your local Toast Masters? . -->
             </div>
           </li>
 
-          <li class="">
+          <!-- business card -->
+          <li>
             <div class="collapsible-header">
               <i class="material-icons">person</i>Profile 
             </div>
@@ -412,20 +412,20 @@
               <div class="row">
 
                 <div id="avatar" class="col hide-on-small-only m4 offset-m1 l4 offset-l1">                  
-                  <img src="img/reuben-photos/reuben_crimp.png" alt="" class="circle left responsive-img">
+                  <img src="img/reuben-photos/iris-reuben-photo.png" alt="" class="circle left responsive-img z-depth-1">
                 </div>
                 
                 <div class="col s12 hide-on-med-and-up">
                   <span class="center chip btn-small transparent z-depth-0 truncate">
-                    <img title="Reuben Crimp" src="img/reuben-photos/reuben_crimp.png" alt="" class="responsive-img"/>
-                    Reuben Crisp
+                    <img title="Reuben Crimp" src="img/reuben-photos/iris-reuben-photo.png" alt="" class="responsive-img"/>
+                    Reuben Crimp
                   </span>
                 </div>
 
                 <div class="col hide-on-small-only m7 l7">
                   <span class="center chip btn-small transparent z-depth-0 truncate">
                     <img title="Linkedin" src="img/linkedin.png" alt="" class="responsive-img"/>
-                    Reuben Crisp
+                    Reuben Crimp
                   </span>
                 </div>
                 
@@ -447,13 +447,13 @@
             </div>
           </li>
 
+          <!-- partners -->
           <li>
             <div class="collapsible-header"><i class="material-icons">people</i>Partners
               <span class="right grey-text badge">
                 (11)</span>
             </div>
             <div class="collapsible-body">
-              <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
               <div class="row">
                 <div class="col s2 m2 l2">
                   <a href="http://www.comedyguild.org.nz/">
@@ -538,19 +538,13 @@
               </div>
             </div>
           </li>
-
-         
-
-        </ul>
-      </div>
-
-      <div class="col s12 m12 l6">
-        <ul class="collapsible popout">
           
+          <!-- email form -->
           <li>
             <div class="collapsible-header"><i class="material-icons">sms</i>Message</div>
             <div class="collapsible-body">
               <div class="card-content">
+                
                 <form action="">
                   <div class="input-field">
                     <i class="material-icons prefix">alternate_email</i>
@@ -562,35 +556,27 @@
                     <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
                     <label for="message">Your message</label>
                   </div>
-
                   <div class="input-field">
-                    <!-- <p>Services required...</p> -->
                     <p><label>
                       <input type="checkbox">
                       <span>Open mic registration</span>
                     </label></p>
-                  </div>
-      
+                  </div>      
                   <div class="input-field center">
                     <button class="btn-small red darken-3">
                       Send<i class="material-icons right">send</i>
                     </button>
                   </div>
-
-
-
                 </form>
+
               </div>
             </div>
           </li>
 
-
+          <!-- phone -->
           <li>
             <div class="collapsible-header"><i class="material-icons">phone</i>Call</div>
             <div class="collapsible-body">
-              <!-- <span width="32px"> -->
-                <!-- <img width="32px" src="img/nz.png" alt=""> -->
-              <!-- </span> -->
               <div class="btn-floating btn-small transparent z-depth-0">
                 <img title="NZ" src="img/nz.png" alt="" class="responsive-img"/>
               </div>
@@ -598,48 +584,17 @@
             </div>
           </li>
 
+          <!-- map -->
           <li>
             <div class="collapsible-header"><i class="material-icons">public</i>Location</div>
             <div class="collapsible-body card-image">
               <img src="img/map.jpg" alt="" class="z-depth-3 responsive-img materialboxed">
-              <p class="center">19 Baldwin st, North Dunedin, 9016<br>
-                <!-- <img class="s2 responsive-img" src="img/Dunedin_Comedy_BSNS_BACK.png" alt=""> -->
-                <!-- <a href="http://dunedincomedy.co.nz">dunedincomedy.co.nz</a><br> -->
-                <!-- <a href="http://reubencrimp.com">reubencrimp.com</a> -->
-              </p>
+              <p class="center">19 Baldwin st, North Dunedin, 9016</p>
             </div>
-
           </li>
 
         </ul>
       </div>
-
-      <!-- <div class="col s12 m12 l5">
-        <div class="card hoverable">
-          
-          <div class="card-image waves-effect">
-            <img class="activator" src="img/Dunedin_Comedy_BSNS_BACK.png" alt="">
-          </div>
-          <div class="card-reveal">
-            
-              <div class="col l1 offset-l11 hide-on-med-and-down">
-                <span class="card-title"><i class="red-text text-darken-4 material-icons right">close</i></span>
-              </div>
-              <div class="col s4 m4 l4 offset-m1">
-                <img src="img/reuben-photos/reuben_crimp.png" alt="" class="left circle responsive-img z-depth-1">
-              </div>
-            
-              <div class="col s8 m6 l8">
-                <span class="card-title red-text text-darken-4">Reuben Crimp</span>
-                <p>Executive Producer,<br>Dunedin Comedy</p>
-              </div>
-              
-          </div>
-
-        </div>
-      </div> -->
-
-
   </section>
 
   <!-- parallax -->
