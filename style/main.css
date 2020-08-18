@@ -67,7 +67,7 @@ blockquote a {
   margin-right: 10px;
 }
 
-.modal {
+#gallery-modal {
   height: 100% !important;
   max-height: 100%;
   width: 100vw !important;

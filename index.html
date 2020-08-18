@@ -38,7 +38,7 @@
     /* profile lists */
     #comedian-list {
       margin: 0 auto;
-      /* text-align: center; */
+      text-align: center;
     }
     .profile {
       display: inline-block;
@@ -58,8 +58,9 @@
     #premium-list .profile img {
       height: 110px;
     }
-    #premium-list .profile p {
-      /* font-size: larger; */
+    #premium-list p {
+      line-height: 1;
+      padding: 0 7px 14px 7px !important;
     }
   </style>
 </head>
@@ -195,7 +196,7 @@
                   <i class="left material-icons">local_activity</i>$5
                 </a>
                 <a class="btn white red-text right" href="#!" class="secondary-content">
-                  <i class="left material-icons">events</i>27-Aug-20</a>
+                  <i class="left material-icons">event</i>27-Aug-20</a>
   
               </div>
             </div>
@@ -222,7 +223,7 @@
                   <i class="left material-icons">local_activity</i>$17
                 </a>
                 <a class="btn white red-text right" href="#!" class="secondary-content">
-                  <i class="left material-icons">events</i>22-Aug-20</a>
+                  <i class="left material-icons">event</i>22-Aug-20</a>
   
               </div>
             </div>
@@ -239,7 +240,7 @@
         <div class="row">
         <div class="col s12 m6 l4">
           <div class="card hoverable">
-            <div class="card-image modal-trigger" href="#modal1">
+            <div class="card-image modal-trigger" href="#gallery-modal">
               <img src="img/shows/raw-banner.jpg" alt="">
               <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">launch</i></a>
             </div>
@@ -248,7 +249,7 @@
             </div>
           </div>
         </div>
-        <div id="modal1" class="modal">
+        <div id="gallery-modal" class="modal">
           <div class="modal-content">
             <!-- <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a> -->
             <!-- <h4>Otago RAW Comedy Quest 2020</h4> -->
@@ -482,8 +483,26 @@
       <div class="col s6 m4 l3">
         <div class="card">
           <div class="card-image">
-            <img src="img/dunedin-photos/inch-crowd.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">Inch Bar Open Mic</span>
+            <img src="img/dunedin-photos/fringe.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title small">Dunedin Fringe Festival</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/toast.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">Comedians at Toast Bar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/dees-crowd.jpg" alt="" class="responsive-img materialboxed"">
+            <span class="card-title small">Downstairs at Dee's Cafe</span>
           </div>
         </div>
       </div>
@@ -500,12 +519,21 @@
       <div class="col s6 m4 l3">
         <div class="card">
           <div class="card-image">
-            <img src="img/dunedin-photos/toast.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">Comedy at Toast Bar</span>
+            <img src="img/reuben-photos/haloween.jpg" alt="" class="responsive-img materialboxed"">
+            <span class="card-title small">Nightmare on 403 Princes St</span>
           </div>
         </div>
       </div>
-      
+
+      <div class="col s6 m4 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dunedin-photos/inch-crowd.jpg" alt="" class="responsive-img materialboxed">
+            <span class="card-title">Inch Bar Open Mic</span>
+          </div>
+        </div>
+      </div>
+
       <div class="col s6 m4 l3">
         <div class="card">
           <div class="card-image">
@@ -518,29 +546,12 @@
       <div class="col s6 m4 l3">
         <div class="card">
           <div class="card-image">
-            <img src="img/reuben-photos/haloween.jpg" alt="" class="responsive-img materialboxed"">
-            <span class="card-title small">Nightmare on 403 Princes St</span>
+            <img src="img/dunedin-photos/breast-comedians.jpg" alt="" class="responsive-img materialboxed"
+              data-caption="Raising money for the Breast in Show">
+            <span class="card-title small">Breast Friends</span>
           </div>
         </div>
-      </div>
 
-      <div class="col s6 m4 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/dan.jpg" alt="" class="responsive-img materialboxed"">
-            <span class="card-title small">Dan Brader at Inch Bar</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/reuben-photos/fringe.jpg" alt="" class="responsive-img materialboxed">
-              <span class="card-title small">Dunedin Fringe Festival</span>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="row">
       <ul class="pagination center">
@@ -629,14 +640,10 @@
   <!-- comedians -->
   <section class="section container">
     
-    <div  class="row">
-      <div class="col s12 l12">
-        <h4 class="red-text text-darken-3">Comedians</h4>
-      </div>
-    </div>
 
+    <h4 class="red-text text-darken-3">Local Comedians</h4>
     <div id="premium-list" class="row"></div>
-    <ul id="comedian-list" class="row"></ul>
+    <div id="comedian-list" class="row"></div>
 
   </section>
 
@@ -737,6 +744,96 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
+      var premium = [
+        {name: 'Jonathan Falconer', flag: 'usa.png'},
+        {name: 'Harriet Moir', flag: 'nz.png'},
+        {name: 'Reuben Crisp', flag: 'nz.png'},
+        {name: 'Simon Kingsley-Holmes', flag: 'uk.png'},
+        {name: 'Brittany Cardwell', flag: 'usa.png'},
+        {name: 'Aaron Davies', flag: 'wales.png'},
+      ];
+      for (f of premium) {
+        $("#premium-list").append(
+          `<div class="col s4 m3 l2">
+            <div class="card hoverable">
+              <div class="card-image modal-trigger waves-effect" href="#${f.name.replace(' ', '-')}-modal">
+                <img class="" src="img/comedians/${f.name}.jpg" alt="">
+              </div>
+              <p class="center truncate red-text text-darken-2">${f.name}</p>
+            </div>
+          </div>
+          <div id="${f.name.replace(' ', '-')}-modal" class="modal modal-fixed-footer">
+            <div class="modal-content row">
+              <div class="col s8 offset-s2 m6 l5">
+                <img class="circle responsive-img" src="img/comedians/${f.name}.jpg" alt="">
+                <div class="row"/>
+                <div class="row">
+                  <div class="col s2 offset-s1"><a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black"><i class="fab fa-facebook"></i></a></div>
+                  <div class="col s2"><a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black"><i class="fab fa-instagram"></i></a></div>
+                  <div class="col s2"><a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black"><i class="fab fa-twitter"></i></a></div>
+                  <div class="col s2"><a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black"><i class="material-icons">email</i></a></div>
+                  <div class="col s2"><a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black"><i class="material-icons">public</i></a></div>
+
+                </div>
+              </div>
+              <h5 class="col s10   m5 l6 red-text text-darken-4">${f.name}</h5>
+              <img class="col s2 m1" title="NZ" src="img/${f.flag}" alt="" class="reponsive-img"/>
+              <p class="col m6 l7">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </h5>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+          `
+          // <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+          // <a class="btn-floating halfway-fab transparent z-depth-0">
+          //         <img title="NZ" src="img/${f.flag}" alt="" class="reponsive-img"/>
+          //       </a>
+        );
+      }
+      var comedians = [
+        'Ian Loughran',
+        'Nicholas Gray',
+        'Annie Hayes',
+        'Jimmy Fletcher',
+        'Brent Harpur',
+        'John Bagnall',
+        'Richie Lewis',
+        'Chewie',
+        'Rob McLennan',
+        'Elisa Rubin',
+        'Joseph Corbett',
+        'Moe Stebbings',
+        'Gerard Dougherty',
+        'Sarper Dorter',
+        'Josh Ritchie',
+        'Hamish Mabon-Ross',
+        'Jenny Kendrick',
+        'Demelza Daisy Ray',
+        'Gerrit Gray',
+        'Rachael Hodge',
+        'Stefan Ayto',
+        'Cheryl Anne Amos',
+        'Nicola Brown',
+        'Cullum Harmer',
+        'William Warren',
+        'Matt Wedd',
+        'Simon McKinney',
+      ];
+      for (f of comedians.sort()) {
+        $("#comedian-list").append(
+          `<div title="${f}" class="profile z-depth-1">
+              <img class="responsive-img" src="img/comedians/${f}.jpg" alt="">
+              <p class="center truncate red-text text-darken-2">${f.split(" ")[0]}</p>
+          </div>`
+        );
+      }
+      //     `<li title="${f}" class="profile z-depth-1">
+      // <a href=""><img class="responsive-img" src="img/comedians/${f}.jpg" alt="">
+      // <p class="center truncate red-text text-darken-2">${f}</p></a></li`)  
+      // }
       $(".sidenav").sidenav();
       $(".materialboxed").materialbox();
       // $(".parallax").parallax();
@@ -749,70 +846,6 @@
       $('.collapsible').collapsible();
       $('.dropdown-trigger').dropdown();
       $('.tabs').tabs();
-        var premium = [
-          'Jonathan Falconer',
-          'Reuben Crisp',
-          'Harriet Moir',
-          'Simon Kingsley-Holmes',
-          'Brittany Cardwell',
-          'Aaron Davies',
-        ];
-        for (f of premium) {
-            $("#premium-list").append(
-
-              `<div class="col s4 m3 l2">
-                <div class="card hoverable">
-                  <div class="card-image responsive-img">
-                    <img class="circle" src="img/comedians/${f}.jpg" alt="">
-                  </div>
-                  <div class="card-content">
-                    <p class="center red-text text-darken-2">${f}</p>
-                  </div>
-                </div>
-              </div>`);
-        }
-        // <div class="card hoverable">
-        //     <div class="card-image modal-trigger" href="#modal1">
-        //       <img src="img/shows/raw-banner.jpg" alt="">
-        //       <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">launch</i></a>
-        //     </div>
-        //     <div class="card-content">
-        //       <p class="truncate">Otago RAW Comedy Quest</p>
-        //     </div>
-        //   </div>
-        var comedians = [
-          'Ian Loughran',
-          'Nicholas Gray',
-          'Annie Hayes',
-          'Jimmy Fletcher',
-          'Brent Harpur',
-          'John Bagnall',
-          'Richie Lewis',
-          'Chewie',
-          'Rob McLennan',
-          'Elisa Rubin',
-          'Joseph Corbett',
-          'Moe Stebbings',
-          'Gerard Dougherty',
-          'Sarper Dorter',
-          'Josh Ritchie',
-          'Hamish Mabon-Ross',
-          'Jenny Kendrick',
-          'Demelza Daisy Ray',
-          'Gerrit Gray',
-          'Rachael Hodge',
-          'Stefan Ayto',
-          'Cheryl Anne Amos',
-          'Nicola Brown',
-          'Cullum Harmer',
-          'William Warren',
-          'Matt Wedd',
-        ];
-        for (f of comedians.sort()) {
-          $("#comedian-list").append(`<li title="${f}" class="profile z-depth-1">
-        <a href=""><img class="responsive-img" src="img/comedians/${f}.jpg" alt="">
-        <p class="center truncate red-text text-darken-2">${f}</p></a></li`)  
-        }
     });
   </script>
 </body>
