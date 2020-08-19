@@ -1,7 +1,7 @@
 var eventData = [
   {
     name: 'Otago RAW Comedy Quest',
-    img: 'img/shows/raw-banner.jpg',
+    img: 'img/shows/bark.png',
     desc: 'First ever RAW Comedy Quest in Otago.',
   }, {
     name: 'Breast Cancer Fundraiser',
@@ -46,31 +46,63 @@ var eventData = [
   }, {
     img: 'img/shows/chip-banner.jpg',
     name: 'CHIP - The Comedy Experiencee',
-    desc: 'CHIP - The Comedy Experience',
+    desc: 'Harriet Moir',
   }, {
     img: 'img/shows/stadej-fringe.jpg',
     name: 'Sh*t Towns & Dead End Jobs',
-    desc: 'Sh*t Towns & Dead End Jobs',
+    desc: 'Mike Chewie Bennet, Nicholas Gray, and John Bagnall'
   }
 ];
 
 for (e of eventData) {
   $('#past-events').append(`
   <div class="col s12 m6 l4">
-  <div class="card hoverable">
-    <div class="card-image">
-      <img class="activator" src="${e.img}" alt="">
-      <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
-    </div>
-    <div class="activator card-content">
-      <p class="truncate">${e.name}</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
-      <p>${e.desc}</p>
+    <div class="card hoverable">
+      <div class="card-image">
+        <img class="activator" src="${e.img}" alt="">
+        <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">expand_less</i></a>
+      </div>
+      <div class="activator card-content">
+        <p class="truncate">${e.name}</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title btn-floating red darken-2 right"><i class="material-icons right">close</i></span>
+        <p>${e.desc}</p>
+      </div>
     </div>
   </div>
-</div>
   `);
-
 }
+
+/* photo gallery event */
+      // <div class="col s12 m6 l4">
+          //   <div class="card hoverable">
+          //     <div class="card-image modal-trigger" href="#gallery-modal">
+          //       <img src="img/shows/raw-banner.jpg" alt="">
+          //       <a class="activator btn-floating halfway-fab waves-effect waves-light red darken-2"><i class="material-icons">launch</i></a>
+          //     </div>
+          //     <div class="card-content">
+          //       <p class="truncate">Otago RAW Comedy Quest</p>
+          //     </div>
+          //   </div>
+          //   <div id="gallery-modal" class="modal">
+          //     <div class="modal-content">
+          //       <!-- <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a> -->
+          //       <!-- <h4>Otago RAW Comedy Quest 2020</h4> -->
+          //       <!-- <p class="btn-large btn-floating">First ever RAW Comedy Quest in Otago.</p> -->
+      
+          //       <div class="slider">
+          //         <ul class="slides">
+          //           <li><img src="img/raw/RAW_00.JPG"></li>
+          //           <li><img src="img/raw/RAW_06.JPG"></li>
+          //           <li><img src="img/raw/RAW_07.JPG"></li>
+          //           <li><img src="img/raw/RAW_10.JPG"></li>
+          //           <li><img src="img/raw/RAW_12.JPG"></li>
+          //         </ul>
+          //       </div>
+          //       <a class="modal-close btn-floating red darken-2 right" href="#!"><i class="material-icons">close</i></a>
+          //                 <p class="center">Innagural Otago RAW Comedy Quest in a basement theatre.</p>
+      
+          //     </div>
+          //   </div>
+          // </div>

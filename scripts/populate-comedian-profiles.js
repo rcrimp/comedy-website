@@ -84,7 +84,3 @@
       </div>`
     );
   }
-  //     `<li title="${f}" class="profile z-depth-1">
-  // <a href=""><img class="responsive-img" src="img/comedians/${f}.jpg" alt="">
-  // <p class="center truncate red-text text-darken-2">${f}</p></a></li`)  
-  // }
