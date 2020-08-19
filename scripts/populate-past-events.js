@@ -1,7 +1,7 @@
 var eventData = [
   {
     name: 'Otago RAW Comedy Quest',
-    img: 'img/shows/bark.png',
+    img: 'img/shows/raw-banner.jpg',
     desc: 'First ever RAW Comedy Quest in Otago.',
   }, {
     name: 'Breast Cancer Fundraiser',
@@ -54,7 +54,9 @@ var eventData = [
   }
 ];
 
-for (e of eventData) {
+// for (e of eventData) {
+for (i of [0,1,2,3,4,5]) {
+  var e = eventData[i];
   $('#past-events').append(`
   <div class="col s12 m6 l4">
     <div class="card hoverable">
