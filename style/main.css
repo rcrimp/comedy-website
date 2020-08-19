@@ -113,14 +113,13 @@ blockquote a {
   max-height: 106px;
 }
 
-
 /* comedian profile card */
-.profile-card p {
-  line-height: 1;
+.profile-card p, .profile-card-small p {
+  /* line-height: 1; */
   padding: 0 7px 14px 7px !important;
 }
 /* smaller profile card */
-.profile-card img {
+.profile-card-small img {
   object-fit: cover;
   /* width: inherit; */
   height: 80px;
