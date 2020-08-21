@@ -18,11 +18,11 @@ services:
             - ./data/certbot/www:/var/www/certbot
         volumes_from:
             - php
-        certbot:
-            image: certbot/certbot
-            volumes:
-                - ./data/certbot/conf:/etc/letsencrypt
-                - ./data/certbot/www:/var/www/certbot
+    certbot:
+        image: certbot/certbot
+        volumes:
+            - ./data/certbot/conf:/etc/letsencrypt
+            - ./data/certbot/www:/var/www/certbot
 
 # PHP container
     php:
