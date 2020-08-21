@@ -12,14 +12,14 @@ set_error_handler("var_dump");
 if (!isset($_POST['message'])) {
   return;
 }
-$to = 'reubencrimp@gmail.com';
-$subject = 'Dunedin Comedy Website';
+$to = 'reuben@dunedincomedy.co.nz';
+$subject = 'Dunedin Comedy Email Form';
 
 // $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$headers = "From: hello@dunedincomedy.co.nz";
+$headers = "From: contact@dunedincomedy.co.nz";
 $message = "Contact Us:\n\n"
   // . "Name:\n$name\n\n"
   . "Contact details:\n$email\n\n"
