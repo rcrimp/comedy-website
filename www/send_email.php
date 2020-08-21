@@ -15,12 +15,11 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 $headers = "From: contact@dunedincomedy.co.nz";
-$message = "Contact Us:\n\n"
+$message = "Contact form:\n\n"
   . "Senders Email:\n$email\n\n"
   . "Message:\n$message\n\n";
 
 if (mail($to, $subject, $message)) {
-  echo "Thank you for your message.\n\n";
 } else {
   echo "We could not send your message. We're sorry about that.\n\n";
 };
