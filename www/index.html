@@ -367,8 +367,8 @@
                   <div class="row">
                     <div class="col s10 input-field">
                       <i class="material-icons prefix">alternate_email</i>
-                      <input type="email" id="email">
-                      <label for="email">Your email</label>
+                      <input id="newsletter-email" type="email" name="email">
+                      <label for="newsletter-email">Your email</label>
                     </div>
         
                     <div class="col s2 input-field center">
@@ -395,22 +395,22 @@
               <div class="collapsible-header"><i class="material-icons">email</i>Message us</div>
               <div class="collapsible-body">
                 <div class="card-content">
-                  <form action="send_email.php", method="post">
+                  <form action="send_email.php" method="post">
                     <div class="input-field">
                       <i class="material-icons prefix">alternate_email</i>
-                      <input name="email" type="email" id="email">
-                      <label for="email">Your email</label>
+                      <input id="contact-email" name="email" type="email">
+                      <label for="contact-email">Your email</label>
                     </div>
                     <div class="input-field">
                       <i class="material-icons prefix ">message</i>
-                      <textarea name="message" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
-                      <label for="message">Your message</label>
+                      <textarea id="contact-message" name="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                      <label for="contact-message">Your message</label>
                     </div>
-                    <!-- <div class="input-field">
+                    <div class="input-field">
                       <p>
                         <label>
                           <input type="checkbox">
-                          <span>Register for open mics></span>
+                          <span>Register for open mics</span>
                         </label>
                       </p>
                     </div> 
@@ -419,12 +419,11 @@
                         <input type="checkbox">
                         <span>Sign up to our newsletter</span>
                       </label></p>
-                    </div>  -->
+                    </div> 
                     <div class="input-field center">
                       <input type="submit" value="Send" class="btn-small red darken-3">
                         <!-- Send<i class="material-icons right">send</i> -->
                     </div>
-  
                   </form>
                 </div>
               </div>

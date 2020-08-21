@@ -30,7 +30,7 @@
         facebook: 'facebook.com/phyterjet',
         instagram: 'instagram.com/reuben_crisp',
         twitter: 'twitter.com/reuben_crisp',
-        email: 'reubencrimp@gmail.com',
+        email: 'reuben@dunedincomedy.co.nz',
         site: 'reubencrimp.com', 
       },
       bio: 'test bio.',
