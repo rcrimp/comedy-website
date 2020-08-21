@@ -5,39 +5,31 @@ and mails them to an email account.
 -->
 
 <?php
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
-
 if (!isset($_POST['message'])) {
   return;
 }
 $to = 'reuben@dunedincomedy.co.nz';
 $subject = 'Dunedin Comedy Email Form';
 
-// $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
 $headers = "From: contact@dunedincomedy.co.nz";
 $message = "Contact Us:\n\n"
-  // . "Name:\n$name\n\n"
-  . "Contact details:\n$email\n\n"
-  . "Feedback:\n$message\n\n";
+  . "Senders Email:\n$email\n\n"
+  . "Message:\n$message\n\n";
 
 if (mail($to, $subject, $message)) {
   echo "Thank you for your message.\n\n";
 } else {
   echo "We could not send your message. We're sorry about that.\n\n";
-  $errorMessage = error_get_last()['message'];
-  echo $errorMessage;
-
 };
   echo "You will be redirected back shortly.";
 ?>
 
 <html>
 <head>
+<meta http-equiv="refresh" content="0; url=index.html" />
 </head>
 <body>
 </body>
