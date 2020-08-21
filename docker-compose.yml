@@ -27,3 +27,10 @@ services:
             - ./www/:/var/www/html
             - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
             - ./php/logs/:/usr/local/etc/php/logs/
+
+# SMTP container
+    mailhog:
+        image: mailhog/mailhog:v1.0.0
+        ports:
+            - "1025:1025"
+            - "8025:8025"
