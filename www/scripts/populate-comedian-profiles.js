@@ -76,7 +76,7 @@
     'Ian Loughran',
     'Nicholas Gray',
     'Annie Hayes',
-    'Jimmy Fletcher',
+    // 'Jimmy Fletcher',
     'Brent Harpur',
     'John Bagnall',
     'Richie Lewis',
@@ -97,9 +97,9 @@
     'Cheryl Anne Amos',
     'Nicola Brown',
     'Cullum Harmer',
-    'William Warren',
+    // 'William Warren',
     'Matt Wedd',
-    'Simon McKinney',
+    // 'Simon McKinney',
     'Mike Thom',
   ];
   for (f of premium) {
