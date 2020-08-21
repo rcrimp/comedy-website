@@ -5,6 +5,10 @@ and mails them to an email account.
 -->
 
 <?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
+
 if (!isset($_POST['message'])) {
   return;
 }
@@ -31,7 +35,6 @@ if (mail($to, $subject, $message)) {
 
 <html>
 <head>
-<meta http-equiv="refresh" content="0; url=index.html" />
 </head>
 <body>
 </body>
