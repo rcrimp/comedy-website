@@ -395,18 +395,18 @@
               <div class="collapsible-header"><i class="material-icons">email</i>Message us</div>
               <div class="collapsible-body">
                 <div class="card-content">
-                  <form action="">
+                  <form action="send_email.php", method="post">
                     <div class="input-field">
                       <i class="material-icons prefix">alternate_email</i>
-                      <input type="email" id="email">
+                      <input name="email" type="email" id="email">
                       <label for="email">Your email</label>
                     </div>
                     <div class="input-field">
                       <i class="material-icons prefix ">message</i>
-                      <textarea name="" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                      <textarea name="message" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
                       <label for="message">Your message</label>
                     </div>
-                    <div class="input-field">
+                    <!-- <div class="input-field">
                       <p>
                         <label>
                           <input type="checkbox">
@@ -419,11 +419,10 @@
                         <input type="checkbox">
                         <span>Sign up to our newsletter</span>
                       </label></p>
-                    </div> 
+                    </div>  -->
                     <div class="input-field center">
-                      <button class="btn-small red darken-3">
-                        Send<i class="material-icons right">send</i>
-                      </button>
+                      <input type="submit" value="Send" class="btn-small red darken-3">
+                        <!-- Send<i class="material-icons right">send</i> -->
                     </div>
   
                   </form>
