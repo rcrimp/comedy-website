@@ -11,18 +11,10 @@ services:
         image: nginx:latest
         ports:
             - 80:80 # outised port : inside port
-            - 443:443
         volumes:
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-            - ./data/certbot/conf:/etc/letsencrypt
-            - ./data/certbot/www:/var/www/certbot
         volumes_from:
             - php
-    certbot:
-        image: certbot/certbot
-        volumes:
-            - ./data/certbot/conf:/etc/letsencrypt
-            - ./data/certbot/www:/var/www/certbot
 
 # PHP container
     php:
