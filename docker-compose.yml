@@ -24,6 +24,6 @@ services:
         ports:
             - 25:25
         volumes:
-            - ./project/:/var/www/html
+            - ./www/:/var/www/html
             - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
             - ./php/logs/:/usr/local/etc/php/logs/

@@ -11,11 +11,15 @@ wget https://github.com/docker/compose/releases/download/1.11.2/docker-compose-L
 chmod +x docker-compose-Linux-x86_64
 sudo cp docker-compose-Linux-x86_64 /usr/bin/docker-compose
 
+########### REBOOT MACHINE ###########
+
 # start docker service
 sudo service docker start
 
 # copy project
 git clone https://github.com/rcrimp/AnatomyViewer.git
+
+# boot docker container
 sudo docker-compose up -d
 
 # local windows machine
@@ -23,7 +27,12 @@ Docker quick start terminal
 docker-compose up -d
 
 ########### DOCKERS IS NOW RUNNING ###########
-
+ 
+restart docker
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)
+docker-compose up -d
 
 
 
