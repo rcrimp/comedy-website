@@ -29,6 +29,9 @@ if (mail($to, $subject, $message)) {
   echo "Thank you for your message.\n\n";
 } else {
   echo "We could not send your message. We're sorry about that.\n\n";
+  $errorMessage = error_get_last()['message'];
+  echo $errorMessage;
+
 };
   echo "You will be redirected back shortly.";
 ?>
