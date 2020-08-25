@@ -2,11 +2,11 @@
   height: 25%;
 }
 .parallax {
-  background-image: url("../img/bricks.jpg");
+  /* background-image: url("../img/bricks.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .shadow-inset {
   -moz-box-shadow:    inset 0 0 50px #000000;
