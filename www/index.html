@@ -14,8 +14,8 @@
   <style>
     #header-image {
       background-image: url("img/bricks-blank.jpg");
-      background-attachment: fixed;
-      background-position: center top;
+      /* background-attachment: fixed; */
+      /* background-position: center top; */
       background-size: cover;
       min-height: 50%;
     }
@@ -41,67 +41,72 @@
 
   <!-- navbar -->
   <header>
-    <nav class="nav-wrapper red darken-4">
-      <div class="container">
-        
-        <!-- desktop navigation -->
-        <ul class="left hide-on-med-and-down">
-          <li><a href="#comedian-anchor" class="">Comedians</a></li>
-          <li><a href="#event-anchor" class="">Shows</a></li>
-          <li><a href="#contact-anchor" class="">Services</a></li>
-        </ul>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+          <div class="container">
+            
+            <!-- desktop navigation -->
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#comedian-anchor" class="">Comedians</a></li>
+              <li><a href="#event-anchor" class="">Shows</a></li>
+              <li><a href="#contact-anchor" class="">Services</a></li>
+            </ul>
 
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="http://www.instagram.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Instagram">
-              <i class="red-text text-darken-3 fab fa-instagram"></i>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="http://www.instagram.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Instagram">
+                  <i class="red-text text-darken-3 fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Facebook">
+                  <i class="red-text text-darken-3 fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Youtube">
+                  <i class="red-text text-darken-3 fab material-icons">play_arrow</i>
+                </a>
+              </li>
+            </ul>
+
+            <img class="brand-logo center responsive-img" src="img/dunedin-logo.png" alt="">
+
+            <!-- side menu -->
+            <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
+              <i class="material-icons">menu</i>
             </a>
-          </li>
-          <li>
-            <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Facebook">
-              <i class="red-text text-darken-3 fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.youtube.com/" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Youtube">
-              <i class="red-text text-darken-3 fab material-icons">play_arrow</i>
-            </a>
-          </li>
-        </ul>
+            <ul id="side-menu" class="sidenav">
+              <li>
+                <div class="user-view">
+                  <div class="background">
+                    <img class="responsive-img" src="img/bricks.jpg">
+                  </div>
+                  <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>               -->
+                  <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
+                  <a href="#user"><img class="circle z-depth-2" src="img/partners/dunedincomedy.jpg"></a>
 
-        <img class="brand-logo center responsive-img" src="img/dunedin-logo.png" alt="">
+                  <a href="#"><span class="white-text name">Dunedin Comedy</span></a>
+                  <!-- <a href="#"><span class="white-text name">Dunedin Comedy</span></a> -->
+                  <a href="#"><span class="white-text email">contact@dunedincomedy.co.nz</span></a>
+                </div>
+              </li>
+              <li><a href="#event-anchor" class="sidenav-close">Upcoming Shows</a></li>
+              <li><a href="#comedian-anchor" class="sidenav-close">Comedians</a></li>
+              <li><a href="#contact-anchor" class="sidenav-close">Services</a></li>
+              <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
+              <li><a href="#contact-anchor" class="sidenav-close">About</a></li>
+              <li><div class="divider"></div></li>
+              <li><a href="http://www.facebook.com/dunedincomedy"><i class="fab fa-facebook"></i>Facebook</a></li>
+              <li><a href="http://www.instagram.com/dunedincomedy"><i class="fab fa-instagram"></i>Instagram</a></li>
+              <li><a href="#" class="sidenav-close"><i class="sidenav-close material-icons">email</i>Email</a></li>
+            </ul>
+          </div> <!-- container -->
+        </div> <!-- nav-wrapper -->
+      </nav>
+    </div>  <!-- nav-fixed -->
 
-        <!-- side menu -->
-        <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul id="side-menu" class="sidenav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img class="responsive-img" src="img/bricks.jpg">
-              </div>
-              <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>               -->
-              <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
-              <a href="#user"><img class="circle z-depth-2" src="img/partners/dunedincomedy.jpg"></a>
-
-              <a href="#"><span class="white-text name">Dunedin Comedy</span></a>
-              <!-- <a href="#"><span class="white-text name">Dunedin Comedy</span></a> -->
-              <a href="#"><span class="white-text email">contact@dunedincomedy.co.nz</span></a>
-            </div>
-          </li>
-          <li><a href="#event-anchor" class="sidenav-close">Upcoming Shows</a></li>
-          <li><a href="#comedian-anchor" class="sidenav-close">Comedians</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">Services</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">About</a></li>
-          <li><div class="divider"></div></li>
-          <li><a href="http://www.facebook.com/dunedincomedy"><i class="fab fa-facebook"></i>Facebook</a></li>
-          <li><a href="http://www.instagram.com/dunedincomedy"><i class="fab fa-instagram"></i>Instagram</a></li>
-          <li><a href="#" class="sidenav-close"><i class="sidenav-close material-icons">email</i>Email</a></li>
-        </ul>
-      </div>
-    </nav>
   
     <div id="header-image" class="shadow-inset">
       <div class="container row">
