@@ -95,12 +95,13 @@
   for (f of profiles) {
     let bioClass = 'col m8 l7 offset-l1';
     let imgClass = 'col s8 m4 l3 offset-s2';
-    if (i % 2 == 1 || true) {
+    if (i % 2 == 1) {
       bioClass += ' push-l3 push-m4'
       imgClass += ' pull-l7 pull-m8'
     }
     if (![3, 9, 10, 11, 12].includes(i)) {
-      imgClass += ' hide';
+      // imgClass += ' hide';
+      f.img = 'img/history/blank.jpg';
     }
     i++;
 
