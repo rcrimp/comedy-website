@@ -2,14 +2,16 @@
     {
       name: 'Patrick Davies',
       img: 'img/history/Patrick Davies.jpg',
-      bio: 'Theatresports. Now a board member on the New Zealand Comedy Guild',
+      bio: 'Actor and Director. Youth theatre, school theatresports. Governance with various art Trusts. Now a board member on the New Zealand Comedy Guild. ',
       awards: '',
       links: '',
     },
     {
       name: 'Te Radar',
       img: 'img/history/TeRadar.jpg',
-      bio: 'Founding member of the sketch group Spleen while studying at Otago University, alongside Jesse Griffin, Aaron Watson, and Duncan Sarkies. The sketch troupe won 1st place at the 1993 NZ University Comedy Competition in Wellington',
+      bio: 'Member of the sketch troupe Spleen alongside Jesse Griffin, Duncan Sarkies, and Aaron Watson.'
+      + ' The sketch troupe won 1st place at the 1993 New Zealand University Comedy Competition in Wellington.'
+      + ' Te Radar has since gone on to... ',
       awards: '',
       links: '',
     },
@@ -23,21 +25,29 @@
     {
       name: 'Jeremy Elwood',
       img: 'img/history/Jeremy Elwood.jpg',
-      bio: 'Alot to write',
+      bio:  '' +
+      'The youngest ever director of the capping shows in its 126 year history.' +
+      ' Classically trained' + 'While completing his degree in Theatre Studies at Otago, Jeremy showed great promise as a performer taking lead roles in Hamlet (Saint James Theatre (now Rialto)), Waiting for Godot (Globe), and Je ne Parle Francais' +
+      ' His first foray into performance was improv and theatre sports at Otago Boys High School.' +
+      ' His first standup set was at the Loaded Goblin (now U-Bar) open mic in 1995, his friend introduced him to the stage unplanned as there were no acts left.' +
+      ' Jeremy saw Spleen perform during his orientation at Otago University, he cites them as the inspiration for his own sketch group This is not a Drill (TnD).' + 
+      ' The TnD sketch comedy was held every wednesday in the back room of Ruby and the Dust (now CBK) from 96-97, alongside Patrick Davies, Simon McKinney, Julian Wilson and guest starring many of their friends.' + 
+      ' Like Spleen, TnD went on to win the NZ University Comedy Competition' + 
+      ' He began his comedy career as a musical comedian, but has since become one of New Zealands formost political comedians.',
       awards: '',
       links: '',
     },
     {
       name: 'Simon McKinney',
       img: 'img/history/Simon McKinney.jpg',
-      bio: 'To interview soon.',
+      bio: 'Sketch group Speak Easy, Look Both Ways, Nigel Chin. Millenium roadtrip with Jeremy Elwood. Cadrona Hotel. ',
       awards: '',
       links: '',
     },
     {
       name: 'Josh Thomson',
       img: 'img/history/Josh Thomson.jpg',
-      bio: 'Sketch group alongside current Aaron Hawkins the current Mayor of Dunedin.',
+      bio: 'Timaru. Sketch group alongside Aaron Hawkins (current current Mayor of Dunedin). Ben Simmons.',
       awards: '',
       links: '',
     },
@@ -71,21 +81,23 @@
     {
       name: 'Skivvy Jon',
       img: 'img/history/Skivvy Jon.jpg',
-      bio: 'Famous for both his colourful atire and running gigs in student flats. Performing at these flag gigs were the local comedians at the time (Simon Kingsley-Holmes, Brittany Cardwell, Hugo Huntington, Feather Shaw, Andrew Mekhail, and others), as well as Ben Hurley, Urzila Carlson, Tarun Mohanbhai, Nick Rado, and Steve Wrigley. Skivvy later went on to invent the Shakti Mat. Little is known of his current whereabouts.',
+      bio: 'Known for his colourful atire and running gigs in student flats.' +
+      ' The local comedians of his era (Simon Kingsley-Holmes, Brittany Cardwell, Hugo Huntington, Feather Shaw, Andrew Mekhail, ...) performed at these flat gigs as did many pro comedians who travelled down for the shows (Ben Hurley, Urzila Carlson, Tarun Mohanbhai, Nick Rado, Steve Wrigley, ...). ' +
+      ' Skivvy went on to make his fortune inventing the Shakti Mat. Little is known of his current whereabouts.',
       awards: '',
       links: '',
     },
     {
       name: 'Simon Kingsley-Holmes',
       img: 'img/history/Simon Kingsley-Holmes.jpg',
-      bio: 'Ran open mics from 2014 till 2017. Performed in the Flat Gigs Dunedin series.',
+      bio: 'Ran open mics from 2014 till 2017. Performed in the Flat Gigs Dunedin series. Multiple Fringe Festivals. Considered a local legend by those who met him.',
       awards: '',
       links: '',
     },
     {
       name: 'Brittany Cardwell',
       img: 'img/history/Brittany Cardwell.jpg',
-      bio: 'PhD in psychology now back doing standup in NYC.',
+      bio: 'Got her PhD in psychology at Otago U. Currently resides in NYC performing comedy there.',
       awards: '',
       links: '',
     },
@@ -100,7 +112,6 @@
       imgClass += ' pull-l7 pull-m8'
     }
     if (![3, 9, 10, 11, 12].includes(i)) {
-      // imgClass += ' hide';
       f.img = 'img/history/blank.jpg';
     }
     i++;
@@ -117,7 +128,8 @@
         <img class="responsive-img" src="${f.img}" alt="">
       </div>
     </div>
-
+    `);}
+/*
     <div class="row">
       <div class="col s6 m6 l5 offset-l1">
         <ul class="collapsible">
@@ -141,3 +153,4 @@
     </div>`
     );
   }
+  */
