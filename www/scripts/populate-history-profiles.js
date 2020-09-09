@@ -1,12 +1,5 @@
   var profiles = [
     {
-      name: 'Patrick Davies',
-      img: 'img/history/Patrick Davies.jpg',
-      bio: 'Actor and Director. Youth theatre, school theatresports. Governance with various art Trusts. Now a board member on the New Zealand Comedy Guild. ',
-      awards: '',
-      links: '',
-    },
-    {
       name: 'Te Radar',
       img: 'img/history/TeRadar.jpg',
       bio: 'Member of the sketch troupe Spleen alongside Jesse Griffin, Duncan Sarkies, and Aaron Watson.'
@@ -111,7 +104,7 @@
       bioClass += ' push-l3 push-m4'
       imgClass += ' pull-l7 pull-m8'
     }
-    if (![3, 9, 10, 11, 12].includes(i)) {
+    if (![2, 8, 9, 10, 11].includes(i)) {
       f.img = 'img/history/blank.jpg';
     }
     i++;
