@@ -1,28 +1,28 @@
 #header-image {
   background-image: url("../img/bricks-blank.jpg");
-  /* background-attachment: fixed; */
-  /* background-position: center top; */
   background-size: cover;
-  min-height: 50%;
 }
-#title {
-  height: 50%;
+#header-image, #title {
+  height: 250px;
 }
 @media screen and (max-width: 992px) {
-  #header-image {
-    min-height: 210px;
-  }
-  #title {
+  #header-image, #title {
     height: 210px;
   }
 }
+@media screen and (max-width: 600px) {
+  #header-image, #title {
+    height: 210px;
+  }
+}
+
 #title img {
   font-weight: 600;
   vertical-align :middle;
 }
 
 .parallax-container {
-  height: 25%;
+  height: 150px;
 }
 .parallax {
   background-image: url("../img/bricks.jpg");
