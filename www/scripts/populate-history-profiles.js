@@ -1,17 +1,11 @@
   var profiles = [
     {
-      name: 'Patrick Davies',
-      img: 'img/history/Patrick Davies.jpg',
-      bio: 'Actor and Director. Youth theatre, school theatresports. Governance with various art Trusts. Now a board member on the New Zealand Comedy Guild. ',
-      awards: '',
-      links: '',
-    },
-    {
       name: 'Te Radar',
       img: 'img/history/TeRadar.jpg',
-      bio: 'Member of the sketch troupe Spleen alongside Jesse Griffin, Duncan Sarkies, and Aaron Watson.'
+      bio: 'Member of the sketch troupe "Spleen" alongside Jesse Griffin, Duncan Sarkies, and Aaron Watson.'
       + ' The sketch troupe won 1st place at the 1993 New Zealand University Comedy Competition in Wellington.'
-      + ' Te Radar has since gone on to... ',
+      + ' Te Radar has since gone on to radio, television, appearing in multiple award-winning documentaries  '
+      + ' Eating the Dog won Best Comedy at 2009 Dunedin Fringe Festival.',
       awards: '',
       links: '',
     },
@@ -27,13 +21,14 @@
       img: 'img/history/Jeremy Elwood.jpg',
       bio:  '' +
       'The youngest ever director of the capping shows in its 126 year history.' +
-      ' Classically trained' + 'While completing his degree in Theatre Studies at Otago, Jeremy showed great promise as a performer taking lead roles in Hamlet (Saint James Theatre (now Rialto)), Waiting for Godot (Globe), and Je ne Parle Francais' +
-      ' His first foray into performance was improv and theatre sports at Otago Boys High School.' +
+      ' While completing his degree in Theatre Studies at Otago, Jeremy showed great promise as a performer taking lead roles in Hamlet, Waiting for Godot, and Je ne parle pas français' +
+      ' His first foray into performance was theatre sports at Otago Boys High School.' +
       ' His first standup set was at the Loaded Goblin (now U-Bar) open mic in 1995, his friend introduced him to the stage unplanned as there were no acts left.' +
-      ' Jeremy saw Spleen perform during his orientation at Otago University, he cites them as the inspiration for his own sketch group This is not a Drill (TnD).' + 
+      ' Jeremy saw Spleen perform during his orientation at Otago University, he cites them as the inspiration for his own sketch group: "This is not a Drill" (TnD).' + 
       ' The TnD sketch comedy was held every wednesday in the back room of Ruby and the Dust (now CBK) from 96-97, alongside Patrick Davies, Simon McKinney, Julian Wilson and guest starring many of their friends.' + 
-      ' Like Spleen, TnD went on to win the NZ University Comedy Competition' + 
-      ' He began his comedy career as a musical comedian, but has since become one of New Zealands formost political comedians.',
+      ' Like Spleen, TnD went on to win the NZ University Comedy Competition in 1994.' + 
+      ' Jeremy has since gone on to become one of New Zealands formost political comedians.' +
+      ' ',
       awards: '',
       links: '',
     },
@@ -81,16 +76,14 @@
     {
       name: 'Skivvy Jon',
       img: 'img/history/Skivvy Jon.jpg',
-      bio: 'Known for his colourful atire and running gigs in student flats.' +
-      ' The local comedians of his era (Simon Kingsley-Holmes, Brittany Cardwell, Hugo Huntington, Feather Shaw, Andrew Mekhail, ...) performed at these flat gigs as did many pro comedians who travelled down for the shows (Ben Hurley, Urzila Carlson, Tarun Mohanbhai, Nick Rado, Steve Wrigley, ...). ' +
-      ' Skivvy went on to make his fortune inventing the Shakti Mat. Little is known of his current whereabouts.',
+      bio: 'Known for his colourful atire and running shows in student flats. The local comedians of his era (Simon Kingsley-Holmes, Brittany Cardwell, Hugo Huntington, Feather Shaw, Andrew Mekhail, ...) performed at these flat gigs as did many pro comedians who travelled down for the shows (Ben Hurley, Urzila Carlson, Tarun Mohanbhai, Nick Rado, Steve Wrigley, ...). Skivvy went on to make his fortune inventing the Shakti Mat. Little is known of his current whereabouts.',
       awards: '',
       links: '',
     },
     {
       name: 'Simon Kingsley-Holmes',
       img: 'img/history/Simon Kingsley-Holmes.jpg',
-      bio: 'Ran open mics from 2014 till 2017. Performed in the Flat Gigs Dunedin series. Multiple Fringe Festivals. Considered a local legend by those who met him.',
+      bio: 'Ran open mics from 2014 till 2017. Performed in the Flat Gigs Dunedin series. Multiple Fringe Festivals. Considered a local legend by those who have met him.',
       awards: '',
       links: '',
     },
@@ -111,23 +104,23 @@
       bioClass += ' push-l3 push-m4'
       imgClass += ' pull-l7 pull-m8'
     }
-    if (![3, 9, 10, 11, 12].includes(i)) {
+    if (![2, 8, 9, 10, 11].includes(i)) {
       f.img = 'img/history/blank.jpg';
     }
     i++;
 
-    $("#historical-profiles").append(
-      `<div id="historical-profile" class="row">
-      <div class="col s12">
-        <h3 class="center-align">${f.name}</h3>
+    $("#historical-profiles").append(`
+      <div id="historical-profile" class="row">
+        <div class="col s12">
+          <h3 class="center-align">${f.name}</h3>
+        </div>
+        <div class="${bioClass}">
+          <p>${f.bio}</p>
+        </div>
+        <div class="${imgClass}">
+          <img class="responsive-img z-depth-1" src="${f.img}" alt="">
+        </div>
       </div>
-      <div class="${bioClass}">
-        <p>${f.bio}</p>
-      </div>
-      <div class="${imgClass}">
-        <img class="responsive-img" src="${f.img}" alt="">
-      </div>
-    </div>
     `);}
 /*
     <div class="row">

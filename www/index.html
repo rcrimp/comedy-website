@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- font awesome -->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">  
-  <title>Dunedin Comedy</title>
   <link rel="stylesheet" href="style/main.css">
+
+  <title>Dunedin Comedy</title>
 </head>
 <body>
 
@@ -22,13 +21,20 @@
         <div class="nav-wrapper red darken-4">
           <div class="container">
             
-            <!-- desktop navigation -->
+            <!-- MOBILE MENU BUTTON -->
+            <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
+              <i class="material-icons">menu</i>
+            </a>
+
+            <!-- DESKTOP NAVIGATION -->
             <ul class="left hide-on-med-and-down">
               <li><a href="#event-anchor" class="">Shows</a></li>
-              <li><a href="#" class="">Comedians</a></li>
+              <li><a href="#contact-anchor" class="">Services</a></li>
               <li><a href="#contact-anchor" class="">Contact</a></li>
+              <!-- <li><a href="#comedian-anchor" class="">Comedians</a></li> -->
             </ul>
 
+            <!-- DESKTOP SOCIAL MEDIA -->
             <ul class="right hide-on-med-and-down">
               <li>
                 <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Facebook">
@@ -41,57 +47,76 @@
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@dunedincomedy.co.nz" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Email">
-                  <i class="red-text text-darken-3 fab material-icons">mail_outline</i>
+                <a href="mailto:hello@dunedincomedy.co.nz" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Email">
+                  <i class="red-text text-darken-3 fas material-icons">mail_outline</i>
                 </a>
               </li>
 
             </ul>
 
             <img class="brand-logo center responsive-img" src="img/dunedin-logo.png" alt="">
-            
-
-            <!-- side menu -->
-            <a href="#" class="col s2 sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
-              <i class="material-icons">menu</i>
-            </a>
 
           </div> <!-- container -->
         </div> <!-- nav-wrapper -->
       </nav>
     </div>  <!-- nav-fixed -->
 
+    <!-- MOBILE NAVIGATION -->
     <ul id="side-menu" class="sidenav">
       <li>
         <div class="user-view">
           <div class="background">
             <img class="responsive-img" src="img/bricks.jpg">
           </div>
-          <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>               -->
-          <a href="#" class="large right sidenav-close white-text"><i class="material-icons">close</i></a>              
+          <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a> -->
+          <a href="#" class="white-text large right sidenav-close"><i class="material-icons">close</i></a>              
           <a href="#user"><img class="circle z-depth-2" src="img/partners/dunedincomedy.jpg"></a>
 
           <a href="#"><span class="white-text name">Dunedin Comedy</span></a>
           <!-- <a href="#"><span class="white-text name">Dunedin Comedy</span></a> -->
-          <a href="#"><span class="white-text email">contact@dunedincomedy.co.nz</span></a>
+          <a href="mailto:hello@dunedincomedy.co.nz"><span class="white-text email">hello@dunedincomedy.co.nz</span></a>
         </div>
       </li>
       <li><a href="https://www.trybooking.com/nz/eventlist/dunedincomedy?embed=1" class="sidenav-close">Buy Tickets</a></li>
-      <!-- <li><a href="#comedian-anchor" class="sidenav-close">Comedians</a></li> -->
+      <li><a href="#event-anchor" class="sidenav-close">Upcoming Shows</a></li>
       <li><a href="#contact-anchor" class="sidenav-close">Services</a></li>
       <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
       <li><a href="#contact-anchor" class="sidenav-close">About</a></li>
       <li><div class="divider"></div></li>
       <li><a href="http://www.facebook.com/dunedincomedy"><i class="fab fa-facebook-f"></i>Facebook</a></li>
       <li><a href="http://www.instagram.com/dunedincomedy"><i class="fab fa-instagram"></i>Instagram</a></li>
-      <li><a href="mailto:contact@dunedincomedy.co.nz"><i class="fas fa-envelope"></i>Email</a></li>
+      <li><a href="mailto:hello@dunedincomedy.co.nz" class="sidenav-close"><i class="fas fa-envelope"></i>Email</a></li>
     </ul>
 
-    <div id="header-image" class="shadow-inset">
+  
+    <div id="hero-image" class="shadow-inset">
       <div class="container row">
-        
+        <div id="dunedin-comedy-logo" class="col s8 m6 l6 offset-s2 offset-m3 offset-l3 valign-wrapper">
+          <img class="responsive-img" src="img/dunedin-comedy.png" alt="">
+        </div>
         <!-- mobile buttons -->
-        <div class="col s2 push-s10 hide-on-large-only">
+        <div class="right hide-on-med-and-up">
+          <ul id="mobile-social-buttons">
+            <li>
+              <a href="http://www.facebook.com/dunedincomedy" class="btn-small btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com/dunedincomedy" class="btn-small btn-floating red darken-4 tooltipped " data-position="left" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@dunedincomedy.co.nz" class="btn-small btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Email">
+                <i class="fab material-icons">mail_outline</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MED BUTTONS -->
+        <div class="right hide-on-small-only hide-on-large-only">
           <ul id="mobile-social-buttons">
             <li>
               <a href="http://www.facebook.com/dunedincomedy" class="btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Facebook">
@@ -104,23 +129,103 @@
               </a>
             </li>
             <li>
-              <a href="mailto:contact@dunedincomedy.co.nz" class="btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Email">
+              <a href="mailto:hello@dunedincomedy.co.nz" class="btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Email">
                 <i class="fab material-icons">mail_outline</i>
               </a>
             </li>
           </ul>
         </div>
-        <!-- mobile buttons -->
 
-        <div id="title" class="col s8 m6 offset-m1 offset-l3 valign-wrapper">
-          <img class="responsive-img" src="img/dunedin-comedy.png" alt="">
-        </div>
-      
       </div>
     </div>
-     
+  
   </header>
-  <!-- </div> -->
+
+    <!-- gallery -->
+    <section class="container section scrollspy">
+      <div id="gallery" class="row">
+  
+        <div id="gallery-1" class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/fringe.jpg" alt="" class="responsive-img materialboxed">
+                <span class="card-title small">Dunedin Fringe Festival</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-2" class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/toast.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title">Comedians at Toast Bar</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-3" class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/dees-crowd.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title small">Downstairs at Dee's Cafe</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-4" class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/zanzibar.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title small">Open Mic at Zanzibar</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-5" class="col m4 l3 hide-on-small-only">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/harriet-raw.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title">RAW Comedy Quest</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-6" class="col m4 l3 hide-on-small-only">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/inch-crowd.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title">Inch Bar Open Mic</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-7" class="col m4 l3 hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/justin.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title">Justin White on Tour</span>
+            </div>
+          </div>
+        </div>
+  
+        <div id="gallery-8" class="col m4 l3 hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/dunedin-photos/breast-comedians.jpg" alt="" class="responsive-img materialboxed"
+                data-caption="Raising money for the Breast cancer Foundation NZ.">
+              <span class="card-title small">Comedians at Playhouse Theatre</span>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container shadow-inset">
+    <div class="parallax">
+    </div>
+  </div>
 
   <!-- EVENTS -->
   <section id="event-anchor" class="container section scrollspy">
@@ -129,25 +234,18 @@
     <div class="row">
       <div class="col s12">
         <ul class="tabs tabs-fixed-width">
-          <li class="tab col s6"><a href="#thisweek" class="active">Upcoming Shows</a></li>
-          <li class="tab col s6"><a href="#past-events">Past Events</a></li>
-
+          <li class="tab col s3"><a href="#upcoming-shows" class="active">Upcoming</a></li>
+          <li class="tab col s3"><a href="#past-events">Past Events</a></li>
         </ul>
       </div>
     </div>
 
-    <div id="past-events" class="row"></div>
-    <script async defer src="https://www.trybooking.com/nz/widget.js"></script>
-
-    <div id="thisweek" class="col s12">
-      
-      <!-- <script async defer src="https://www.trybooking.com/nz/widget.js"></script>
-
-<div class="tryb-widget" data-type="buttonWidget" data-eid="3133" data-showlogo="False" data-text="Book"></div> -->
-      <script async defer src="https://www.trybooking.com/nz/widget.js"></script>
-      <div class="tryb-widget" data-type="eventListingWidget" data-aid="1500" data-allevents="false"></div>
+    <div id="upcoming-shows" class="col s12">
+      <p>coming soon!</p>
     </div>
     
+    <div id="past-events" class="row"></div>
+
   </section>
 
   <!-- parallax -->
@@ -155,111 +253,6 @@
     <div class="parallax">
     </div>
   </div>
-
-
-  <!-- gallery -->
-  <section class="container section scrollspy">
-    
-    <div class="row">
-      <div class="col s12 m7 l7">
-        <h4 id="-anchor" class="left red-text text-darken-2 scrollspy">Gallery</h4>
-      </div>
-    </div>
-    
-    <div id="gallery" class="row">
-
-      <div id="gallery-1" class="col s6 m4 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/fringe.jpg" alt="" class="responsive-img materialboxed">
-              <span class="card-title small">Dunedin Fringe Festival</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-2" class="col s6 m4 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/toast.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">Comedians at Toast Bar</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-3" class="col s6 m4 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/dees-crowd.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title small">Downstairs at Dee's Cafe</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-4" class="col s6 m4 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/zanzibar.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title small">Open Mic at Zanzibar</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-5" class="col m4 l3 hide-on-small-only">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/harriet-raw.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">RAW Comedy Quest</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-6" class="col m4 l3 hide-on-small-only">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/inch-crowd.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">Inch Bar Open Mic</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-7" class="col m4 l3 hide-on-med-and-down">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/justin.jpg" alt="" class="responsive-img materialboxed">
-            <span class="card-title">Justin White on Tour</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery-8" class="col m4 l3 hide-on-med-and-down">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/dunedin-photos/breast-comedians.jpg" alt="" class="responsive-img materialboxed"
-              data-caption="Raising money for the Breast cancer Foundation NZ.">
-            <span class="card-title small">Comedians at Playhouse Theatre</span>
-          </div>
-        </div>
-
-    </div>
-    <div class="row">
-      <ul class="col s12 pagination center">
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-        <li class="active"><a href="#!">1</a></li>
-        <li class="waves-effect"><a href="#!">2</a></li>
-        <li class="waves-effect"><a href="#!">3</a></li>
-        <li class="waves-effect"><a href="#!">4</a></li>
-        <li class="waves-effect"><a href="#!">5</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-      </ul>
-    </div>
-  
-  </section>
-
-  <!-- parallax -->
-  <!-- <div class="parallax-container shadow-inset">
-    <div class="parallax">
-    </div>
-  </div> -->
   
   <!-- comedians -->
   <!-- <section id="comedian-anchor" class="section container scrollspy">
@@ -268,10 +261,10 @@
   </section> -->
 
   <!-- parallax -->
-  <div class="parallax-container shadow-inset">
+  <!-- <div class="parallax-container shadow-inset">
     <div class="parallax">
     </div>
-  </div>
+  </div> -->
 
   <!-- footer -->
   <footer id="contact-anchor" class="page-footer white black-text scrollspy">
@@ -295,7 +288,7 @@
               <div class="collapsible-body">
                 Join our newsletter and get special offers, discounted ticket prices and comedy show news delivered straight to your inbox.
 
-                <form action="" autocomplete="off" method="post">
+                <form action="send_email.php" autocomplete="off" method="post">
                   <div class="row">
                     <div class="col s10 input-field">
                       <i class="material-icons prefix">alternate_email</i>
@@ -303,10 +296,12 @@
                       <label for="newsletter-email">Your email</label>
                     </div>
         
+                    <text hidden id="newsletter-message" name="message" value="Newsletter sign up."></text>
+
                     <div class="col s2 input-field center">
-                      <button class="btn-floating red darken-3">
+                      <input type="submit" class="btn-floating red darken-3">
                         <i class="material-icons right">navigate_next</i>
-                      </button>
+                      </input>
                     </div>
                   </div>
 
@@ -350,22 +345,44 @@
                     </div> 
                     <!-- <div class="input-field">
                       <p><label>
+                
+                <form action="send_email.php" autocomplete="off" method="post">
+                  <div class="input-field">
+                    <i class="material-icons prefix">alternate_email</i>
+                    <input id="contact-email" name="email" type="email">
+                    <label for="contact-email">Your email</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix ">message</i>
+                    <textarea id="contact-message" name="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                    <label for="contact-message">Your message</label>
+                  </div>
+                  <div class="input-field">
+                    <p>
+                      <label>
                         <input type="checkbox">
-                        <span>Sign up to our newsletter</span>
-                      </label></p>
-                    </div>  -->
-                    <div class="input-field center">
-                      <input type="submit" value="Send" class="btn-small red darken-3">
-                    </div>
-                  </form>
-                </div>
+                        <span>Register for open mics</span>
+                      </label>
+                    </p>
+                  </div> 
+                  <!-- <div class="input-field">
+                    <p><label>
+                      <input type="checkbox">
+                      <span>Sign up to our newsletter</span>
+                    </label></p>
+                  </div>  -->
+                  <div class="input-field center">
+                    <input type="submit" value="Send" class="btn-small red darken-3">
+                  </div>
+                </form>
+
               </div>
             </li>
   
             <li>
               <div class="collapsible-header"><i class="material-icons">people</i>Follow us 
                 <span class="right grey-text badge">
-                  (1,114)</span>
+                  (1,130)</span>
               </div>
               <div class="collapsible-body">
                 

@@ -21,9 +21,9 @@ $message = "Contact form:\n\n"
 
 if (mail($to, $subject, $message)) {
 } else {
-  echo "We could not send your message. We're sorry about that.\n\n";
+  echo "Unable to send message. Sorry about that :(\n\n";
 };
-  echo "You will be redirected back shortly.";
+  echo "Message sent 👍\n\n";
 ?>
 
 <html>
