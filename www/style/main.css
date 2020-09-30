@@ -2,17 +2,21 @@
 #hero-image {
   background-image: url("../img/bricks-blank.jpg");
   background-size: cover;
-  min-height: 35%;
+  min-height: 350px;
+  height: 30vh;
 }
 #dunedin-comedy-logo {
-  height: 35%;
+  min-height: 350px;
+  height: 30vh;
 }
 
 @media screen and (max-width: 992px) {
   #hero-image {
     min-height: 210px;
+    height: 210px;
   }
   #dunedin-comedy-logo {
+    min-height: 210px;
     height: 210px;
   }
 }
@@ -20,17 +24,17 @@
 @media screen and (max-width: 600px) {
   #hero-image {
     min-height: 180px;
+    height: 180px;
   }
   #dunedin-comedy-logo {
+    min-height: 180px;
     height: 180px;
   }
 }
 
 #dunedin-comedy-logo img {
-  font-weight: 600;
   vertical-align :middle;
 }
-
 
 /* NAV BAR -> DUNEDIN CITY LOGO */
 .brand-logo {
