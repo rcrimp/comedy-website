@@ -1,8 +1,6 @@
 /* TITLE HERO IMAGE (below nav bar)  */
 #hero-image {
   background-image: url("../img/bricks-blank.jpg");
-  /* background-attachment: fixed; */
-  /* background-position: center top; */
   background-size: cover;
   min-height: 35%;
 }
@@ -54,7 +52,7 @@ nav .btn-floating {
 
 /* PARALLAX (between sections) */
 .parallax-container {
-  height: 25%;
+  height: 150px;
 }
 .parallax {
   background-image: url("../img/bricks.jpg");
