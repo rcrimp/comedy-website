@@ -1,161 +1,176 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- font awesome -->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="stylesheet" href="style/main.css">
+
+  <title>Reuben Crisp</title>
   <style>
-    #header-image {
+    #hero-image {
       background-image: url("img/header.jpg");
       background-color: black;
       background-position: center top;
       background-attachment: fixed;
       background-position: top;
       background-repeat: no-repeat;
-      background-size: contain;
-      min-height: 100%;
+      background-size: cover;
+      min-height: 100vh;
+      height: 100vh;
     }
     @media screen and (max-width: 992px) {
-      #header-image {
-        min-height: 50%;
+      #hero-image {
+        min-height: 260px;
+        height: 260px;
         background-attachment: scroll;
         background-image: url("img/header-trimmed.jpg");
       }
     }
     @media screen and (max-width: 600px) {
-      #header-image {
-        min-height: 210px;
+      #hero-image {
+        min-height: 180px;
+        height: 180px;
         background-size: cover;
         background-attachment: scroll;
       }
     }
   </style>
-  <title>Dunedin Comedy - Reuben Crisp</title>
+
   
 </head>
 <body>
 
-  <!-- navbar -->
   <header>
-    <nav class="nav-wrapper red darken-4">
-      <div class="container">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+          <div class="container">
+            
+            <!-- MOBILE MENU BUTTON -->
+            <a href="#" data-target="side-menu" class="brand-logo truncate sidenav-trigger show-on-large">Reuben Crisp</a>
+            <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
+              <i class="material-icons">menu</i>
+            </a>
 
-        <!-- desktop nav -->
-        <a href="#" data-target="side-menu" class="brand-logo truncate sidenav-trigger show-on-large">Reuben Crisp</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#performer-anchor" class="">Comedian</a></li>
-          <li><a href="#producer-anchor" class="">Producer</a></li>
-          <li><a href="#contact-anchor" class="">Contact</a></li>
-          <li>
-            <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small black tooltipped" data-tooltip="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small black tooltipped" data-tooltip="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#contact-anchor" class="btn-floating btn-small black tooltipped" data-tooltip="Me">
-              <i class="fab material-icons">person</i>
-            </a>
-          </li>
-        </ul>
+            <!-- DESKTOP SOCIAL MEDIA -->
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="http://www.facebook.com/phyterjet" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Facebook">
+                  <i class="red-text text-darken-3 fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.instagram.com/reuben_crisp" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Instagram">
+                  <i class="red-text text-darken-3 fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#contact-anchor" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Email">
+                  <i class="red-text text-darken-3 fas material-icons">mail_outline</i>
+                </a>
+              </li>
+            </ul>
 
-        <!-- side menu -->
-        <a href="" class="sidenav-trigger" data-target="side-menu" data-position="right" data-tooltip="Menu">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul id="side-menu" class="sidenav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img class="responsive-img" src="img/bricks.jpg">
-              </div>
-              <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a>              
-              <a href="#user"><img class="circle z-depth-2" src="img/reuben-photos/moustache-profile.png"></a>
-              <a href="#name"><span class="white-text name">Reuben Crisp</span></a>
-              <a href="#email"><span class="white-text email">reubencrimp@gmail.com</span></a>
-            </div>
-          </li>
-          <li><a href="#performer-anchor" class="sidenav-close">Performances</a></li>
-          <li><a href="#producer-anchor" class="sidenav-close">Productions</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close">Me</a></li>
-          <li><div class="divider"></div></li>
-          <li><a href="http://www.facebook.com/phyterjet"><i class="fab fa-facebook"></i>Facebook</a></li>
-          <li><a href="http://www.instagram.com/reuben_crisp"><i class="fab fa-instagram"></i>Instagram</a></li>
-          <li><a href="#contact-anchor" class="sidenav-close"><i class="sidenav-close material-icons">email</i>Email</a></li>
-        </ul>
+            <!-- DESKTOP NAVIGATION -->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#performer-anchor" class="">Comedian</a></li>
+              <li><a href="#producer-anchor" class="">Producer</a></li>
+              <li><a href="#contact-anchor" class="">Contact</a></li>
+              <!-- <li><a href="#comedian-anchor" class="">Comedians</a></li> -->
+            </ul>
+
+          </div> <!-- container -->
+        </div> <!-- nav-wrapper -->
+      </nav>
+    </div>  <!-- nav-fixed -->
+
+    <!-- MOBILE NAVIGATION -->
+    <ul id="side-menu" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img class="responsive-img" src="img/bricks.jpg">
+          </div>
+          <!-- <a href="#" class="large right sidenav-close"><i class="material-icons">close</i></a> -->
+          <a href="#" class="white-text large right sidenav-close"><i class="material-icons">close</i></a>              
+          <a href="#user"><img class="circle z-depth-2" src="img/reuben-photos/moustache-profile.png"></a>
+          <a href="#"><span class="white-text name">Reuben Crisp</span></a>
+          <!-- <a href="#"><span class="white-text name">Dunedin Comedy</span></a> -->
+          <a href="mailto:reuben@dunedincomedy.co.nz"><span class="white-text email">reuben@dunedincomedy.co.nz</span></a>
+        </div>
+      </li>
+      <li><a href="#performer-anchor" class="sidenav-close">Performances</a></li>
+      <li><a href="#producer-anchor" class="sidenav-close">Productions</a></li>
+      <li><a href="#contact-anchor" class="sidenav-close">Contact</a></li>
+      <li><a href="#contact-anchor" class="sidenav-close">Me</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="http://www.facebook.com/phyterjet"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+      <li><a href="http://www.instagram.com/reuben_crisp"><i class="fab fa-instagram"></i>Instagram</a></li>
+      <li><a href="#contact-anchor" class="sidenav-close"><i class="fas fa-envelope"></i>Email</a></li>
+    </ul>
+
+  
+    <div id="hero-image" class="shadow-inset">
+      <div class="container row">
+        <!-- mobile buttons -->
+        <div class="right hide-on-med-and-up">
+          <ul id="mobile-social-buttons">
+            <li>
+              <a href="http://www.facebook.com/phyterjet" class="btn-small btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com/reuben_crisp" class="btn-small btn-floating red darken-4 tooltipped " data-position="left" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#contact-anchor" class="btn-small btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Email">
+                <i class="fab material-icons">mail_outline</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MED BUTTONS -->
+        <div class="right hide-on-small-only hide-on-large-only">
+          <ul id="mobile-social-buttons">
+            <li>
+              <a href="http://www.facebook.com/phyterjet" class="btn-large btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com/reuben_crisp" class="btn-large btn-floating red darken-4 tooltipped " data-position="left" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#contact-anchor" class="btn-large btn-floating red darken-4 tooltipped" data-position="left" data-tooltip="Email">
+                <i class="fab material-icons">mail_outline</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-    </nav>
-  </header>
-
-  <!-- hero image -->
-  <div id="header-image">
-    <!-- mobile menu -->
-    <div class="container hide-on-large-only">
-      <ul id="mobile-social-buttons" class="left">
-        <li>
-          <a href="#performer-anchor" class="btn-floating red darken-4 tooltipped "
-          data-position="right" data-tooltip="Profile">
-            <i class="material-icons">person</i>
-          </a>
-        </li>
-        <li>
-          <a href="#contact-anchor" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Contact">
-            <i class="material-icons">mail</i>
-          </a>
-        </li>
-        <li>
-          <a href="#producer-anchor" class="btn-floating red darken-4 tooltipped" data-position="right" data-tooltip="Portfolio">
-            <i class="material-icons">apps</i>
-          </a>
-        </li>
-      </ul>
     </div>
-  </div>
+  
+  </header>
 
   <!-- performer -->
   <section id="performer-anchor" class="container section scrollspy">
-    
     <div class="row">
-      
-      <!-- title -->
       <div class="col s12 m7 l7">
         <h2  class="left red-text text-darken-2 scrollspy">Comedian</h2>
       </div>
-      <!-- show button -->
-      <div class="col s12 m5 l5">
-        <h2 class="hide-on-small-only"><a class='dropdown-trigger btn-large red darken-2' href='#' data-target='dropdown1'>
-          <i class="material-icons right white-text">expand_more</i>Upcoming shows
-        </a></h2>
-        <ul id='dropdown1' class='dropdown-content'>
-          <li>
-            <a class="white-text red darken-2" href="#!">
-              Calendar
-              <i class="material-icons white-text right">event</i>
-            </a>
-          </li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a class="red-text text-darken-3" href="#!">Facebook</a></li>
-          <li><a class="red-text text-darken-3" href="#!">Eventfinda</a></li>
-          <li><a class="red-text text-darken-3" href="#!">Trybooking</a></li>
-        </ul>
-      </div>
-
     </div>
 
     <div class="row">
