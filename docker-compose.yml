@@ -24,6 +24,7 @@ services:
         ports:
             - 25:25
         volumes:
-            - ./www/:/var/www/html
+            - ./www/:/var/www/dunedincomedy.co.nz
             - ./php/php.ini:/usr/local/etc/php/conf.d/php.ini
             - ./php/logs/:/usr/local/etc/php/logs/
+
