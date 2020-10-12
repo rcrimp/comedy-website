@@ -174,3 +174,12 @@ blockquote a {
   /* width: inherit; */
   height: 80px;
 }
+
+#upcoming-shows p {
+  font-size:1em; margin-bottom:1em;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
