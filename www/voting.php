@@ -466,9 +466,8 @@ if (strlen($voteremail) == 0) { ?>
 						<label>Best Venue Vote</label>
           </div>
 				</div>
-				<?php } ?>
-
 			</div>
+			<?php } ?>
 			
 		</section>
 
@@ -608,7 +607,7 @@ if (strlen($voteremail) == 0) { ?>
           </div>
         </div>
 			</div>
-			<? php } ?>
+			<?php } ?>
 			
 		</section>
 
