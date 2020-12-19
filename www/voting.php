@@ -150,8 +150,6 @@
     </div>
   
   </header>
-
-    <section class="container">
 	
 			<?php
 				$voterid = $_GET["voterid"];
@@ -184,10 +182,13 @@
 				$voteremail = $voteremaillist[$voterid];
 
 				if (strlen($voteremail) == 0) { ?>
-							<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
-							<p>Invalid voting link.</p>
+		<section class="container">
+			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
+			<p>Invalid voting link.</p>
+		</section>
 			
 					<?php } else { ?>
+		<section class="container">
 			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
 			<p>Nominations are in and it's time to cast your votes</p>
 			<p>There are 8 categories, one vote each. You may skip any of the categories. You may vote for yourself. You may recast your vote(s) unlimited times until the voting closes. </p>
@@ -201,70 +202,70 @@
 		<form action="submit_vote.php" method="post">
 			<input type="hidden" id="voterid" name="voterid" value=<?php echo $voterid ?>>
 
-		<section class="container">
+			<section class="container">
 
-				<h4 class="center red-text text-darken-3">Best Newcomer Nominees</h4>
+					<h4 class="center red-text text-darken-3">Best Newcomer Nominees</h4>
 
-				<div class="row">
-					<div class="col s3">
-						<div class="card">
-							<div class="card-image">
-								<img src="img/voting/Carrie-Ankerstein.jpg">
+					<div class="row">
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Carrie-Ankerstein.jpg">
+								</div>
+								<div class="card-content">
+									Carrie Ankerstein
+								</div>
 							</div>
-							<div class="card-content">
-								Carrie Ankerstein
+						</div>
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Gerard-Dougherty.jpg">
+								</div>
+								<div class="card-content">
+									Gerard Dougherty
+								</div>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Kate-Hansen.jpg">
+								</div>
+								<div class="card-content">
+									Kate Hansen
+								</div>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Sarper-Dorter.jpg">
+								</div>
+								<div class="card-content">
+									Sarper Dörter
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col s3">
-						<div class="card">
-							<div class="card-image">
-								<img src="img/voting/Gerard-Dougherty.jpg">
-							</div>
-							<div class="card-content">
-								Gerard Dougherty
-							</div>
-						</div>
-					</div>
-					<div class="col s3">
-						<div class="card">
-							<div class="card-image">
-								<img src="img/voting/Kate-Hansen.jpg">
-							</div>
-							<div class="card-content">
-								Kate Hansen
-							</div>
-						</div>
-					</div>
-					<div class="col s3">
-						<div class="card">
-							<div class="card-image">
-								<img src="img/voting/Sarper-Dorter.jpg">
-							</div>
-							<div class="card-content">
-								Sarper Dörter
-							</div>
-						</div>
-					</div>
-				</div>
 
-        <div class="row">
-          <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Newcomer" name="Best-Newcomer">
-                <option value="none" class="right" selected>Vote here</option>
-								<option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
-								<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
-                <option value="Kate Hansen" data-icon="img/voting/Kate-Hansen.jpg" class="right">Kate Hansen</option>
-                <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
-							</select>
-							<label>Best Newcomer Vote</label>
-            </div>
-          </div>
-				</div>
-				
-			</section>
+					<div class="row">
+						<div class="col s12">
+							<div class="input-field">
+								<i class="material-icons prefix">how_to_vote</i>
+								<select id="Best-Newcomer" name="Best-Newcomer">
+									<option value="none" class="right" selected>Vote here</option>
+									<option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
+									<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
+									<option value="Kate Hansen" data-icon="img/voting/Kate-Hansen.jpg" class="right">Kate Hansen</option>
+									<option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
+								</select>
+								<label>Best Newcomer Vote</label>
+							</div>
+						</div>
+					</div>
+					
+				</section>
 
 		<!-- parallax -->
 		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
