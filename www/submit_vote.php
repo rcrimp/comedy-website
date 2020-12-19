@@ -5,14 +5,12 @@ and mails them to an email account.
 -->
 
 <?php
-if (!isset($_POST['message'])) {
-  return;
-}
-
 $ballot = "";
 foreach ($_POST as $key => $value) {
   $ballot .= "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+  echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
 }
+exit();
 
 $to = 'reuben@dunedincomedy.co.nz';
 $subject = 'Dunedin Comedy Vote Ballot';
