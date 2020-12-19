@@ -181,13 +181,12 @@
 				);
 				$voteremail = $voteremaillist[$voterid];
 
-				if (strlen($voteremail) == 0) { ?>
+if (strlen($voteremail) == 0) { ?>
 		<section class="container">
 			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
-			<p>Invalid voting link.</p>
-		</section>
-			
-					<?php } else { ?>
+			<p>This is not a valid voting link. You may view the nominees but you cannot vote. If you think you should be able to vote please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
+		</section>			
+<?php } else { ?>
 		<section class="container">
 			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
 			<p>Nominations are in and it's time to cast your votes</p>
@@ -195,12 +194,15 @@
 			<p>Voting closes at midnight on Sunday, 3rd of January. Winners will be announced at the awards ceremony on Wednesday, 20th of January at Inch Bar after the open mic.</p>
 			<p>If you have any issues with the ballot please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
 		</section>
+<?php } ?>
 
 		<!-- parallax -->
   	<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
 
+<?php if (strlen($voteremail) != 0) { ?>
 		<form action="submit_vote.php" method="post">
 			<input type="hidden" id="voterid" name="voterid" value=<?php echo $voterid ?>>
+<?php } ?>
 
 			<section class="container">
 
@@ -248,7 +250,7 @@
 							</div>
 						</div>
 					</div>
-
+					<?php if (strlen($voteremail) != 0) { ?>
 					<div class="row">
 						<div class="col s12">
 							<div class="input-field">
@@ -264,6 +266,7 @@
 							</div>
 						</div>
 					</div>
+					<?php } ?>
 					
 				</section>
 
@@ -317,6 +320,7 @@
 					</div>
 				</div>
 
+				<?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
             <div class="input-field">
@@ -332,6 +336,7 @@
             </div>
           </div>
 				</div>
+				<?php } ?>
 				
 			</section>
 
@@ -385,6 +390,7 @@
 				</div>
 			</div>
 
+			<?php if (strlen($voteremail) != 0) { ?>
       <div class="row">
         <div class="col s12">
           <div class="input-field">
@@ -400,6 +406,7 @@
           </div>
         </div>
 			</div>
+			<?php } ?>
 			
 		</section>
 
@@ -445,6 +452,7 @@
 					</div>
 				</div>
 
+				<?php if (strlen($voteremail) != 0) { ?>
       <div class="row">
         <div class="col s12">
           <div class="input-field">
@@ -457,7 +465,9 @@
 						</select>
 						<label>Best Venue Vote</label>
           </div>
-        </div>
+				</div>
+				<?php } ?>
+
 			</div>
 			
 		</section>
@@ -512,6 +522,7 @@
 				</div>
 			</div>
 
+			<?php if (strlen($voteremail) != 0) { ?>
       <div class="row">
         <div class="col s12">
           <div class="input-field">
@@ -527,6 +538,7 @@
           </div>
         </div>
 			</div>
+			<?php } ?>
 			
 		</section>
 
@@ -580,6 +592,7 @@
 				</div>
 			</div>
 
+			<?php if (strlen($voteremail) != 0) { ?>
       <div class="row">
         <div class="col s12">
           <div class="input-field">
@@ -595,6 +608,7 @@
           </div>
         </div>
 			</div>
+			<? php } ?>
 			
 		</section>
 
@@ -660,6 +674,7 @@
 					</div>
 				</div>
 
+				<?php if (strlen($voteremail) != 0) { ?>
 				<div class="row">
 					<div class="col s12">
 						<div class="input-field">
@@ -676,6 +691,7 @@
 						</div>
 					</div>
 				</div>
+				<?php } ?>
 				
 			</section>
 
@@ -741,6 +757,7 @@
 				</div>
 			</div>
 
+			<?php if (strlen($voteremail) != 0) { ?>
       <div class="row">
         <div class="col s12">
           <div class="input-field">
@@ -757,9 +774,11 @@
           </div>
         </div>
 			</div>
+			<?php } ?>
 			
 		</section>
 
+		<?php if (strlen($voteremail) != 0) { ?>
 		<!-- parallax -->
 		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
 
@@ -777,8 +796,8 @@
     </section>
 
 		</form>
-		
-				<?php } ?>
+<?php } ?>		
+
 
 
 
