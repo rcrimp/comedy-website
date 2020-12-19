@@ -193,150 +193,593 @@
 			<p>There are 8 categories, one vote each. You may skip any of the categories. You may vote for yourself. You may recast your vote(s) unlimited times until the voting closes. </p>
 			<p>Voting closes at midnight on Sunday, 3rd of January. Winners will be announced at the awards ceremony on Wednesday, 20th of January at Inch Bar after the open mic.</p>
 			<p>If you have any issues with the ballot please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
-		
+		</section>
 
-      <form action="submit_vote.php" method="post">
-        <input type="hidden" id="voterid" name="voterid" value=<?php echo $voterid ?>>
+		<!-- parallax -->
+  	<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
 
-        <h4 class="center red-text text-darken-3">Best Newcomer</h4>
+		<form action="submit_vote.php" method="post">
+			<input type="hidden" id="voterid" name="voterid" value=<?php echo $voterid ?>>
+
+		<section class="container">
+
+				<h4 class="center red-text text-darken-3">Best Newcomer Nominees</h4>
+
+				<div class="row">
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Carrie-Ankerstein.jpg">
+							</div>
+							<div class="card-content">
+								Carrie Ankerstein
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Gerard-Dougherty.jpg">
+							</div>
+							<div class="card-content">
+								Gerard Dougherty
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Kate-Hansen.jpg">
+							</div>
+							<div class="card-content">
+								Kate Hansen
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Sarper-Dorter.jpg">
+							</div>
+							<div class="card-content">
+								Sarper Dörter
+							</div>
+						</div>
+					</div>
+				</div>
+
         <div class="row">
-          <div class="col s12 m6 push-m3">
+          <div class="col s12">
             <div class="input-field">
-              
+              <i class="material-icons prefix">how_to_vote</i>
               <select id="Best-Newcomer" name="Best-Newcomer">
-                <option value="none" class="right" selected>Best Newcomer</option>
+                <option value="none" class="right" selected>Vote here</option>
 								<option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
 								<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
                 <option value="Kate Hansen" data-icon="img/voting/Kate-Hansen.jpg" class="right">Kate Hansen</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
-              </select>
+							</select>
+							<label>Best Newcomer Vote</label>
             </div>
           </div>
-        </div>
+				</div>
+				
+			</section>
 
-        <h4 class="center red-text text-darken-3">Most Improved</h4>
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+			<section class="container">
+
+				<h4 class="center red-text text-darken-3">Most Improved Nominees</h4>
+				
+				<div class="row">
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Gerard-Dougherty.jpg">
+							</div>
+							<div class="card-content">
+								Gerard Dougherty
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/John-Bagnall.jpg">
+							</div>
+							<div class="card-content">
+								John Bagnall
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Jonathan-Falconer.jpg">
+							</div>
+							<div class="card-content">
+								Jonathan Falconer
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Sarper-Dorter.jpg">
+							</div>
+							<div class="card-content">
+								Sarper Dörter
+							</div>
+						</div>
+					</div>
+				</div>
+
         <div class="row">
-          <div class="col s12 m6 push-m3">
+          <div class="col s12">
             <div class="input-field">
-              
+              <i class="material-icons prefix">how_to_vote</i>
               <select id="Most-Improved" name="Most-Improved">
-                <option value="none" class="right" selected>Most Improved</option>
+                <option value="none" class="right" selected>Vote here</option>
 								<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
 								<option value="John Bagnall" data-icon="img/voting/John-Bagnall.jpg" class="right">John Bagnall</option>
 								<option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
-              </select>
+							</select>
+							<label>Most Improved Vote</label>
             </div>
           </div>
-        </div>
+				</div>
+				
+			</section>
 
-      <h4 class="center red-text text-darken-3">Best Greenroomer</h4>
+			<!-- parallax -->
+			<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+	
+				<section class="container">
+
+			<h4 class="center red-text text-darken-3">Best Greenroomer Nominees</h4>
+			
+			<div class="row">
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Elisa-Rubin.jpg">
+						</div>
+						<div class="card-content">
+							Elisa Rubin
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Harriet-Moir.jpg">
+						</div>
+						<div class="card-content">
+							Harriet Moir
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Jenny-Kendrick.jpg">
+						</div>
+						<div class="card-content">
+							Jenny Kendrick
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Reuben-Crisp.jpg">
+						</div>
+						<div class="card-content">
+							Reuben Crisp
+						</div>
+					</div>
+				</div>
+			</div>
+
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12">
           <div class="input-field">
-            
+            <i class="material-icons prefix">how_to_vote</i>
             <select id="Best-Greenroomer" name="Best-Greenroomer">
-              <option value="none" class="right" selected>Best Greenroomer</option>
+              <option value="none" class="right" selected>Vote here</option>
 							<option value="Elisa Rubin" data-icon="img/voting/Elisa-Rubin.jpg" class="right">Elisa Rubin</option>
 							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
 							<option value="Jenny Kendrick" data-icon="img/voting/Jenny-Kendrick.jpg" class="right">Jenny Kendrick</option>
               <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-            </select>
+						</select>
+						<label>Best Greenroomer Vote</label>
           </div>
         </div>
-      </div>
+			</div>
+			
+		</section>
 
-      <h4 class="center red-text text-darken-3">Best MC</h4>
-      <div class="row">
-        <div class="col s12 m6 push-m3">
-          <div class="input-field">
-            
-            <select id="Best-MC" name="Best-MC">
-              <option value="none" class="right" selected>Best MC</option>
-              <option value="Aaron Davies" data-icon="img/voting/Aaron-Davies.jpg" class="right">Aaron Davies</option>
-							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
-              <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
-							<option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-            </select>
-          </div>
-        </div>
-      </div>
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
 
-      <h4 class="center red-text text-darken-3">Best Venue</h4>
+			<section class="container">
+
+				<h4 class="center red-text text-darken-3">Best Venue Nominees</h4>
+
+				<div class="row">
+					<div class="flexbox">
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Dog-with-two-Tails.jpg">
+								</div>
+								<div class="card-content">
+									Dog with two Tails
+								</div>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/Inch-Bar.jpg">
+								</div>
+								<div class="card-content">
+									Inch Bar
+								</div>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="card">
+								<div class="card-image">
+									<img src="img/voting/New-Athenaeum-Theatre.jpg">
+								</div>
+								<div class="card-content">
+									New Athenaeum Theatre
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12">
           <div class="input-field">
-            
+            <i class="material-icons prefix">how_to_vote</i>
             <select id="Best-Venue" name="Best-Venue">
-              <option value="none" class="right" selected>Best Venue</option>
+              <option value="none" class="right" selected>Vote here</option>
               <option value="Dog with two Tails" data-icon="img/voting/Dog-with-two-Tails.jpg" class="right">Dog with two Tails</option>
 							<option value="Inch Bar" data-icon="img/voting/Inch-Bar.jpg" class="right">Inch Bar</option>
 							<option value="New Athenaeum Theatre" data-icon="img/voting/New-Athenaeum-Theatre.jpg" class="right">New Athenaeum Theatre</option>
-            </select>
+						</select>
+						<label>Best Venue Vote</label>
           </div>
         </div>
-      </div>
+			</div>
+			
+		</section>
 
-      <h4 class="center red-text text-darken-3">Best Solo Show</h4>
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+			<section class="container">
+
+			<h4 class="center red-text text-darken-3">Best Solo Show Nominees</h4>
+			
+			<div class="row">
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Ben-Hurley.jpg">
+						</div>
+						<div class="card-content">
+							Ben Hurley: The Straight-out-of-lockdown Tour
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Harriet-Moir.jpg">
+						</div>
+						<div class="card-content">
+							Harriet Moir: CHIP: Salty with a Bit of Sauce
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/James-Mustapic.jpg">
+						</div>
+						<div class="card-content">
+							James Mustapic is Coming Out (From Under a Rock)
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Jonathan-Falconer.jpg">
+						</div>
+						<div class="card-content">
+								Jonathan Falconer: World's Dumbest Doctor
+						</div>
+					</div>
+				</div>
+			</div>
+
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12">
           <div class="input-field">
-            
+            <i class="material-icons prefix">how_to_vote</i>
             <select id="Best-Solo-Show" name="Best-Solo-Show">
-              <option value="none" class="right" selected>Best Solo Show</option>
+              <option value="none" class="right" selected>Vote here</option>
               <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley: The Straight-out-of-lockdown Tour</option>
               <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir: CHIP: Salty with a Bit of Sauce</option>
               <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James Mustapic is Coming Out (From Under a Rock)</option>
               <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer: World's Dumbest Doctor</option>
-            </select>
+						</select>
+						<label>Best Solo Show Vote</label>
           </div>
         </div>
-      </div>
+			</div>
+			
+		</section>
 
-      <h4 class="center red-text text-darken-3">Best Comedian (visiting)</h4>
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+			<section class="container">
+
+			<h4 class="center red-text text-darken-3">Best MC Nominees</h4>
+			
+			<div class="row">
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Aaron-Davies.jpg">
+						</div>
+						<div class="card-content">
+							Aaron Davies
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Harriet-Moir.jpg">
+						</div>
+						<div class="card-content">
+							Harriet Moir
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Jonathan-Falconer.jpg">
+						</div>
+						<div class="card-content">
+							Jonathan Falconer
+						</div>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Reuben-Crisp.jpg">
+						</div>
+						<div class="card-content">
+							Reuben Crisp
+						</div>
+					</div>
+				</div>
+			</div>
+
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12">
           <div class="input-field">
-            
-            <select id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
-              <option value="none" class="right" selected>Best Comedian (visiting)</option>
-              <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley (Auckland)</option>
-							<option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader (Wanaka)</option>
-							<option value="Gary Sansome" data-icon="img/voting/Gary-Sansome.jpg" class="right">Gary Sansome (UK)</option>
-              <option value="Jadwiga Green" data-icon="img/voting/Jadwiga-Green.jpg" class="right">Jadwiga Green (Christchurch)</option>
-              <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James-Mustapic (Auckland)</option>
-            </select>
+            <i class="material-icons prefix">how_to_vote</i>
+            <select id="Best-MC" name="Best-MC">
+              <option value="none" class="right" selected>Vote here</option>
+              <option value="Aaron Davies" data-icon="img/voting/Aaron-Davies.jpg" class="right">Aaron Davies</option>
+							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
+              <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
+							<option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
+						</select>
+						<label>Best MC Vote</label>
           </div>
         </div>
-      </div>
+			</div>
+			
+		</section>
 
-      <h4 class="center red-text text-darken-3">Best Comedian (Dunedin)</h4>
+				<!-- parallax -->
+				<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+				<section class="container">
+	
+				<h4 class="center red-text text-darken-3">Best Visiting Comedian Nominees</h4>
+
+				<div class="row">
+					<div class="flexbox">
+					<div class="col s2">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Ben-Hurley.jpg">
+							</div>
+							<div class="card-content">
+								Ben Hurley
+							</div>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Dan-Brader.jpg">
+							</div>
+							<div class="card-content">
+								Dan Brader
+							</div>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Gary-Sansome.jpg">
+							</div>
+							<div class="card-content">
+								Gary Sansome
+							</div>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/Jadwiga-Green.jpg">
+							</div>
+							<div class="card-content">
+									Jadwiga Green
+							</div>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/voting/James-Mustapic.jpg">
+							</div>
+							<div class="card-content">
+								James Mustapic
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<div class="input-field">
+							<i class="material-icons prefix">how_to_vote</i>
+							<select id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
+								<option value="none" class="right" selected>Vote here</option>
+								<option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley (Auckland)</option>
+								<option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader (Wanaka)</option>
+								<option value="Gary Sansome" data-icon="img/voting/Gary-Sansome.jpg" class="right">Gary Sansome (UK)</option>
+								<option value="Jadwiga Green" data-icon="img/voting/Jadwiga-Green.jpg" class="right">Jadwiga Green (Christchurch)</option>
+								<option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James-Mustapic (Auckland)</option>
+							</select>
+							<label>Best Visiting Comedian Vote</label>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+			<section class="container">
+
+			<h4 class="center red-text text-darken-3">Best Comedian Nominees</h4>
+			
+			<div class="row">
+				<div class="flexbox">
+				<div class="col s2">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Demelza-Daisy-Ray.jpg">
+						</div>
+						<div class="card-content">
+							Demelza Daisy Ray
+						</div>
+					</div>
+				</div>
+				<div class="col s2">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Harriet-Moir.jpg">
+						</div>
+						<div class="card-content">
+							Harriet Moir
+						</div>
+					</div>
+				</div>
+				<div class="col s2">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Jonathan-Falconer.jpg">
+						</div>
+						<div class="card-content">
+							Jonathan Falconer
+						</div>
+					</div>
+				</div>
+				<div class="col s2">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Mike-Chewie-Bennett.jpg">
+						</div>
+						<div class="card-content">
+								Mike "Chewie" Bennett
+						</div>
+					</div>
+				</div>
+				<div class="col s2">
+					<div class="card">
+						<div class="card-image">
+							<img src="img/voting/Reuben-Crisp.jpg">
+						</div>
+						<div class="card-content">
+							Reuben Crisp
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12">
           <div class="input-field">
-            
+            <i class="material-icons prefix">how_to_vote</i>
             <select id="Best-Comedian" name="Best-Comedian">
-              <option value="none" class="right" selected>Best Comedian</option>
+              <option value="none" class="right" selected>Vote here</option>
 							<option value="Demelza Daisy Ray" data-icon="img/voting/Demelza-Daisy-Ray.jpg" class="right">Demelza-Daisy-Ray</option>
 							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
 							<option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
 							<option value="Mike Chewie Bennett" data-icon="img/voting/Mike-Chewie-Bennett.jpg" class="right">Mike "Chewie" Bennett</option>
 							<option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-            </select>
+						</select>
+						<label>Best Comedian Vote</label>
           </div>
         </div>
-      </div>
+			</div>
+			
+		</section>
+
+		<!-- parallax -->
+		<div class="parallax-container shadow-inset"><div class="parallax"></div></div>
+
+		<section class="container">
+
+			<p>Before submitting please double check your votes.</p>
+			<p>You may revisit this page to recast your votes unlimited times, up until January 3rd.</p>
 
       <div class="row">
-        <div class="col s12 m6 push-m3">
+        <div class="col s12 m6 offset-m3">
           <input type="submit" value="Submit Votes" class="red darken-3 right btn">
         </div>
-      </div>
+			</div>
+			
+    </section>
+
 		</form>
 		
 				<?php } ?>
 
-    </section>
+
 
     <!-- parallax -->
     <div class="parallax-container shadow-inset"><div class="parallax"></div></div>
