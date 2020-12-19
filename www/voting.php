@@ -196,7 +196,7 @@
 		
 
       <form action="submit_vote.php" method="post">
-        <input type="hidden" id="voter" name="voter" value=<?php echo $voteremail ?>>
+        <input type="hidden" id="voterid" name="voterid" value=<?php echo $voterid ?>>
 
         <h4 class="center red-text text-darken-3">Best Newcomer</h4>
         <div class="row">
