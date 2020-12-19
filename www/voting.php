@@ -102,7 +102,7 @@
     <div id="hero-image" class="shadow-inset">
       <div class="container row">
         <div id="dunedin-comedy-logo" class="col s8 m6 l6 offset-s2 offset-m3 offset-l3 valign-wrapper">
-          <img class="responsive-img" src="img/dunedin-comedy.png" alt="">
+          <img class="responsive-img" src="img/dunedin-comedy-awards.png" alt="">
         </div>
         <!-- mobile buttons -->
         <div class="right hide-on-med-and-up">
@@ -153,12 +153,16 @@
 
     <section class="container">
 
+			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
+			<p>Nominations are in and it's time to cast your votes</p>
+			<p>There are 8 categories, one vote each. You may skip any of the categories. You may vote for yourself.</p>
+			<p>Voting closes at midnight on Sunday, 3rd of January. Winners will be announced at the awards ceremony on Wednesday, 20th of January at Inch Bar after the open mic.</p>
+			<p>If you have any issues with the ballot please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
 			
 			<?php
 				$voterid = $_GET["voterid"];
 				$voteremaillist = array(						
 					"024de771-c736-4972-b6c1-cefc25f111e1" => "chewie_nz@orcon.net.nz",
-					"029ba473-edb6-4336-9e7b-23b35038d78a" => "danielbrader@hotmail.com",
 					"03eba4b7-6256-4476-9d80-d018223dec27" => "elsadaisy@gmail.com",
 					"1d6e2403-fdcd-4f38-83c1-561ae3abe0ed" => "rename.gerard@gmail.com",
 					"2391ce85-4594-485c-be38-cdf07cbddc2f" => "harriet_moir@hotmail.com",
@@ -191,15 +195,15 @@
 
         <h4 class="center red-text text-darken-3">Best Newcomer</h4>
         <div class="row">
-          <div class="col s4 push-s4">
+          <div class="col s12 m6 push-m3">
             <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
+              
               <select id="Best-Newcomer" name="Best-Newcomer">
-                <option value="none" class="right" disabled selected>Best Newcomer</option>
-                <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
+                <option value="none" class="right" selected>Best Newcomer</option>
+								<option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
+								<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
                 <option value="Kate Hansen" data-icon="img/voting/Kate-Hansen.jpg" class="right">Kate Hansen</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
-                <option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
               </select>
             </div>
           </div>
@@ -207,15 +211,15 @@
 
         <h4 class="center red-text text-darken-3">Most Improved</h4>
         <div class="row">
-          <div class="col s4 push-s4">
+          <div class="col s12 m6 push-m3">
             <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
+              
               <select id="Most-Improved" name="Most-Improved">
-                <option value="none" class="right" disabled selected>Most Improved</option>
-                <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
+                <option value="none" class="right" selected>Most Improved</option>
+								<option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
+								<option value="John Bagnall" data-icon="img/voting/John-Bagnall.jpg" class="right">John Bagnall</option>
+								<option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
-                <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
-                <option value="John Bagnall" data-icon="img/voting/John-Bagnall.jpg" class="right">John Bagnall</option>
               </select>
             </div>
           </div>
@@ -223,15 +227,15 @@
 
       <h4 class="center red-text text-darken-3">Best Greenroomer</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-Greenroomer" name="Best-Greenroomer">
-              <option value="none" class="right" disabled selected>Best Greenroomer</option>
-              <option value="Jenny Kendrick" data-icon="img/voting/Jenny-Kendrick.jpg" class="right">Jenny Kendrick</option>
-              <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
+              <option value="none" class="right" selected>Best Greenroomer</option>
+							<option value="Elisa Rubin" data-icon="img/voting/Elisa-Rubin.jpg" class="right">Elisa Rubin</option>
+							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
+							<option value="Jenny Kendrick" data-icon="img/voting/Jenny-Kendrick.jpg" class="right">Jenny Kendrick</option>
               <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-              <option value="Elisa Rubin" data-icon="img/voting/Elisa-Rubin.jpg" class="right">Elisa Rubin</option>
             </select>
           </div>
         </div>
@@ -239,15 +243,15 @@
 
       <h4 class="center red-text text-darken-3">Best MC</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-MC" name="Best-MC">
-              <option value="none" class="right" disabled selected>Best MC</option>
-              <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-              <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
+              <option value="none" class="right" selected>Best MC</option>
               <option value="Aaron Davies" data-icon="img/voting/Aaron-Davies.jpg" class="right">Aaron Davies</option>
+							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
               <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
+							<option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
             </select>
           </div>
         </div>
@@ -255,14 +259,14 @@
 
       <h4 class="center red-text text-darken-3">Best Venue</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-Venue" name="Best-Venue">
-              <option value="none" class="right" disabled selected>Best Venue</option>
+              <option value="none" class="right" selected>Best Venue</option>
               <option value="Dog with two Tails" data-icon="img/voting/Dog-with-two-Tails.jpg" class="right">Dog with two Tails</option>
-              <option value="New Athenaeum Theatre" data-icon="img/voting/New-Athenaeum-Theatre.jpg" class="right">New Athenaeum Theatre</option>
-              <option value="Inch Bar" data-icon="img/voting/Inch-Bar.jpg" class="right">Inch Bar</option>
+							<option value="Inch Bar" data-icon="img/voting/Inch-Bar.jpg" class="right">Inch Bar</option>
+							<option value="New Athenaeum Theatre" data-icon="img/voting/New-Athenaeum-Theatre.jpg" class="right">New Athenaeum Theatre</option>
             </select>
           </div>
         </div>
@@ -270,11 +274,11 @@
 
       <h4 class="center red-text text-darken-3">Best Solo Show</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-Solo-Show" name="Best-Solo-Show">
-              <option value="none" class="right" disabled selected>Best Solo Show</option>
+              <option value="none" class="right" selected>Best Solo Show</option>
               <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley: The Straight-out-of-lockdown Tour</option>
               <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir: CHIP: Salty with a Bit of Sauce</option>
               <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James Mustapic is Coming Out (From Under a Rock)</option>
@@ -286,16 +290,16 @@
 
       <h4 class="center red-text text-darken-3">Best Comedian (visiting)</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
-              <option value="none" class="right" disabled selected>Best Comedian (visiting)</option>
-              <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley</option>
-              <option value="Gary Sansome" data-icon="img/voting/Gary-Sansome.jpg" class="right">Gary Sansome</option>
-              <option value="Jadwiga Green" data-icon="img/voting/Jadwiga-Green.jpg" class="right">Jadwiga Green</option>
-              <option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader</option>
-              <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James-Mustapic</option>
+              <option value="none" class="right" selected>Best Comedian (visiting)</option>
+              <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley (Auckland)</option>
+							<option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader (Wanaka)</option>
+							<option value="Gary Sansome" data-icon="img/voting/Gary-Sansome.jpg" class="right">Gary Sansome (UK)</option>
+              <option value="Jadwiga Green" data-icon="img/voting/Jadwiga-Green.jpg" class="right">Jadwiga Green (Christchurch)</option>
+              <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James-Mustapic (Auckland)</option>
             </select>
           </div>
         </div>
@@ -303,23 +307,23 @@
 
       <h4 class="center red-text text-darken-3">Best Comedian (Dunedin)</h4>
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <div class="input-field">
-            <i class="material-icons prefix">how_to_vote</i>
+            
             <select id="Best-Comedian" name="Best-Comedian">
-              <option value="none" class="right" disabled selected>Best Comedian</option>
-              <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
-              <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
-              <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
-              <option value="Demelza Daisy Ray" data-icon="img/voting/Demelza-Daisy-Ray.jpg" class="right">Demelza-Daisy-Ray</option>
-              <option value="Mike Chewie Bennett" data-icon="img/voting/Mike-Chewie-Bennett.jpg" class="right">Mike "Chewie" Bennett</option>
+              <option value="none" class="right" selected>Best Comedian</option>
+							<option value="Demelza Daisy Ray" data-icon="img/voting/Demelza-Daisy-Ray.jpg" class="right">Demelza-Daisy-Ray</option>
+							<option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
+							<option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
+							<option value="Mike Chewie Bennett" data-icon="img/voting/Mike-Chewie-Bennett.jpg" class="right">Mike "Chewie" Bennett</option>
+							<option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
             </select>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col s4 push-s4">
+        <div class="col s12 m6 push-m3">
           <input type="submit" value="Submit Votes" class="red darken-3 right btn">
         </div>
       </div>

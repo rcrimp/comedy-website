@@ -7,7 +7,7 @@ and mails them to an email account.
 <?php
 $ballot = "";
 foreach ($_POST as $key => $value) {
-  $ballot .= htmlspecialchars($key).": ".htmlspecialchars($value)."<br>";
+  $ballot .= htmlspecialchars($key).": ".htmlspecialchars($value)."\n\n";
 }
 
 $to = 'reuben@dunedincomedy.co.nz';
@@ -25,7 +25,7 @@ if (mail($to, $subject, $message)) {
 } else {
   echo "Unable to submit your vote. Sorry about that :(\n\n";
 };
-  echo $ballot . "Vote Submitted 👍\n\n";
+  echo "Vote Submitted 👍\n\n";
 ?>
 
 <html>
