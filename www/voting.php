@@ -152,13 +152,7 @@
   </header>
 
     <section class="container">
-
-			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
-			<p>Nominations are in and it's time to cast your votes</p>
-			<p>There are 8 categories, one vote each. You may skip any of the categories. You may vote for yourself.</p>
-			<p>Voting closes at midnight on Sunday, 3rd of January. Winners will be announced at the awards ceremony on Wednesday, 20th of January at Inch Bar after the open mic.</p>
-			<p>If you have any issues with the ballot please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
-			
+	
 			<?php
 				$voterid = $_GET["voterid"];
 				$voteremaillist = array(						
@@ -188,7 +182,18 @@
 					"cdab2186-03b0-41e8-8519-2c1c1de1ade9" => "danielbrader@hotmail.com"
 				);
 				$voteremail = $voteremaillist[$voterid];
-			?>
+
+				if (strlen($voteremail) == 0) { ?>
+							<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
+							<p>Invalid voting link.</p>
+			
+					<?php } else { ?>
+			<h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
+			<p>Nominations are in and it's time to cast your votes</p>
+			<p>There are 8 categories, one vote each. You may skip any of the categories. You may vote for yourself. You may recast your vote(s) unlimited times until the voting closes. </p>
+			<p>Voting closes at midnight on Sunday, 3rd of January. Winners will be announced at the awards ceremony on Wednesday, 20th of January at Inch Bar after the open mic.</p>
+			<p>If you have any issues with the ballot please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
+		
 
       <form action="submit_vote.php" method="post">
         <input type="hidden" id="voter" name="voter" value=<?php echo $voteremail ?>>
@@ -327,7 +332,9 @@
           <input type="submit" value="Submit Votes" class="red darken-3 right btn">
         </div>
       </div>
-    </form>
+		</form>
+		
+				<?php } ?>
 
     </section>
 
