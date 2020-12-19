@@ -170,7 +170,8 @@
       if (strlen($voteremail) == 0) { ?>
     <section class="container">
       <h3 class="center red-text text-darken-3">2020 Dunedin Comedy Awards</h3>
-      <p>This is not a valid voting link. You may view the nominees but you cannot vote. If you think you should be able to vote please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
+			<p>This is not a valid voting link.</p>
+			<p>You may view the nominees but you cannot vote. If you think you should be able to vote please email <a href="mailto:contact@dunedincomedy.co.nz">contact@dunedincomedy.co.nz</a></p>
     </section>
     <?php } else { ?>
     <section class="container">
@@ -759,8 +760,6 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="scripts/populate-comedian-profiles.js"></script>
-    <script src="scripts/populate-past-events.js"></script>
     <script>
       $(document).ready(function(){
         $(".sidenav").sidenav();
@@ -775,7 +774,6 @@
         $('.collapsible').collapsible();
         $('.dropdown-trigger').dropdown();
         $('.tabs').tabs();
-      
         $("select").formSelect();
       });
     </script>
