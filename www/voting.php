@@ -184,12 +184,10 @@
 					"cdab2186-03b0-41e8-8519-2c1c1de1ade9" => "danielbrader@hotmail.com"
 				);
 				$voteremail = $voteremaillist[$voterid];
-				echo $voteremail;
-			
 			?>
 
       <form action="submit_vote.php" method="post">
-        <input type="hidden" id="voter" name="voter" value="reubencrimp@gmail.com">
+        <input type="hidden" id="voter" name="voter" value=<?php echo $voteremail ?>>
 
         <h4 class="center red-text text-darken-3">Best Newcomer</h4>
         <div class="row">
