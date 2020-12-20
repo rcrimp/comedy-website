@@ -776,7 +776,9 @@
         $('.collapsible').collapsible();
         $('.dropdown-trigger').dropdown();
         $('.tabs').tabs();
-        $("select").formSelect();
+        $("select").formSelect(
+          {closeOnClick: false}
+        );
       });
     </script>
   </body>
