@@ -239,16 +239,16 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Newcomer" name="Best-Newcomer">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Newcomer" name="Best-Newcomer">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
                 <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
                 <option value="Kate Hansen" data-icon="img/voting/Kate-Hansen.jpg" class="right">Kate Hansen</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
               </select>
-              <label>Best Newcomer Vote</label>
+              <!-- <label style="display:hidden;">Best Newcomer Vote</label> -->
             </div>
           </div>
         </div>
@@ -305,16 +305,16 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Most-Improved" name="Most-Improved">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Most-Improved" name="Most-Improved">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
                 <option value="John Bagnall" data-icon="img/voting/John-Bagnall.jpg" class="right">John Bagnall</option>
                 <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
                 <option value="Sarper Dorter" data-icon="img/voting/Sarper-Dorter.jpg" class="right">Sarper Dörter</option>
               </select>
-              <label>Most Improved Vote</label>
+              <!-- <label style="display:hidden;">Most Improved Vote</label> -->
             </div>
           </div>
         </div>
@@ -371,16 +371,16 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Greenroomer" name="Best-Greenroomer">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Greenroomer" name="Best-Greenroomer">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Elisa Rubin" data-icon="img/voting/Elisa-Rubin.jpg" class="right">Elisa Rubin</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
                 <option value="Jenny Kendrick" data-icon="img/voting/Jenny-Kendrick.jpg" class="right">Jenny Kendrick</option>
                 <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
               </select>
-              <label>Best Greenroomer Vote</label>
+              <!-- <label style="display:hidden;">Best Greenroomer Vote</label> -->
             </div>
           </div>
         </div>
@@ -429,15 +429,15 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Venue" name="Best-Venue">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Venue" name="Best-Venue">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Dog with two Tails" data-icon="img/voting/Dog-with-two-Tails.jpg" class="right">Dog with two Tails</option>
                 <option value="Inch Bar" data-icon="img/voting/Inch-Bar.jpg" class="right">Inch Bar</option>
                 <option value="New Athenaeum Theatre" data-icon="img/voting/New-Athenaeum-Theatre.jpg" class="right">New Athenaeum Theatre</option>
               </select>
-              <label>Best Venue Vote</label>
+              <!-- <label style="display:hidden;">Best Venue Vote</label> -->
             </div>
           </div>
         </div>
@@ -494,16 +494,16 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Solo-Show" name="Best-Solo-Show">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Solo-Show" name="Best-Solo-Show">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley: The Straight-out-of-lockdown Tour</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir: CHIP: Salty with a Bit of Sauce</option>
                 <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James Mustapic is Coming Out (From Under a Rock)</option>
                 <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer: World's Dumbest Doctor</option>
               </select>
-              <label>Best Solo Show Vote</label>
+              <!-- <label style="display:hidden;">Best Solo Show Vote</label> -->
             </div>
           </div>
         </div>
@@ -560,16 +560,16 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-MC" name="Best-MC">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-MC" name="Best-MC">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Aaron Davies" data-icon="img/voting/Aaron-Davies.jpg" class="right">Aaron Davies</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
                 <option value="Jonathan Falconer" data-icon="img/voting/Jonathan-Falconer.jpg" class="right">Jonathan Falconer</option>
                 <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
               </select>
-              <label>Best MC Vote</label>
+              <!-- <label style="display:hidden;">Best MC Vote</label> -->
             </div>
           </div>
         </div>
@@ -638,9 +638,9 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley (Auckland)</option>
                 <option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader (Wanaka)</option>
@@ -648,7 +648,7 @@
                 <option value="Jadwiga Green" data-icon="img/voting/Jadwiga-Green.jpg" class="right">Jadwiga Green (Christchurch)</option>
                 <option value="James Mustapic" data-icon="img/voting/James-Mustapic.jpg" class="right">James-Mustapic (Auckland)</option>
               </select>
-              <label>Best Visiting Comedian Vote</label>
+              <!-- <label style="display:hidden;">Best Visiting Comedian Vote</label> -->
             </div>
           </div>
         </div>
@@ -717,9 +717,9 @@
         <?php if (strlen($voteremail) != 0) { ?>
         <div class="row">
           <div class="col s12">
-            <div class="input-field">
-              <i class="material-icons prefix">how_to_vote</i>
-              <select id="Best-Comedian" name="Best-Comedian">
+            <div class="input-field browser-default">
+              
+              <select class="browser-default" id="Best-Comedian" name="Best-Comedian">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Demelza Daisy Ray" data-icon="img/voting/Demelza-Daisy-Ray.jpg" class="right">Demelza-Daisy-Ray</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
@@ -727,7 +727,7 @@
                 <option value="Mike Chewie Bennett" data-icon="img/voting/Mike-Chewie-Bennett.jpg" class="right">Mike "Chewie" Bennett</option>
                 <option value="Reuben Crisp" data-icon="img/voting/Reuben-Crisp.jpg" class="right">Reuben Crisp</option>
               </select>
-              <label>Best Comedian Vote</label>
+              <!-- <label style="display:hidden;">Best Comedian Vote</label> -->
             </div>
           </div>
         </div>
