@@ -184,13 +184,6 @@ blockquote a {
   flex-wrap: wrap;
 }
 
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .page-footer {
 	padding-top: 0;
 }

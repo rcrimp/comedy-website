@@ -20,7 +20,19 @@
     <link rel="stylesheet" href="style/main.css">
     <style>
       .select-wrapper ul li span {
-      color: #C62828 !important
+        color: #C62828 !important;
+      }
+      .card .card-content {
+        padding: 8px 0 4px 0 !important;
+      }
+      .row {
+        margin-bottom: 0 !important;
+      }
+      .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
       }
     </style>
     <title>Dunedin Comedy</title>
@@ -44,17 +56,17 @@
               <!-- DESKTOP SOCIAL MEDIA -->
               <ul class="right hide-on-med-and-down">
                 <li>
-                  <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Facebook">
+                  <a href="http://www.facebook.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-1" data-tooltip="Facebook">
                   <i class="red-text text-darken-3 fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.instagram.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Instagram">
+                  <a href="http://www.instagram.com/dunedincomedy" class="btn-floating btn-small white tooltipped z-depth-1" data-tooltip="Instagram">
                   <i class="red-text text-darken-3 fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:hello@dunedincomedy.co.nz" class="btn-floating btn-small white tooltipped z-depth-0" data-tooltip="Email">
+                  <a href="mailto:hello@dunedincomedy.co.nz" class="btn-floating btn-small white tooltipped z-depth-1" data-tooltip="Email">
                   <i class="red-text text-darken-3 fas material-icons">mail_outline</i>
                   </a>
                 </li>
@@ -198,41 +210,41 @@
         <h4 class="center red-text text-darken-3">Best Newcomer Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Carrie-Ankerstein.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Carrie Ankerstein
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Gerard-Dougherty.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Gerard Dougherty
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Kate-Hansen.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Kate Hansen
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Sarper-Dorter.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Sarper Dörter
               </div>
             </div>
@@ -243,7 +255,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Newcomer" name="Best-Newcomer">
+              <select class="browser-default z-depth-1" id="Best-Newcomer" name="Best-Newcomer">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Carrie Ankerstein" data-icon="img/voting/Carrie-Ankerstein.jpg" class="right">Carrie Ankerstein</option>
                 <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
@@ -264,41 +276,41 @@
         <h4 class="center red-text text-darken-3">Most Improved Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Gerard-Dougherty.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Gerard Dougherty
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/John-Bagnall.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 John Bagnall
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Jonathan Falconer
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Sarper-Dorter.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Sarper Dörter
               </div>
             </div>
@@ -309,7 +321,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Most-Improved" name="Most-Improved">
+              <select class="browser-default z-depth-1" id="Most-Improved" name="Most-Improved">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Gerard Dougherty" data-icon="img/voting/Gerard-Dougherty.jpg" class="right">Gerard Dougherty</option>
                 <option value="John Bagnall" data-icon="img/voting/John-Bagnall.jpg" class="right">John Bagnall</option>
@@ -330,41 +342,41 @@
         <h4 class="center red-text text-darken-3">Best Greenroomer Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Elisa-Rubin.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Elisa Rubin
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Harriet Moir
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Jenny-Kendrick.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Jenny Kendrick
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Reuben-Crisp.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Reuben Crisp
               </div>
             </div>
@@ -375,7 +387,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Greenroomer" name="Best-Greenroomer">
+              <select class="browser-default z-depth-1" id="Best-Greenroomer" name="Best-Greenroomer">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Elisa Rubin" data-icon="img/voting/Elisa-Rubin.jpg" class="right">Elisa Rubin</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
@@ -397,31 +409,31 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s3">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Dog-with-two-Tails.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Dog with two Tails
                 </div>
               </div>
             </div>
             <div class="col s3">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Inch-Bar.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Inch Bar
                 </div>
               </div>
             </div>
             <div class="col s3">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/New-Athenaeum-Theatre.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   New Athenaeum Theatre
                 </div>
               </div>
@@ -433,7 +445,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Venue" name="Best-Venue">
+              <select class="browser-default z-depth-1" id="Best-Venue" name="Best-Venue">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Dog with two Tails" data-icon="img/voting/Dog-with-two-Tails.jpg" class="right">Dog with two Tails</option>
                 <option value="Inch Bar" data-icon="img/voting/Inch-Bar.jpg" class="right">Inch Bar</option>
@@ -453,41 +465,41 @@
         <h4 class="center red-text text-darken-3">Best Solo Show Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Ben-Hurley.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Ben Hurley: The Straight-out-of-lockdown Tour
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Harriet Moir: CHIP: Salty with a Bit of Sauce
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/James-Mustapic.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 James Mustapic is Coming Out (From Under a Rock)
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Jonathan Falconer: World's Dumbest Doctor
               </div>
             </div>
@@ -498,7 +510,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Solo-Show" name="Best-Solo-Show">
+              <select class="browser-default z-depth-1" id="Best-Solo-Show" name="Best-Solo-Show">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley: The Straight-out-of-lockdown Tour</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir: CHIP: Salty with a Bit of Sauce</option>
@@ -519,41 +531,41 @@
         <h4 class="center red-text text-darken-3">Best MC Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Aaron-Davies.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Aaron Davies
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Harriet Moir
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Jonathan Falconer
               </div>
             </div>
           </div>
           <div class="col s3">
-            <div class="card z-depth-0">
+            <div class="card z-depth-1">
               <div class="card-image">
                 <img src="img/voting/Reuben-Crisp.jpg">
               </div>
-              <div class="card-content">
+              <div class="card-content center">
                 Reuben Crisp
               </div>
             </div>
@@ -564,7 +576,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-MC" name="Best-MC">
+              <select class="browser-default z-depth-1" id="Best-MC" name="Best-MC">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Aaron Davies" data-icon="img/voting/Aaron-Davies.jpg" class="right">Aaron Davies</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
@@ -586,51 +598,51 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Ben-Hurley.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Ben Hurley
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Dan-Brader.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Dan Brader
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Gary-Sansome.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Gary Sansome
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Jadwiga-Green.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Jadwiga Green
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/James-Mustapic.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   James Mustapic
                 </div>
               </div>
@@ -642,7 +654,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
+              <select class="browser-default z-depth-1" id="Best-Visiting-Comedian" name="Best-Visiting-Comedian">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Ben Hurley" data-icon="img/voting/Ben-Hurley.jpg" class="right">Ben Hurley (Auckland)</option>
                 <option value="Dan Brader" data-icon="img/voting/Dan-Brader.jpg" class="right">Dan Brader (Wanaka)</option>
@@ -665,51 +677,51 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Demelza-Daisy-Ray.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Demelza Daisy Ray
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Harriet-Moir.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Harriet Moir
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Jonathan-Falconer.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Jonathan Falconer
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Mike-Chewie-Bennett.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Mike "Chewie" Bennett
                 </div>
               </div>
             </div>
             <div class="col s2">
-              <div class="card z-depth-0">
+              <div class="card z-depth-1">
                 <div class="card-image">
                   <img src="img/voting/Reuben-Crisp.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content center">
                   Reuben Crisp
                 </div>
               </div>
@@ -721,7 +733,7 @@
           <div class="col s12">
             <div class="input-field browser-default">
               
-              <select class="browser-default" id="Best-Comedian" name="Best-Comedian">
+              <select class="browser-default z-depth-1" id="Best-Comedian" name="Best-Comedian">
                 <option value="none" class="right" selected>Vote here</option>
                 <option value="Demelza Daisy Ray" data-icon="img/voting/Demelza-Daisy-Ray.jpg" class="right">Demelza-Daisy-Ray</option>
                 <option value="Harriet Moir" data-icon="img/voting/Harriet-Moir.jpg" class="right">Harriet Moir</option>
