@@ -165,7 +165,8 @@
       	"c145d29a-9b0c-454d-8a6d-131a36db7e97" => "roslyn.n@xtra.co.nz",
       	"ccbe09a4-3143-403c-9070-fa9edeeb6618" => "mikeeyt1@gmail.com",
 				"cdab2186-03b0-41e8-8519-2c1c1de1ade9" => "danielbrader@hotmail.com",
-				"91f0a002-6dd6-46f8-be2d-7eb8737e98b6" => "nomd_rocks@hotmail.com"
+        "91f0a002-6dd6-46f8-be2d-7eb8737e98b6" => "nomd_rocks@hotmail.com",
+        "69420694-6942-6942-6952-694206942069" => "test@mail.com"
       );
       $voteremail = $voteremaillist[$voterid];
       
