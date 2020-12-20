@@ -196,7 +196,7 @@
         <h4 class="center red-text text-darken-3">Best Newcomer Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Carrie-Ankerstein.jpg">
               </div>
@@ -206,7 +206,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Gerard-Dougherty.jpg">
               </div>
@@ -216,7 +216,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Kate-Hansen.jpg">
               </div>
@@ -226,7 +226,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Sarper-Dorter.jpg">
               </div>
@@ -262,7 +262,7 @@
         <h4 class="center red-text text-darken-3">Most Improved Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Gerard-Dougherty.jpg">
               </div>
@@ -272,7 +272,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/John-Bagnall.jpg">
               </div>
@@ -282,7 +282,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
@@ -292,7 +292,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Sarper-Dorter.jpg">
               </div>
@@ -328,7 +328,7 @@
         <h4 class="center red-text text-darken-3">Best Greenroomer Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Elisa-Rubin.jpg">
               </div>
@@ -338,7 +338,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
@@ -348,7 +348,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Jenny-Kendrick.jpg">
               </div>
@@ -358,7 +358,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Reuben-Crisp.jpg">
               </div>
@@ -395,7 +395,7 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s3">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Dog-with-two-Tails.jpg">
                 </div>
@@ -405,7 +405,7 @@
               </div>
             </div>
             <div class="col s3">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Inch-Bar.jpg">
                 </div>
@@ -415,7 +415,7 @@
               </div>
             </div>
             <div class="col s3">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/New-Athenaeum-Theatre.jpg">
                 </div>
@@ -451,7 +451,7 @@
         <h4 class="center red-text text-darken-3">Best Solo Show Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Ben-Hurley.jpg">
               </div>
@@ -461,7 +461,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
@@ -471,7 +471,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/James-Mustapic.jpg">
               </div>
@@ -481,7 +481,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
@@ -517,7 +517,7 @@
         <h4 class="center red-text text-darken-3">Best MC Nominees</h4>
         <div class="row">
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Aaron-Davies.jpg">
               </div>
@@ -527,7 +527,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Harriet-Moir.jpg">
               </div>
@@ -537,7 +537,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Jonathan-Falconer.jpg">
               </div>
@@ -547,7 +547,7 @@
             </div>
           </div>
           <div class="col s3">
-            <div class="card">
+            <div class="card z-depth-0">
               <div class="card-image">
                 <img src="img/voting/Reuben-Crisp.jpg">
               </div>
@@ -584,7 +584,7 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Ben-Hurley.jpg">
                 </div>
@@ -594,7 +594,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Dan-Brader.jpg">
                 </div>
@@ -604,7 +604,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Gary-Sansome.jpg">
                 </div>
@@ -614,7 +614,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Jadwiga-Green.jpg">
                 </div>
@@ -624,7 +624,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/James-Mustapic.jpg">
                 </div>
@@ -663,7 +663,7 @@
         <div class="row">
           <div class="flexbox">
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Demelza-Daisy-Ray.jpg">
                 </div>
@@ -673,7 +673,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Harriet-Moir.jpg">
                 </div>
@@ -683,7 +683,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Jonathan-Falconer.jpg">
                 </div>
@@ -693,7 +693,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Mike-Chewie-Bennett.jpg">
                 </div>
@@ -703,7 +703,7 @@
               </div>
             </div>
             <div class="col s2">
-              <div class="card">
+              <div class="card z-depth-0">
                 <div class="card-image">
                   <img src="img/voting/Reuben-Crisp.jpg">
                 </div>
