@@ -187,3 +187,13 @@ blockquote a {
 .page-footer {
 	padding-top: 0;
 }
+
+.event-description {
+  line-height: 18px;
+  height: 54px;
+  overflow: hidden;
+}
+
+.seemore {
+  cursor: pointer;
+}
