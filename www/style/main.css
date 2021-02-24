@@ -188,10 +188,21 @@ blockquote a {
 	padding-top: 0;
 }
 
+h5:first-child {
+  margin-top: 0;
+}
+
+.card-content {
+  padding: 12px 24px !important;
+}
+
 .event-description {
   line-height: 18px;
   height: 54px;
   overflow: hidden;
+}
+.event-description p {
+  margin-bottom: 15px !important;
 }
 
 .seemore {
