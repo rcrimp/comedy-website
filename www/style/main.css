@@ -208,3 +208,10 @@ h5:first-child {
 .seemore {
   cursor: pointer;
 }
+
+.center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
